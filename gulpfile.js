@@ -35,6 +35,14 @@ function scripts(){
     .pipe(browserSync.stream());
 }
 
+function orderNewScripts(){
+    return src('app/js/order_new.js')
+    .pipe(uglify())
+    .pipe(concat('order_new.min.js'))
+    .pipe(dest('app/js'))
+    .pipe(browserSync.stream());
+}
+
 function styles(){
     return src('app/scss/style.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -47,19 +55,35 @@ function styles(){
         .pipe(browserSync.stream());
 }
 
+function orderNewStyles(){
+    return src('app/scss/order_new.scss')
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(concat('order_new.min.css'))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 10 version'],
+            grid: true
+        }))
+        .pipe(dest('app/css'))
+        .pipe(browserSync.stream());
+}
+
 function build (){
     return src([
         'app/css/style.min.css',
+        'app/css/order_new.min.css',
         'app/fonts/**/*',
         'app/js/main.min.js',
+        'app/js/order_new.min.js',
         'app/*.html'
     ], {base:'app'})
     .pipe(dest('dist'));
 }
 
 function watching(){
-    watch(['app/scss/**/*.scss'], styles);
-    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+    watch(['app/scss/style.scss', 'app/scss/_*.scss'], styles);
+    watch(['app/scss/order_new.scss'], orderNewStyles);
+    watch(['app/js/main.js'], scripts);
+    watch(['app/js/order_new.js'], orderNewScripts);
     watch(['app/*.html']).on('change', browserSync.reload);
 }
 
@@ -67,8 +91,10 @@ exports.browsersync = browsersync;
 exports.cleanDist = cleanDist;
 exports.images = images;
 exports.styles = styles;
+exports.orderNewStyles = orderNewStyles;
 exports.scripts = scripts;
+exports.orderNewScripts = orderNewScripts;
 exports.watching = watching;
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, orderNewStyles, scripts, orderNewScripts, browsersync, watching);

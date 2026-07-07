@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="92785ae8-e81a-421f-ae2f-90e87b8c2a43" name="new">
+        <fileTransfer rootFolder="/home/sfdevelop/web/stock.sf-site.pp.ua/public_html" accessType="SFTP" host="91.216.106.81" port="22" sshConfigId="8c02c71d-517e-40b8-85eb-60b33c803088" sshConfig="root@91.216.106.81:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
