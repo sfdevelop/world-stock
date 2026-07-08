@@ -192,7 +192,7 @@ $(function () {
     $(this).addClass('order-new__tab--active');
   });
 
-  const DESKTOP_MIN = 769;
+  const DESKTOP_MIN = 992;
 
   function isDesktopViewport() {
     return window.innerWidth >= DESKTOP_MIN;
