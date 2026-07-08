@@ -1,0 +1,155 @@
+$header-user-black: #000101;
+$header-user-grey: #555;
+$header-user-grey-light: #ededed;
+$header-user-radius: 3px;
+$header-user-bp-desktop: 992px;
+$header-user-overlay-z: 1000;
+$header-user-dropdown-z: 1001;
+
+.header-user {
+	position: relative;
+	flex-shrink: 0;
+}
+
+.header-user__overlay {
+	display: none;
+	position: fixed;
+	inset: 0;
+	z-index: $header-user-overlay-z;
+	background: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+
+	&--visible {
+		display: block;
+	}
+}
+
+.header-user__dropdown {
+	display: none;
+	position: fixed;
+	z-index: $header-user-dropdown-z;
+	width: 241px;
+	padding: 12px;
+	border: 1px solid $header-user-grey-light;
+	border-radius: $header-user-radius;
+	background: #fff;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+
+	&--visible {
+		display: block;
+	}
+}
+
+.header-user__profile {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding-top: 8px;
+	margin-bottom: 16px;
+}
+
+.header-user__avatar {
+	flex-shrink: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.header-user__info {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+
+	p {
+		margin: 0;
+		font-size: 12px;
+		line-height: 1.4;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	p:first-child {
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $header-user-black;
+	}
+
+	p:last-child {
+		font-weight: 400;
+		color: $header-user-grey;
+	}
+}
+
+.header-user__nav {
+	ul {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		margin: 0;
+	}
+}
+
+.header-user__link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	padding: 12px 24px;
+	border: none;
+	border-radius: $header-user-radius;
+	background: transparent;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: $header-user-black;
+	text-align: left;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.2s linear;
+	box-sizing: border-box;
+
+	img {
+		display: block;
+		flex-shrink: 0;
+		width: 18px;
+		height: 18px;
+		object-fit: contain;
+	}
+
+	&:hover {
+		background-color: $header-user-grey-light;
+	}
+
+	&--active {
+		background-color: $header-user-black;
+		color: #fff;
+		pointer-events: none;
+
+		img {
+			filter: brightness(0) invert(1);
+		}
+	}
+}
+
+@media (max-width: $header-user-bp-desktop - 1px) {
+	.header-user__dropdown,
+	.header-user__overlay {
+		display: none !important;
+	}
+}

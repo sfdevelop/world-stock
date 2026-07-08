@@ -25,6 +25,7 @@
 
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/order_new.min.css">
+  <link rel="stylesheet" href="css/header-user-menu.min.css">
 </head>
 
 <body>
@@ -59,12 +60,66 @@
           </div>
         </div>
         <button class="header__search"><img src="images/icons/search.svg" alt="icon"></button>
-        <button class="header__cabinet header__cabinet--login"><img src="images/content/avatar-1.jpg"
-            alt="icon"></button>
+        <div class="header-user">
+          <button type="button" class="header__cabinet header__cabinet--login" aria-haspopup="true"
+            aria-expanded="false"><img src="images/content/avatar-1.jpg" alt="icon"></button>
+        </div>
         <button class="header__bascket"><img src="images/icons/bacsket.svg" alt="img"><span>99</span></button>
       </div>
     </div>
   </header>
+  <div class="header-user__overlay" hidden></div>
+  <div class="header-user__dropdown" hidden>
+    <div class="header-user__profile">
+      <div class="header-user__avatar">
+        <img src="images/content/avatar-1.jpg" alt="">
+      </div>
+      <div class="header-user__info">
+        <p>Станислав Кулаков</p>
+        <p>Exemle@email.com</p>
+      </div>
+    </div>
+    <nav class="header-user__nav">
+      <ul>
+        <li>
+          <a class="header-user__link" href="#">
+            <img src="images/assets/header-user/icon-information.svg" alt="">
+            <span>Інформація</span>
+          </a>
+        </li>
+        <li>
+          <a class="header-user__link header-user__link--active" href="#">
+            <img src="images/assets/header-user/icon-orders.svg" alt="">
+            <span>Замовлення</span>
+          </a>
+        </li>
+        <li>
+          <a class="header-user__link" href="#">
+            <img src="images/assets/header-user/icon-personal.svg" alt="">
+            <span>Особисті дані</span>
+          </a>
+        </li>
+        <li>
+          <a class="header-user__link" href="#">
+            <img src="images/assets/header-user/icon-favorites.svg" alt="">
+            <span>Вподобання</span>
+          </a>
+        </li>
+        <li>
+          <a class="header-user__link" href="#">
+            <img src="images/assets/header-user/icon-terms.svg" alt="">
+            <span>Умови торгівлі</span>
+          </a>
+        </li>
+        <li>
+          <button type="button" class="header-user__link">
+            <img src="images/assets/header-user/icon-exit.svg" alt="">
+            <span>Вийти</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <form class="header__search-form">
     <div class="header__input-wrap">
       <input type="text" placeholder="Введіть назву товару" required="">
@@ -2360,6 +2415,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="js/main.min.js"></script>
+  <script src="js/header-user-menu.min.js"></script>
   <script src="js/order_new.min.js"></script>
 </body>
 
