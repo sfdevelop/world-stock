@@ -388,6 +388,18 @@ $format-jpg-text: #b35f00;
 		margin-top: 12px;
 	}
 
+	&__details-row {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__invoices {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+
 	&__section-title {
 		padding-top: 4px;
 		font-size: 12px;
@@ -483,6 +495,14 @@ $format-jpg-text: #b35f00;
 		background: $order-grey-back;
 		border-radius: $order-radius;
 		box-sizing: border-box;
+
+		&--empty {
+			justify-content: center;
+
+			p {
+				color: $order-grey-stroke;
+			}
+		}
 
 		p {
 			flex: 1;
@@ -865,46 +885,58 @@ $format-jpg-text: #b35f00;
 		}
 
 		&__details {
-			flex-direction: row;
-			align-items: stretch;
-			gap: 12px;
 			margin-top: 0;
 			padding: 14px 8px 0;
 		}
 
+		&__details-row {
+			flex-direction: row;
+			align-items: stretch;
+			gap: 12px;
+		}
+
 		&__invoices {
-			flex: 1;
-			min-width: 0;
-			display: flex;
-			flex-direction: column;
+			flex: 0 0 auto;
+			flex-shrink: 0;
 		}
 
 		&__invoices-grid {
-			flex: 1;
+			display: flex;
 			flex-direction: row;
-			align-items: stretch;
+			flex-wrap: nowrap;
 			gap: 6px;
 		}
 
 		&__invoice {
-			flex: 1 1 0;
-			min-width: 0;
+			flex: 0 0 229.333px;
+			width: 229.333px;
+			flex-shrink: 0;
+			box-sizing: border-box;
 		}
 
 		&__comment {
-			position: relative;
-			width: 184px;
-			flex-shrink: 0;
+			flex: 1 1 184px;
+			min-width: 184px;
 			display: flex;
 			flex-direction: column;
 		}
 
 		&__comment-box {
 			flex: 1;
+			min-height: 105px;
 
 			p {
 				padding-right: 20px;
 				box-sizing: border-box;
+			}
+
+			&--empty {
+				justify-content: center;
+
+				p {
+					padding-right: 0;
+					color: $order-grey-stroke;
+				}
 			}
 		}
 
