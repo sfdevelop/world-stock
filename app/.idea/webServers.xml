@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2c8e61a0-395b-4149-96ba-f3613854113c" name="workdstock">
+        <fileTransfer rootFolder="/home/sfdevelop/web/worldstock.sf-site.pp.ua/public_html" accessType="SFTP" host="91.216.106.81" port="22" sshConfigId="8c02c71d-517e-40b8-85eb-60b33c803088" sshConfig="root@91.216.106.81:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
