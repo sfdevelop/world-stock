@@ -1,0 +1,37 @@
+<nav class="drop-menu" id="drop-menu" aria-label="Мобільне меню" aria-hidden="true" inert data-drop-menu>
+  <ul class="drop-menu__list">
+    <li class="drop-menu__item">
+      <a class="drop-menu__link" href="drop-index.html">Головна</a>
+    </li>
+    <li class="drop-menu__item" data-drop-menu-item>
+      <button class="drop-menu__toggle" type="button" aria-expanded="false" aria-controls="drop-menu-shoes" data-drop-menu-toggle>
+        <span>Взуття</span>
+        <img class="drop-menu__icon drop-menu__icon--plus" src="images/Drop/icon-menu-plus.svg" alt="" width="20" height="20">
+        <img class="drop-menu__icon drop-menu__icon--minus" src="images/Drop/icon-menu-minus.svg" alt="" width="20" height="20">
+      </button>
+      <div class="drop-menu__sub" id="drop-menu-shoes" data-drop-menu-sub>
+        <!-- @include menu-groups.html -->
+      </div>
+    </li>
+    <li class="drop-menu__item" data-drop-menu-item>
+      <button class="drop-menu__toggle" type="button" aria-expanded="false" aria-controls="drop-menu-clothes" data-drop-menu-toggle>
+        <span>Одяг</span>
+        <img class="drop-menu__icon drop-menu__icon--plus" src="images/Drop/icon-menu-plus.svg" alt="" width="20" height="20">
+        <img class="drop-menu__icon drop-menu__icon--minus" src="images/Drop/icon-menu-minus.svg" alt="" width="20" height="20">
+      </button>
+      <div class="drop-menu__sub" id="drop-menu-clothes" data-drop-menu-sub>
+        <!-- @include menu-groups.html -->
+      </div>
+    </li>
+    <li class="drop-menu__item" data-drop-menu-item>
+      <button class="drop-menu__toggle" type="button" aria-expanded="false" aria-controls="drop-menu-accessories" data-drop-menu-toggle>
+        <span>Аксесуари</span>
+        <img class="drop-menu__icon drop-menu__icon--plus" src="images/Drop/icon-menu-plus.svg" alt="" width="20" height="20">
+        <img class="drop-menu__icon drop-menu__icon--minus" src="images/Drop/icon-menu-minus.svg" alt="" width="20" height="20">
+      </button>
+      <div class="drop-menu__sub" id="drop-menu-accessories" data-drop-menu-sub>
+        <!-- @include menu-groups.html -->
+      </div>
+    </li>
+  </ul>
+</nav>

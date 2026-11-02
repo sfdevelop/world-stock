@@ -1,58 +1,60 @@
-<header class="drop-header">
-  <div class="drop-header__inner">
-    <div class="drop-header__bar">
-      <button class="drop-header__menu" type="button" aria-label="Меню">
-        <img src="images/Drop/icon-menu.svg" alt="" width="22" height="22">
-      </button>
-      <a class="drop-header__logo" href="drop-index.html" aria-label="WORLD STOCK DROP">
-        <div class="drop-header__lockup">
-          <div class="drop-header__lockup-shift">
-            <img src="images/Drop/logo-shop-mobile.png" alt="">
-          </div>
-        </div>
-        <div class="drop-header__desk">
-          <div class="drop-header__mark">
-            <img src="images/Drop/logo-shop.png" alt="">
-          </div>
-          <div class="drop-header__brand">
-            <div class="drop-header__word">
+<div class="drop-top">
+  <header class="drop-header">
+    <div class="drop-header__inner">
+      <div class="drop-header__bar">
+        <button class="drop-header__menu" type="button" aria-label="Меню" aria-expanded="false" aria-controls="drop-menu" data-drop-menu-open>
+          <span class="drop-header__burger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <a class="drop-header__logo" href="drop-index.html" aria-label="WORLD STOCK DROP">
+          <div class="drop-header__desk">
+            <div class="drop-header__mark">
               <img src="images/Drop/logo-shop.png" alt="">
             </div>
-            <div class="drop-header__caption">
-              <p>ДРОП</p>
+            <div class="drop-header__brand">
+              <div class="drop-header__word">
+                <img src="images/Drop/logo-shop.png" alt="">
+              </div>
+              <div class="drop-header__caption">
+                <p>ДРОП</p>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-      <nav class="drop-header__nav" aria-label="Головне меню">
-        <ul>
-          <li><a href="drop-index.html">головна</a></li>
-          <li><a href="#">Взуття</a></li>
-          <li><a href="#">Одяг</a></li>
-          <li><a href="#">Аксесуари</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="drop-header__actions">
-      <button class="drop-header__currency" type="button" aria-label="Валюта">
-        <img src="images/Drop/icon-exchange.svg" alt="">
-      </button>
-      <div class="drop-header__tools">
-        <button class="drop-header__tool" type="button" aria-label="Пошук">
-          <img class="drop-header__icon" src="images/Drop/icon-search.svg" alt="">
+        </a>
+        <nav class="drop-header__nav" aria-label="Головне меню">
+          <ul>
+            <li><a href="drop-index.html">головна</a></li>
+            <li><a href="#">Взуття</a></li>
+            <li><a href="#">Одяг</a></li>
+            <li><a href="#">Аксесуари</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="drop-header__actions">
+        <button class="drop-header__currency" type="button" aria-label="Валюта">
+          <img src="images/Drop/icon-exchange.svg" alt="">
         </button>
-        <a class="drop-header__tool" href="#" aria-label="Кабінет">
-          <img class="drop-header__icon" src="images/Drop/icon-user.svg" alt="">
-        </a>
-        <a class="drop-header__tool drop-header__tool--cart" href="#" aria-label="Кошик">
-          <img class="drop-header__cart" src="images/Drop/icon-cart.svg" alt="">
-          <img class="drop-header__dot drop-header__dot--left" src="images/Drop/icon-cart-dot.svg" alt="">
-          <img class="drop-header__dot drop-header__dot--right" src="images/Drop/icon-cart-dot.svg" alt="">
-          <div class="drop-header__badge">
-            <p>99</p>
-          </div>
-        </a>
+        <div class="drop-header__tools">
+          <button class="drop-header__tool" type="button" aria-label="Пошук">
+            <img class="drop-header__icon" src="images/Drop/icon-search.svg" alt="">
+          </button>
+          <a class="drop-header__tool" href="#" aria-label="Кабінет">
+            <img class="drop-header__icon" src="images/Drop/icon-user.svg" alt="">
+          </a>
+          <a class="drop-header__tool drop-header__tool--cart" href="#" aria-label="Кошик">
+            <img class="drop-header__cart" src="images/Drop/icon-cart.svg" alt="">
+            <img class="drop-header__dot drop-header__dot--left" src="images/Drop/icon-cart-dot.svg" alt="">
+            <img class="drop-header__dot drop-header__dot--right" src="images/Drop/icon-cart-dot.svg" alt="">
+            <div class="drop-header__badge">
+              <p>99</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
+  <!-- @include menu.html -->
+</div>

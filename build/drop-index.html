@@ -13,64 +13,193 @@
 
 <body>
   <div class="drop-page">
-    <header class="drop-header">
-      <div class="drop-header__inner">
-        <div class="drop-header__bar">
-          <button class="drop-header__menu" type="button" aria-label="Меню">
-            <img src="images/Drop/icon-menu.svg" alt="" width="22" height="22">
-          </button>
-          <a class="drop-header__logo" href="drop-index.html">
-            <div class="drop-header__lockup">
-              <div class="drop-header__lockup-shift">
-                <img src="images/Drop/logo-shop-mobile.png" alt="WORLD STOCK DROP">
-              </div>
-            </div>
-            <div class="drop-header__desk">
-              <div class="drop-header__mark">
-                <img src="images/Drop/logo-shop.png" alt="">
-              </div>
-              <div class="drop-header__brand">
-                <div class="drop-header__word">
-                  <img src="images/Drop/logo-shop.png" alt="WORLD STOCK">
-                </div>
-                <div class="drop-header__caption">
-                  <p>ДРОП</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <nav class="drop-header__nav" aria-label="Головне меню">
-            <ul>
-              <li><a href="drop-index.html">головна</a></li>
-              <li><a href="#">Взуття</a></li>
-              <li><a href="#">Одяг</a></li>
-              <li><a href="#">Аксесуари</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="drop-header__actions">
-          <button class="drop-header__currency" type="button" aria-label="Валюта">
-            <img src="images/Drop/icon-exchange.svg" alt="">
-          </button>
-          <div class="drop-header__tools">
-            <button class="drop-header__tool" type="button" aria-label="Пошук">
-              <img class="drop-header__icon" src="images/Drop/icon-search.svg" alt="">
+    <div class="drop-top">
+      <header class="drop-header">
+        <div class="drop-header__inner">
+          <div class="drop-header__bar">
+            <button class="drop-header__menu" type="button" aria-label="Меню" aria-expanded="false" aria-controls="drop-menu" data-drop-menu-open>
+              <span class="drop-header__burger" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
             </button>
-            <a class="drop-header__tool" href="#" aria-label="Кабінет">
-              <img class="drop-header__icon" src="images/Drop/icon-user.svg" alt="">
-            </a>
-            <a class="drop-header__tool drop-header__tool--cart" href="#" aria-label="Кошик">
-              <img class="drop-header__cart" src="images/Drop/icon-cart.svg" alt="">
-              <img class="drop-header__dot drop-header__dot--left" src="images/Drop/icon-cart-dot.svg" alt="">
-              <img class="drop-header__dot drop-header__dot--right" src="images/Drop/icon-cart-dot.svg" alt="">
-              <div class="drop-header__badge">
-                <p>99</p>
+            <a class="drop-header__logo" href="drop-index.html" aria-label="WORLD STOCK DROP">
+              <div class="drop-header__desk">
+                <div class="drop-header__mark">
+                  <img src="images/Drop/logo-shop.png" alt="">
+                </div>
+                <div class="drop-header__brand">
+                  <div class="drop-header__word">
+                    <img src="images/Drop/logo-shop.png" alt="">
+                  </div>
+                  <div class="drop-header__caption">
+                    <p>ДРОП</p>
+                  </div>
+                </div>
               </div>
             </a>
+            <nav class="drop-header__nav" aria-label="Головне меню">
+              <ul>
+                <li><a href="drop-index.html">головна</a></li>
+                <li><a href="#">Взуття</a></li>
+                <li><a href="#">Одяг</a></li>
+                <li><a href="#">Аксесуари</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="drop-header__actions">
+            <button class="drop-header__currency" type="button" aria-label="Валюта">
+              <img src="images/Drop/icon-exchange.svg" alt="">
+            </button>
+            <div class="drop-header__tools">
+              <button class="drop-header__tool" type="button" aria-label="Пошук">
+                <img class="drop-header__icon" src="images/Drop/icon-search.svg" alt="">
+              </button>
+              <a class="drop-header__tool" href="#" aria-label="Кабінет">
+                <img class="drop-header__icon" src="images/Drop/icon-user.svg" alt="">
+              </a>
+              <a class="drop-header__tool drop-header__tool--cart" href="#" aria-label="Кошик">
+                <img class="drop-header__cart" src="images/Drop/icon-cart.svg" alt="">
+                <img class="drop-header__dot drop-header__dot--left" src="images/Drop/icon-cart-dot.svg" alt="">
+                <img class="drop-header__dot drop-header__dot--right" src="images/Drop/icon-cart-dot.svg" alt="">
+                <div class="drop-header__badge">
+                  <p>99</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <nav class="drop-menu" id="drop-menu" aria-label="Мобільне меню" aria-hidden="true" inert data-drop-menu>
+        <ul class="drop-menu__list">
+          <li class="drop-menu__item">
+            <a class="drop-menu__link" href="drop-index.html">Головна</a>
+          </li>
+          <li class="drop-menu__item" data-drop-menu-item>
+            <button class="drop-menu__toggle" type="button" aria-expanded="false" aria-controls="drop-menu-shoes" data-drop-menu-toggle>
+              <span>Взуття</span>
+              <img class="drop-menu__icon drop-menu__icon--plus" src="images/Drop/icon-menu-plus.svg" alt="" width="20" height="20">
+              <img class="drop-menu__icon drop-menu__icon--minus" src="images/Drop/icon-menu-minus.svg" alt="" width="20" height="20">
+            </button>
+            <div class="drop-menu__sub" id="drop-menu-shoes" data-drop-menu-sub>
+              <a class="drop-menu__all" href="#">Дивитися все</a>
+              <div class="drop-menu__groups">
+                <div class="drop-menu__group">
+                  <p>Чоловікам</p>
+                  <ul class="drop-menu__links">
+                    <li><a href="#">Черевики</a></li>
+                    <li><a href="#">Напівчеревики</a></li>
+                    <li><a href="#">Шльопанці/сандалі</a></li>
+                    <li><a href="#">Одяг та аксесуари</a></li>
+                  </ul>
+                </div>
+                <div class="drop-menu__group">
+                  <p>Жінкам</p>
+                  <ul class="drop-menu__links">
+                    <li><a href="#">Черевики</a></li>
+                    <li><a href="#">Напівчеревики</a></li>
+                    <li><a href="#">Шльопанці/сандалі</a></li>
+                    <li><a href="#">Одяг та аксесуари</a></li>
+                  </ul>
+                </div>
+                <div class="drop-menu__group">
+                  <p>Дітям</p>
+                  <ul class="drop-menu__links">
+                    <li><a href="#">Черевики</a></li>
+                    <li><a href="#">Напівчеревики</a></li>
+                    <li><a href="#">Шльопанці/сандалі</a></li>
+                    <li><a href="#">Одяг та аксесуари</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </li>
+          <li class="drop-menu__item" data-drop-menu-item>
+            <button class="drop-menu__toggle" type="button" aria-expanded="false" aria-controls="drop-menu-clothes" data-drop-menu-toggle>
+              <span>Одяг</span>
+              <img class="drop-menu__icon drop-menu__icon--plus" src="images/Drop/icon-menu-plus.svg" alt="" width="20" height="20">
+              <img class="drop-menu__icon drop-menu__icon--minus" src="images/Drop/icon-menu-minus.svg" alt="" width="20" height="20">
+            </button>
+            <div class="drop-menu__sub" id="drop-menu-clothes" data-drop-menu-sub>
+              <a class="drop-menu__all" href="#">Дивитися все</a>
+              <div class="drop-menu__groups">
+                <div class="drop-menu__group">
+                  <p>Чоловікам</p>
+                  <ul class="drop-menu__links">
+                    <li><a href="#">Черевики</a></li>
+                    <li><a href="#">Напівчеревики</a></li>
+                    <li><a href="#">Шльопанці/сандалі</a></li>
+                    <li><a href="#">Одяг та аксесуари</a></li>
+                  </ul>
+                </div>
+                <div class="drop-menu__group">
+                  <p>Жінкам</p>
+                  <ul class="drop-menu__links">
+                    <li><a href="#">Черевики</a></li>
+                    <li><a href="#">Напівчеревики</a></li>
+                    <li><a href="#">Шльопанці/сандалі</a></li>
+                    <li><a href="#">Одяг та аксесуари</a></li>
+                  </ul>
+                </div>
+                <div class="drop-menu__group">
+                  <p>Дітям</p>
+                  <ul class="drop-menu__links">
+                    <li><a href="#">Черевики</a></li>
+                    <li><a href="#">Напівчеревики</a></li>
+                    <li><a href="#">Шльопанці/сандалі</a></li>
+                    <li><a href="#">Одяг та аксесуари</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </li>
+          <li class="drop-menu__item" data-drop-menu-item>
+            <button class="drop-menu__toggle" type="button" aria-expanded="false" aria-controls="drop-menu-accessories" data-drop-menu-toggle>
+              <span>Аксесуари</span>
+              <img class="drop-menu__icon drop-menu__icon--plus" src="images/Drop/icon-menu-plus.svg" alt="" width="20" height="20">
+              <img class="drop-menu__icon drop-menu__icon--minus" src="images/Drop/icon-menu-minus.svg" alt="" width="20" height="20">
+            </button>
+            <div class="drop-menu__sub" id="drop-menu-accessories" data-drop-menu-sub>
+              <a class="drop-menu__all" href="#">Дивитися все</a>
+              <div class="drop-menu__groups">
+                <div class="drop-menu__group">
+                  <p>Чоловікам</p>
+                  <ul class="drop-menu__links">
+                    <li><a href="#">Черевики</a></li>
+                    <li><a href="#">Напівчеревики</a></li>
+                    <li><a href="#">Шльопанці/сандалі</a></li>
+                    <li><a href="#">Одяг та аксесуари</a></li>
+                  </ul>
+                </div>
+                <div class="drop-menu__group">
+                  <p>Жінкам</p>
+                  <ul class="drop-menu__links">
+                    <li><a href="#">Черевики</a></li>
+                    <li><a href="#">Напівчеревики</a></li>
+                    <li><a href="#">Шльопанці/сандалі</a></li>
+                    <li><a href="#">Одяг та аксесуари</a></li>
+                  </ul>
+                </div>
+                <div class="drop-menu__group">
+                  <p>Дітям</p>
+                  <ul class="drop-menu__links">
+                    <li><a href="#">Черевики</a></li>
+                    <li><a href="#">Напівчеревики</a></li>
+                    <li><a href="#">Шльопанці/сандалі</a></li>
+                    <li><a href="#">Одяг та аксесуари</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
 
     <main class="drop-home">
       <h1>WORLD STOCK DROP</h1>

@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="start">
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/html-assembler.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/html-assembler.js" afterDir="false" />
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Add support for partial HTML handling and &quot;Drop&quot; styles/scripts integration&#10;&#10;Enhance `html-assembler.js` with partials handling, including new regex patterns and recursive assembly logic. Update `gulpfile.js` to build and watch &quot;Drop&quot; styles and scripts, ensuring seamless integration with the project.">
+      <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/Drop/drop.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/drop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/Drop/drop.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/drop.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/partials/Drop/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partials/Drop/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/drop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/drop.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/drop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/Drop/drop.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/Drop/drop.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +244,23 @@
       <option name="project" value="LOCAL" />
       <updated>1793624935567</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add support for partial HTML handling and &quot;Drop&quot; styles/scripts integration&#10;&#10;Enhance `html-assembler.js` with partials handling, including new regex patterns and recursive assembly logic. Update `gulpfile.js` to build and watch &quot;Drop&quot; styles and scripts, ensuring seamless integration with the project.">
+      <option name="closed" value="true" />
+      <created>1793627163407</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1793627163407</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add support for partial HTML handling and &quot;Drop&quot; styles/scripts integration&#10;&#10;Enhance `html-assembler.js` with partials handling, including new regex patterns and recursive assembly logic. Update `gulpfile.js` to build and watch &quot;Drop&quot; styles and scripts, ensuring seamless integration with the project.">
+      <option name="closed" value="true" />
+      <created>1793627456369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1793627456369</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +280,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="Add support for partial HTML handling and &quot;Drop&quot; styles/scripts integration&#10;&#10;Enhance `html-assembler.js` with partials handling, including new regex patterns and recursive assembly logic. Update `gulpfile.js` to build and watch &quot;Drop&quot; styles and scripts, ensuring seamless integration with the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add support for partial HTML handling and &quot;Drop&quot; styles/scripts integration&#10;&#10;Enhance `html-assembler.js` with partials handling, including new regex patterns and recursive assembly logic. Update `gulpfile.js` to build and watch &quot;Drop&quot; styles and scripts, ensuring seamless integration with the project." />
   </component>
 </project>
