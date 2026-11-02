@@ -52,6 +52,15 @@ function orderNewScripts() {
         .pipe(browserSync.stream());
 }
 
+function dropScripts() {
+    return src(APP_DIR + '/js/Drop/drop.js')
+        .pipe(uglify())
+        .pipe(concat('drop.min.js'))
+        .pipe(dest(APP_DIR + '/js/Drop'))
+        .pipe(dest(BUILD_DIR + '/js/Drop'))
+        .pipe(browserSync.stream());
+}
+
 function headerUserMenuScripts() {
     return src(APP_DIR + '/js/header-user-menu.js')
         .pipe(uglify())
@@ -87,6 +96,19 @@ function orderNewStyles() {
         .pipe(browserSync.stream());
 }
 
+function dropStyles() {
+    return src(APP_DIR + '/scss/Drop/drop.scss')
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(concat('drop.min.css'))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 10 version'],
+            grid: true
+        }))
+        .pipe(dest(APP_DIR + '/css/Drop'))
+        .pipe(dest(BUILD_DIR + '/css/Drop'))
+        .pipe(browserSync.stream());
+}
+
 function headerUserMenuStyles() {
     return src(APP_DIR + '/scss/header-user-menu.scss')
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
@@ -104,9 +126,11 @@ const compileAssets = parallel(
     styles,
     orderNewStyles,
     headerUserMenuStyles,
+    dropStyles,
     scripts,
     orderNewScripts,
-    headerUserMenuScripts
+    headerUserMenuScripts,
+    dropScripts
 );
 
 function copyBuildAssets() {
@@ -130,10 +154,12 @@ function distBuild() {
         APP_DIR + '/css/style.min.css',
         APP_DIR + '/css/order_new.min.css',
         APP_DIR + '/css/header-user-menu.min.css',
+        APP_DIR + '/css/Drop/drop.min.css',
         APP_DIR + '/fonts/**/*',
         APP_DIR + '/js/main.min.js',
         APP_DIR + '/js/order_new.min.js',
         APP_DIR + '/js/header-user-menu.min.js',
+        APP_DIR + '/js/Drop/drop.min.js',
         APP_DIR + '/*.html'
     ], { base: APP_DIR })
         .pipe(dest('dist'));
@@ -148,9 +174,11 @@ function watching() {
     watch([APP_DIR + '/scss/style.scss', APP_DIR + '/scss/_*.scss'], styles);
     watch([APP_DIR + '/scss/order_new.scss'], orderNewStyles);
     watch([APP_DIR + '/scss/header-user-menu.scss'], headerUserMenuStyles);
+    watch([APP_DIR + '/scss/Drop/**/*.scss'], dropStyles);
     watch([APP_DIR + '/js/main.js'], scripts);
     watch([APP_DIR + '/js/order_new.js'], orderNewScripts);
     watch([APP_DIR + '/js/header-user-menu.js'], headerUserMenuScripts);
+    watch([APP_DIR + '/js/Drop/drop.js'], dropScripts);
     watch([APP_DIR + '/images/**/*'], copyBuildAssets);
     watch([
         APP_DIR + '/*.html',
@@ -165,9 +193,11 @@ exports.images = images;
 exports.styles = styles;
 exports.orderNewStyles = orderNewStyles;
 exports.headerUserMenuStyles = headerUserMenuStyles;
+exports.dropStyles = dropStyles;
 exports.scripts = scripts;
 exports.orderNewScripts = orderNewScripts;
 exports.headerUserMenuScripts = headerUserMenuScripts;
+exports.dropScripts = dropScripts;
 exports.assembleHtml = assembleHtml;
 exports.copyBuildAssets = copyBuildAssets;
 exports.compileAssets = compileAssets;

@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+@mixin drop-desktop {
+	@media (min-width: $drop-bp-desktop) {
+		@content;
+	}
+}
+
+@mixin drop-tablet-frame {
+	@media (min-width: $drop-bp-tablet) and (max-width: ($drop-bp-desktop - 1px)) {
+		@content;
+	}
+}
+
+@mixin drop-flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin drop-text($size, $weight: 400) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: 1.4;
+}
+
+@mixin drop-button-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: inherit;
+	font-family: inherit;
+	cursor: pointer;
+}

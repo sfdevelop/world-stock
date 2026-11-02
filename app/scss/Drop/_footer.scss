@@ -1,0 +1,184 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.drop-footer {
+	position: relative;
+	margin-top: 90px;
+
+	@include drop-desktop {
+		margin-top: 120px;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding: 16px;
+		background: $drop-grey-light;
+
+		@include drop-desktop {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 268px;
+			height: 232px;
+			padding: 70px 92px;
+		}
+	}
+
+	&__logo {
+		flex-shrink: 0;
+
+		img {
+			width: 200px;
+			height: 50px;
+		}
+	}
+
+	&__cols {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+
+		@include drop-desktop {
+			flex-direction: row;
+			gap: 97px;
+		}
+	}
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		a {
+			@include drop-text(11px);
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+
+		@include drop-desktop {
+			a {
+				font-size: 14px;
+			}
+		}
+
+		&--projects {
+			gap: 12px;
+
+			ul {
+				gap: 12px;
+			}
+
+			@include drop-desktop {
+				gap: 16px;
+
+				ul {
+					gap: 16px;
+				}
+			}
+		}
+	}
+
+	&__title p {
+		@include drop-text(11px, 700);
+
+		@include drop-desktop {
+			font-size: 14px;
+		}
+	}
+}
+
+.drop-cookie {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	padding: 16px;
+	background: $drop-black;
+	color: $drop-white;
+
+	@include drop-desktop {
+		flex-direction: row;
+		justify-content: center;
+		gap: 43px;
+		height: 53px;
+		padding: 0;
+	}
+
+	&__text {
+		width: 289px;
+		max-width: 100%;
+		text-align: center;
+
+		p {
+			@include drop-text(11px);
+		}
+
+		@include drop-desktop {
+			width: auto;
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 43px;
+	}
+
+	&__more {
+		@include drop-text(11px);
+		color: $drop-grey-link-mobile;
+
+		@include drop-desktop {
+			font-size: 14px;
+			color: $drop-grey-link;
+		}
+	}
+
+	&__accept {
+		@include drop-flex-center;
+		width: 76px;
+		height: 32px;
+		border-radius: $drop-radius-small;
+		background: $drop-cookie-button;
+		color: $drop-grey;
+		@include drop-text(12px);
+
+		@include drop-desktop {
+			background: $drop-grey-light;
+			font-size: 14px;
+		}
+	}
+}
+
+.drop-up {
+	@include drop-flex-center;
+	position: fixed;
+	right: 16px;
+	bottom: 16px;
+	z-index: 30;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: rgba($drop-up, 0.68);
+
+	img {
+		width: 16px;
+		height: 25px;
+		transform: scaleY(-1);
+	}
+
+	@include drop-desktop {
+		right: 24px;
+		bottom: 24px;
+	}
+}

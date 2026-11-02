@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 const INCLUDE_RE = /^(\s*)<!--\s*@include\s+([^\s>]+)\s*-->\s*$/;
+const PARTIAL_RE = /^(\s*)<div\s+data-partial="([^"]+)"\s*>\s*<\/div>\s*$/;
+const LOADER_RE = /^\s*<script\s+src="js\/Drop\/partials-loader\.js"\s*>\s*<\/script>\s*$/;
 
 function indentBlock(content, indent) {
   if (!indent) {
@@ -14,39 +16,54 @@ function indentBlock(content, indent) {
     .join('\n');
 }
 
-function assembleContent(content, baseDir, stack = []) {
+function readPartial(partialPath, stack, rootDir) {
+  if (!fs.existsSync(partialPath)) {
+    throw new Error(`Partial not found: ${partialPath}`);
+  }
+
+  if (stack.includes(partialPath)) {
+    throw new Error(`Circular include detected: ${[...stack, partialPath].join(' -> ')}`);
+  }
+
+  return assembleFile(partialPath, path.dirname(partialPath), [...stack, partialPath], rootDir);
+}
+
+function assembleContent(content, baseDir, stack = [], rootDir = baseDir) {
   const lines = content.split('\n');
   const output = [];
 
   for (const line of lines) {
-    const match = line.match(INCLUDE_RE);
-
-    if (!match) {
-      output.push(line);
+    if (LOADER_RE.test(line)) {
       continue;
     }
 
-    const [, indent, relativePath] = match;
-    const partialPath = path.resolve(baseDir, relativePath);
+    const includeMatch = line.match(INCLUDE_RE);
 
-    if (!fs.existsSync(partialPath)) {
-      throw new Error(`Partial not found: ${relativePath} (resolved: ${partialPath})`);
+    if (includeMatch) {
+      const [, indent, relativePath] = includeMatch;
+      const partialPath = path.resolve(baseDir, relativePath);
+      output.push(indentBlock(readPartial(partialPath, stack, rootDir), indent));
+      continue;
     }
 
-    if (stack.includes(partialPath)) {
-      throw new Error(`Circular include detected: ${[...stack, partialPath].join(' -> ')}`);
+    const partialMatch = line.match(PARTIAL_RE);
+
+    if (partialMatch) {
+      const [, indent, name] = partialMatch;
+      const partialPath = path.resolve(rootDir, 'partials', `${name}.html`);
+      output.push(indentBlock(readPartial(partialPath, stack, rootDir), indent));
+      continue;
     }
 
-    const partialContent = assembleFile(partialPath, path.dirname(partialPath), [...stack, partialPath]);
-    output.push(indentBlock(partialContent, indent));
+    output.push(line);
   }
 
   return output.join('\n');
 }
 
-function assembleFile(filePath, baseDir, stack = []) {
+function assembleFile(filePath, baseDir, stack = [], rootDir = baseDir) {
   const content = fs.readFileSync(filePath, 'utf8');
-  return assembleContent(content, baseDir, stack);
+  return assembleContent(content, baseDir, stack, rootDir);
 }
 
 function assembleHtmlFiles({ sourceDir, outputDir, files = [] }) {
