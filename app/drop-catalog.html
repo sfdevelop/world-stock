@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взуття — WORLD STOCK DROP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/Drop/drop.min.css">
+</head>
+
+<body>
+  <div class="drop-page">
+    <div data-partial="Drop/header"></div>
+    <main class="drop-catalog" data-drop-catalog>
+      <div class="drop-catalog__heading">
+        <h1>Взуття</h1>
+      </div>
+      <nav class="drop-breadcrumbs drop-catalog__crumbs" aria-label="Хлібні крихти">
+        <a href="drop-index.html">Головна</a>
+        <img src="images/Drop/catalog/icon-crumb.svg" alt="" width="5" height="8">
+        <div class="drop-breadcrumbs__current">
+          <p>Взуття</p>
+        </div>
+      </nav>
+
+      <div class="drop-catalog__layout">
+        <button class="drop-filters__backdrop" type="button" data-drop-filter-backdrop data-drop-filter-close hidden aria-label="Закрити фільтри"></button>
+        <aside class="drop-filters" data-drop-filter aria-label="Фільтри">
+          <div class="drop-filters__head">
+            <p>Фільтри</p>
+            <button class="drop-filters__close" type="button" data-drop-filter-close aria-label="Закрити фільтри">
+              <img src="images/Drop/catalog/icon-cancel.svg" alt="" width="18" height="18">
+            </button>
+          </div>
+          <div class="drop-filters__body">
+            <button class="drop-filters__clear" type="button" data-drop-clear>Очистити все</button>
+            <div class="drop-filters__chosen">
+              <div class="drop-filters__label">
+                <p>Обрано:</p>
+              </div>
+              <div class="drop-filters__tags" data-drop-tags>
+                <button class="drop-tag" type="button" data-drop-tag="Кеди"><span>Кеди</span><img src="images/Drop/catalog/icon-cancel.svg" alt="" width="18" height="18"></button>
+                <button class="drop-tag" type="button" data-drop-tag="Кросівки для бігу"><span>Кросівки для бігу</span><img src="images/Drop/catalog/icon-cancel.svg" alt="" width="18" height="18"></button>
+                <button class="drop-tag" type="button" data-drop-tag="Кеди 2"><span>Кеди</span><img src="images/Drop/catalog/icon-cancel.svg" alt="" width="18" height="18"></button>
+                <button class="drop-tag" type="button" data-drop-tag="Кеди 3"><span>Кеди</span><img src="images/Drop/catalog/icon-cancel.svg" alt="" width="18" height="18"></button>
+                <button class="drop-tag" type="button" data-drop-tag="Кросівки"><span>Кросівки</span><img src="images/Drop/catalog/icon-cancel.svg" alt="" width="18" height="18"></button>
+                <button class="drop-tag" type="button" data-drop-tag="Кеди 4"><span>Кеди</span><img src="images/Drop/catalog/icon-cancel.svg" alt="" width="18" height="18"></button>
+                <button class="drop-tag" type="button" data-drop-tag="Кеди 5"><span>Кеди</span><img src="images/Drop/catalog/icon-cancel.svg" alt="" width="18" height="18"></button>
+              </div>
+            </div>
+
+            <div class="drop-filters__block">
+              <section class="drop-filters__section">
+                <div class="drop-filters__heading">
+                  <p>Взуття</p>
+                </div>
+                <div class="drop-filters__list">
+                  <label class="drop-check">
+                    <input type="checkbox" data-drop-option="Кросівки" checked>
+                    <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                    <div class="drop-check__name"><p>Кросівки</p></div>
+                    <div class="drop-check__count"><p>(380)</p></div>
+                  </label>
+                  <label class="drop-check">
+                    <input type="checkbox" data-drop-option="Мокасини">
+                    <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                    <div class="drop-check__name"><p>Мокасини</p></div>
+                    <div class="drop-check__count"><p>(80)</p></div>
+                  </label>
+                  <label class="drop-check">
+                    <input type="checkbox" data-drop-option="Сліпони">
+                    <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                    <div class="drop-check__name"><p>Сліпони</p></div>
+                    <div class="drop-check__count"><p>(80)</p></div>
+                  </label>
+                  <label class="drop-check">
+                    <input type="checkbox" data-drop-option="Шльопанці">
+                    <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                    <div class="drop-check__name"><p>Шльопанці</p></div>
+                    <div class="drop-check__count"><p>(80)</p></div>
+                  </label>
+                  <label class="drop-check">
+                    <input type="checkbox" data-drop-option="Балетки-Туфлі">
+                    <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                    <div class="drop-check__name"><p>Балетки-Туфлі</p></div>
+                    <div class="drop-check__count"><p>(80)</p></div>
+                  </label>
+                  <label class="drop-check">
+                    <input type="checkbox" data-drop-option="Сандалії">
+                    <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                    <div class="drop-check__name"><p>Сандалії</p></div>
+                    <div class="drop-check__count"><p>(80)</p></div>
+                  </label>
+                  <label class="drop-check">
+                    <input type="checkbox" data-drop-option="Тапочки">
+                    <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                    <div class="drop-check__name"><p>Тапочки</p></div>
+                    <div class="drop-check__count"><p>(80)</p></div>
+                  </label>
+                  <label class="drop-check">
+                    <input type="checkbox" data-drop-option="Черевики">
+                    <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                    <div class="drop-check__name"><p>Черевики</p></div>
+                    <div class="drop-check__count"><p>(80)</p></div>
+                  </label>
+                </div>
+              </section>
+
+              <section class="drop-filters__section">
+                <div class="drop-filters__heading drop-filters__heading--plain">
+                  <p>Фільтри</p>
+                </div>
+                <div class="drop-filters__group" data-drop-accordion>
+                  <button class="drop-filters__toggle" type="button" aria-expanded="false" data-drop-accordion-toggle>
+                    Сезон
+                    <img src="images/Drop/catalog/icon-dropdown.svg" alt="" width="10" height="6">
+                  </button>
+                  <div class="drop-filters__panel" data-drop-accordion-panel hidden>
+                    <div class="drop-filters__list">
+                      <label class="drop-check">
+                        <input type="checkbox" data-drop-option="Зима">
+                        <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                        <div class="drop-check__name"><p>Зима</p></div>
+                      </label>
+                      <label class="drop-check">
+                        <input type="checkbox" data-drop-option="Весна">
+                        <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                        <div class="drop-check__name"><p>Весна</p></div>
+                      </label>
+                      <label class="drop-check">
+                        <input type="checkbox" data-drop-option="Літо">
+                        <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                        <div class="drop-check__name"><p>Літо</p></div>
+                      </label>
+                      <label class="drop-check">
+                        <input type="checkbox" data-drop-option="Осінь">
+                        <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                        <div class="drop-check__name"><p>Осінь</p></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-filters__group" data-drop-accordion>
+                  <button class="drop-filters__toggle" type="button" aria-expanded="false" data-drop-accordion-toggle>
+                    Бренд
+                    <img src="images/Drop/catalog/icon-dropdown.svg" alt="" width="10" height="6">
+                  </button>
+                  <div class="drop-filters__panel" data-drop-accordion-panel hidden>
+                    <div class="drop-filters__list">
+                      <label class="drop-check">
+                        <input type="checkbox" data-drop-option="New Balance">
+                        <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                        <div class="drop-check__name"><p>New Balance</p></div>
+                      </label>
+                      <label class="drop-check">
+                        <input type="checkbox" data-drop-option="Adidas">
+                        <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                        <div class="drop-check__name"><p>Adidas</p></div>
+                      </label>
+                      <label class="drop-check">
+                        <input type="checkbox" data-drop-option="Nike">
+                        <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                        <div class="drop-check__name"><p>Nike</p></div>
+                      </label>
+                      <label class="drop-check">
+                        <input type="checkbox" data-drop-option="Puma">
+                        <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                        <div class="drop-check__name"><p>Puma</p></div>
+                      </label>
+                      <label class="drop-check">
+                        <input type="checkbox" data-drop-option="Salomon">
+                        <div class="drop-check__box"><img src="images/Drop/catalog/icon-check.svg" alt="" width="11" height="11"></div>
+                        <div class="drop-check__name"><p>Salomon</p></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-filters__group is-open" data-drop-accordion>
+                  <button class="drop-filters__toggle" type="button" aria-expanded="true" data-drop-accordion-toggle>
+                    Ціна
+                    <img src="images/Drop/catalog/icon-dropdown.svg" alt="" width="10" height="6">
+                  </button>
+                  <div class="drop-filters__panel" data-drop-accordion-panel>
+                    <div class="drop-range" data-drop-range>
+                      <div class="drop-range__bounds">
+                        <p>0 ₴</p>
+                        <p>5000,50 ₴</p>
+                      </div>
+                      <div class="drop-range__control">
+                        <div class="drop-range__track"></div>
+                        <div class="drop-range__fill" data-drop-range-fill></div>
+                        <input type="range" min="0" max="5000.5" step="0.5" value="0" aria-label="Ціна від" data-drop-range-min>
+                        <input type="range" min="0" max="5000.5" step="0.5" value="500.5" aria-label="Ціна до" data-drop-range-max>
+                      </div>
+                      <div class="drop-range__fields">
+                        <label class="drop-range__field">
+                          <input type="text" inputmode="decimal" value="0" aria-label="Від" data-drop-range-from>
+                        </label>
+                        <label class="drop-range__field">
+                          <input type="text" inputmode="decimal" value="500,50" aria-label="До" data-drop-range-to>
+                        </label>
+                        <button class="drop-range__apply" type="button" data-drop-range-apply>ОК</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-filters__group is-open" data-drop-accordion>
+                  <button class="drop-filters__toggle" type="button" aria-expanded="true" data-drop-accordion-toggle>
+                    Розміри
+                    <img src="images/Drop/catalog/icon-dropdown.svg" alt="" width="10" height="6">
+                  </button>
+                  <div class="drop-filters__panel" data-drop-accordion-panel>
+                    <div class="drop-sizes">
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(1)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(26)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(26)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(26)</span></button>
+                      <button class="drop-size is-active" type="button" data-drop-size aria-pressed="true"><span>23</span><span>(26)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(26)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>36</span><span>(45)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>37.5</span><span>(229)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(26)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(26)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>40.5</span><span>(632)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(26)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(26)</span></button>
+                      <button class="drop-size" type="button" data-drop-size aria-pressed="false"><span>23</span><span>(26)</span></button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </aside>
+
+        <div class="drop-catalog__content">
+          <div class="drop-toolbar">
+            <button class="drop-toolbar__filter" type="button" aria-label="Фільтр" aria-expanded="false" data-drop-filter-open>
+              <img src="images/Drop/catalog/icon-filter.svg" alt="" width="13" height="13">
+            </button>
+            <div class="drop-toolbar__dropdown" data-drop-dropdown>
+              <button class="drop-toolbar__select" type="button" aria-expanded="false" data-drop-dropdown-toggle>
+                <span data-drop-sort-label>Спочатку нові</span>
+                <div class="drop-toolbar__chevron">
+                  <img src="images/Drop/catalog/icon-chevron.svg" alt="" width="5" height="8">
+                </div>
+              </button>
+              <div class="drop-toolbar__menu" data-drop-dropdown-menu hidden>
+                <button type="button" class="is-active" data-drop-sort="new">Спочатку нові</button>
+                <button type="button" data-drop-sort="price-asc">За збільшенням ціни</button>
+                <button type="button" data-drop-sort="price-desc">За зменшенням ціни</button>
+              </div>
+            </div>
+            <div class="drop-toolbar__choices">
+              <div class="drop-toolbar__sort-label">
+                <p>Сортувати:</p>
+              </div>
+              <button class="drop-toolbar__choice is-active" type="button" data-drop-choice>Спочатку нові</button>
+              <button class="drop-toolbar__choice" type="button" data-drop-choice>За збільшенням ціни</button>
+              <button class="drop-toolbar__choice" type="button" data-drop-choice>За зменшенням ціни</button>
+            </div>
+            <div class="drop-toolbar__count drop-toolbar__dropdown" data-drop-dropdown>
+              <button class="drop-toolbar__select" type="button" aria-expanded="false" aria-label="Кількість на сторінці" data-drop-dropdown-toggle>
+                <div class="drop-toolbar__count-main">
+                  <img class="drop-toolbar__grid" src="images/Drop/catalog/icon-grid.svg" alt="" width="13" height="13">
+                  <span data-drop-per-page-value>24</span>
+                </div>
+                <div class="drop-toolbar__chevron">
+                  <img src="images/Drop/catalog/icon-chevron.svg" alt="" width="5" height="8">
+                </div>
+              </button>
+              <div class="drop-toolbar__menu" data-drop-dropdown-menu hidden>
+                <button type="button" class="is-active" data-drop-per-page="24">24</button>
+                <button type="button" data-drop-per-page="48">48</button>
+                <button type="button" data-drop-per-page="96">96</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="drop-catalog__grid">
+            <div data-partial="Drop/catalog-grid"></div>
+          </div>
+
+          <nav class="drop-pagination" aria-label="Сторінки">
+            <a class="drop-pagination__step drop-pagination__step--prev is-disabled" aria-disabled="true">
+              <img src="images/Drop/catalog/icon-page-arrow.svg" alt="" width="16" height="16">
+              <span>Попередня</span>
+            </a>
+            <ul class="drop-pagination__list">
+              <li><a href="#" aria-current="page">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><span>…</span></li>
+              <li><a href="#">67</a></li>
+              <li><a href="#">68</a></li>
+            </ul>
+            <a class="drop-pagination__step drop-pagination__step--next" href="#">
+              <span>Наступна</span>
+              <img src="images/Drop/catalog/icon-page-arrow.svg" alt="" width="16" height="16">
+            </a>
+          </nav>
+        </div>
+      </div>
+    </main>
+    <div data-partial="Drop/footer"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/Drop/partials-loader.js"></script>
+  <script src="js/Drop/drop.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    integrity="sha512-NWCafukXClS6fKch6bSMl/WvPzZrD1OGMf1oMAnFYXSSKZ7hgeswls+r4SdK4bFJauVwmvFf7HlMwji2TsjROA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <button class="header__menu-btn">
+          <span></span>
+        </button>
+        <a href="#" class="header__logo">
+          <img src="images/content/logo.png" alt="logo">
+        </a>
+        <div class="header__box">
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#">головна</a></li>
+              <li><a href="#">Взуття</a></li>
+              <li><a href="#">Одяг</a></li>
+              <li><a href="#">Аксесуари</a></li>
+              <li><a href="#">БРЕНДИ</a></li>
+            </ul>
+          </nav>
+          <div class="header__btn-box">
+            <div class="btn btn--black">Магазин B2B <img src="images/icons/arrow-white.svg" alt="arrow"></div>
+            <ul>
+              <li><a href="#">Магазин B2B</a></li>
+              <li><a href="#">Передзамовлення</a></li>
+              <li><a href="#">Файли завантаження</a></li>
+              <li><a href="#">Інтеграціянтеграція з B2B</a></li>
+            </ul>
+          </div>
+        </div>
+        <button class="header__search"><img src="images/icons/search.svg" alt="icon"></button>
+        <a href="#" class="header__cabinet"><img src="images/icons/cab.svg" alt="icon"></a>
+        <button class="header__bascket"><img src="images/icons/bacsket.svg" alt="img"><span>99</span></button>
+      </div>
+    </div>
+  </header>
+
+  <form class="header__search-form">
+    <div class="header__input-wrap">
+      <input type="text" placeholder="Введіть назву товару" required="">
+    </div>
+    <button type="submit"><img src="images/icons/search.svg" alt="search"></button>
+  </form>
+
+  <div class="pst-basket">
+    <div class="pst-basket__inner">
+      <button class="pst-basket__close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_869_14976)">
+            <path
+              d="M0.781152 16C0.626614 16 0.475539 15.9542 0.347036 15.8683C0.218534 15.7825 0.118376 15.6605 0.0592335 15.5177C9.05208e-05 15.3749 -0.0153811 15.2178 0.0147757 15.0662C0.0449324 14.9147 0.119363 14.7755 0.228652 14.6662L14.6662 0.2287C14.8127 0.0821683 15.0114 -0.000152588 15.2187 -0.000152588C15.4259 -0.000152588 15.6246 0.0821683 15.7712 0.2287C15.9177 0.375233 16 0.573973 16 0.7812C16 0.988428 15.9177 1.18717 15.7712 1.3337L1.33365 15.7712C1.26116 15.8438 1.17504 15.9014 1.08022 15.9407C0.985408 15.98 0.883772 16.0001 0.781152 16Z"
+              fill="#000101" />
+            <path
+              d="M15.2186 16C15.116 16.0001 15.0144 15.98 14.9195 15.9407C14.8247 15.9014 14.7386 15.8438 14.6661 15.7712L0.228609 1.3337C0.0820768 1.18717 -0.000244141 0.988428 -0.000244141 0.7812C-0.000244141 0.573973 0.0820768 0.375233 0.228609 0.2287C0.375141 0.0821683 0.573881 -0.000152588 0.781109 -0.000152588C0.988337 -0.000152588 1.18708 0.0821683 1.33361 0.2287L15.7711 14.6662C15.8804 14.7755 15.9548 14.9147 15.985 15.0662C16.0151 15.2178 15.9997 15.3749 15.9405 15.5177C15.8814 15.6605 15.7812 15.7825 15.6527 15.8683C15.5242 15.9542 15.3731 16 15.2186 16Z"
+              fill="#000101" />
+          </g>
+          <defs>
+            <clipPath id="clip0_869_14976">
+              <rect width="16" height="16" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+      <div class="dss-basket__item">
+        <div class="dss-basket__col">
+          <div class="dss-basket__item-img">
+            <img src="images/content/basket-1.jpg" alt="img">
+          </div>
+          <div class="dss-basket__item-content">
+            <div class="dss-basket__content-top">
+              <div class="dss-basket__title">Mizuno Wave Momentum Pro V1GA254021 </div>
+              <div class="dss-basket__sticker">Чоловікам</div>
+            </div>
+            <div class="dss-basket__mob-opt">
+              <span>500,00 ₴</span>
+              <span>126</span>
+              <span>63 000,00 ₴</span>
+            </div>
+            <div class="dss-card__wrap">
+              <div class="dss-card__wrap-left">
+                <div class="dss-card__wrap-line">Розмір EU:</div>
+                <div class="dss-card__wrap-line">Замовлено:</div>
+              </div>
+              <div class="dss-card__wrap-right">
+                <div class="size-wrap">
+                  <div class="size-wrap__inner">
+                    <div class="size-wrap__line">
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                    </div>
+                    <div class="size-wrap__line">
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty">23</div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty">123</div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty">1</div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dss-card__col-wrap">
+              <div class="dss-card__type-col">
+                <div class="dss-card__type-title">Ростовка тип А (12 пар):</div>
+                <div class="size-wrap">
+                  <div class="size-wrap__inner">
+                    <div class="size-wrap__line">
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                    </div>
+                    <div class="size-wrap__line">
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dss-card__type-col">
+                <div class="dss-card__type-title">Замовлено:</div>
+                <div class="dss-card__type-box dss-available
+">50</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="dss-basket__item-delete">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.75 12.375C9.88261 12.375 10.0098 12.3223 10.1036 12.2286C10.1973 12.1348 10.25 12.0076 10.25 11.875V6.875C10.25 6.74239 10.1973 6.61521 10.1036 6.52145C10.0098 6.42768 9.88261 6.375 9.75 6.375C9.61739 6.375 9.49021 6.42768 9.39645 6.52145C9.30268 6.61521 9.25 6.74239 9.25 6.875V11.875C9.25 12.0076 9.30268 12.1348 9.39645 12.2286C9.49021 12.3223 9.61739 12.375 9.75 12.375ZM6.25 12.375C6.38261 12.375 6.50979 12.3223 6.60355 12.2286C6.69732 12.1348 6.75 12.0076 6.75 11.875V6.875C6.75 6.74239 6.69732 6.61521 6.60355 6.52145C6.50979 6.42768 6.38261 6.375 6.25 6.375C6.11739 6.375 5.99021 6.42768 5.89645 6.52145C5.80268 6.61521 5.75 6.74239 5.75 6.875V11.875C5.75 12.0076 5.80268 12.1348 5.89645 12.2286C5.99021 12.3223 6.11739 12.375 6.25 12.375ZM10 2.625C10.1326 2.625 10.2598 2.57232 10.3536 2.47855C10.4473 2.38479 10.5 2.25761 10.5 2.125C10.5 1.99239 10.4473 1.86521 10.3536 1.77145C10.2598 1.67768 10.1326 1.625 10 1.625H6C5.86739 1.625 5.74021 1.67768 5.64645 1.77145C5.55268 1.86521 5.5 1.99239 5.5 2.125C5.5 2.25761 5.55268 2.38479 5.64645 2.47855C5.74021 2.57232 5.86739 2.625 6 2.625H10Z"
+              fill="#000101" />
+            <path
+              d="M2.5 3.125C2.36739 3.125 2.24021 3.17768 2.14645 3.27145C2.05268 3.36521 2 3.49239 2 3.625C2 3.75761 2.05268 3.88479 2.14645 3.97855C2.24021 4.07232 2.36739 4.125 2.5 4.125H3V13.325C3 14.455 3.92 15.375 5.05 15.375H10.95C12.08 15.375 13 14.455 13 13.325V4.125H13.5C13.6326 4.125 13.7598 4.07232 13.8536 3.97855C13.9473 3.88479 14 3.75761 14 3.625C14 3.49239 13.9473 3.36521 13.8536 3.27145C13.7598 3.17768 13.6326 3.125 13.5 3.125H3.5H2.5ZM12 4.125V13.325C12 13.6035 11.8894 13.8705 11.6925 14.0675C11.4955 14.2644 11.2285 14.375 10.95 14.375H5.05C4.77152 14.375 4.50445 14.2644 4.30754 14.0675C4.11062 13.8705 4 13.6035 4 13.325V4.125H12Z"
+              fill="#000101" />
+          </svg>
+        </button>
+      </div>
+      <div class="dss-basket__item">
+        <div class="dss-basket__col">
+          <div class="dss-basket__item-img">
+            <img src="images/content/basket-1.jpg" alt="img">
+          </div>
+          <div class="dss-basket__item-content">
+            <div class="dss-basket__content-top">
+              <div class="dss-basket__title">Mizuno Wave Momentum Pro V1GA254021 </div>
+              <div class="dss-basket__sticker">Чоловікам</div>
+            </div>
+            <div class="dss-basket__mob-opt">
+              <span>500,00 ₴</span>
+              <span>126</span>
+              <span>63 000,00 ₴</span>
+            </div>
+            <div class="dss-card__wrap">
+              <div class="dss-card__wrap-left">
+                <div class="dss-card__wrap-line">Розмір EU:</div>
+                <div class="dss-card__wrap-line">Замовлено:</div>
+              </div>
+              <div class="dss-card__wrap-right">
+                <div class="size-wrap">
+                  <div class="size-wrap__inner">
+                    <div class="size-wrap__line">
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                    </div>
+                    <div class="size-wrap__line">
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty">23</div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty">123</div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty">1</div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                      <div class="dss-size empty"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="dss-basket__item-delete">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.75 12.375C9.88261 12.375 10.0098 12.3223 10.1036 12.2286C10.1973 12.1348 10.25 12.0076 10.25 11.875V6.875C10.25 6.74239 10.1973 6.61521 10.1036 6.52145C10.0098 6.42768 9.88261 6.375 9.75 6.375C9.61739 6.375 9.49021 6.42768 9.39645 6.52145C9.30268 6.61521 9.25 6.74239 9.25 6.875V11.875C9.25 12.0076 9.30268 12.1348 9.39645 12.2286C9.49021 12.3223 9.61739 12.375 9.75 12.375ZM6.25 12.375C6.38261 12.375 6.50979 12.3223 6.60355 12.2286C6.69732 12.1348 6.75 12.0076 6.75 11.875V6.875C6.75 6.74239 6.69732 6.61521 6.60355 6.52145C6.50979 6.42768 6.38261 6.375 6.25 6.375C6.11739 6.375 5.99021 6.42768 5.89645 6.52145C5.80268 6.61521 5.75 6.74239 5.75 6.875V11.875C5.75 12.0076 5.80268 12.1348 5.89645 12.2286C5.99021 12.3223 6.11739 12.375 6.25 12.375ZM10 2.625C10.1326 2.625 10.2598 2.57232 10.3536 2.47855C10.4473 2.38479 10.5 2.25761 10.5 2.125C10.5 1.99239 10.4473 1.86521 10.3536 1.77145C10.2598 1.67768 10.1326 1.625 10 1.625H6C5.86739 1.625 5.74021 1.67768 5.64645 1.77145C5.55268 1.86521 5.5 1.99239 5.5 2.125C5.5 2.25761 5.55268 2.38479 5.64645 2.47855C5.74021 2.57232 5.86739 2.625 6 2.625H10Z"
+              fill="#000101" />
+            <path
+              d="M2.5 3.125C2.36739 3.125 2.24021 3.17768 2.14645 3.27145C2.05268 3.36521 2 3.49239 2 3.625C2 3.75761 2.05268 3.88479 2.14645 3.97855C2.24021 4.07232 2.36739 4.125 2.5 4.125H3V13.325C3 14.455 3.92 15.375 5.05 15.375H10.95C12.08 15.375 13 14.455 13 13.325V4.125H13.5C13.6326 4.125 13.7598 4.07232 13.8536 3.97855C13.9473 3.88479 14 3.75761 14 3.625C14 3.49239 13.9473 3.36521 13.8536 3.27145C13.7598 3.17768 13.6326 3.125 13.5 3.125H3.5H2.5ZM12 4.125V13.325C12 13.6035 11.8894 13.8705 11.6925 14.0675C11.4955 14.2644 11.2285 14.375 10.95 14.375H5.05C4.77152 14.375 4.50445 14.2644 4.30754 14.0675C4.11062 13.8705 4 13.6035 4 13.325V4.125H12Z"
+              fill="#000101" />
+          </svg>
+        </button>
+      </div>
+      <div class="dss-basket__item">
+        <div class="dss-basket__col">
+          <div class="dss-basket__item-img">
+            <img src="images/content/basket-1.jpg" alt="img">
+          </div>
+          <div class="dss-basket__item-content">
+            <div class="dss-basket__content-top">
+              <div class="dss-basket__title">Mizuno Wave Momentum Pro V1GA254021 </div>
+              <div class="dss-basket__sticker">Чоловікам</div>
+            </div>
+            <div class="dss-basket__mob-opt">
+              <span>500,00 ₴</span>
+              <span>126</span>
+              <span>63 000,00 ₴</span>
+            </div>
+            <div class="dss-card__wrap">
+              <div class="dss-card__wrap-left">
+                <div class="dss-card__wrap-line">Розмір EU:</div>
+              </div>
+              <div class="dss-card__wrap-right">
+                <div class="size-wrap">
+                  <div class="size-wrap__inner">
+                    <div class="size-wrap__line">
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="dss-basket__item-delete">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.75 12.375C9.88261 12.375 10.0098 12.3223 10.1036 12.2286C10.1973 12.1348 10.25 12.0076 10.25 11.875V6.875C10.25 6.74239 10.1973 6.61521 10.1036 6.52145C10.0098 6.42768 9.88261 6.375 9.75 6.375C9.61739 6.375 9.49021 6.42768 9.39645 6.52145C9.30268 6.61521 9.25 6.74239 9.25 6.875V11.875C9.25 12.0076 9.30268 12.1348 9.39645 12.2286C9.49021 12.3223 9.61739 12.375 9.75 12.375ZM6.25 12.375C6.38261 12.375 6.50979 12.3223 6.60355 12.2286C6.69732 12.1348 6.75 12.0076 6.75 11.875V6.875C6.75 6.74239 6.69732 6.61521 6.60355 6.52145C6.50979 6.42768 6.38261 6.375 6.25 6.375C6.11739 6.375 5.99021 6.42768 5.89645 6.52145C5.80268 6.61521 5.75 6.74239 5.75 6.875V11.875C5.75 12.0076 5.80268 12.1348 5.89645 12.2286C5.99021 12.3223 6.11739 12.375 6.25 12.375ZM10 2.625C10.1326 2.625 10.2598 2.57232 10.3536 2.47855C10.4473 2.38479 10.5 2.25761 10.5 2.125C10.5 1.99239 10.4473 1.86521 10.3536 1.77145C10.2598 1.67768 10.1326 1.625 10 1.625H6C5.86739 1.625 5.74021 1.67768 5.64645 1.77145C5.55268 1.86521 5.5 1.99239 5.5 2.125C5.5 2.25761 5.55268 2.38479 5.64645 2.47855C5.74021 2.57232 5.86739 2.625 6 2.625H10Z"
+              fill="#000101" />
+            <path
+              d="M2.5 3.125C2.36739 3.125 2.24021 3.17768 2.14645 3.27145C2.05268 3.36521 2 3.49239 2 3.625C2 3.75761 2.05268 3.88479 2.14645 3.97855C2.24021 4.07232 2.36739 4.125 2.5 4.125H3V13.325C3 14.455 3.92 15.375 5.05 15.375H10.95C12.08 15.375 13 14.455 13 13.325V4.125H13.5C13.6326 4.125 13.7598 4.07232 13.8536 3.97855C13.9473 3.88479 14 3.75761 14 3.625C14 3.49239 13.9473 3.36521 13.8536 3.27145C13.7598 3.17768 13.6326 3.125 13.5 3.125H3.5H2.5ZM12 4.125V13.325C12 13.6035 11.8894 13.8705 11.6925 14.0675C11.4955 14.2644 11.2285 14.375 10.95 14.375H5.05C4.77152 14.375 4.50445 14.2644 4.30754 14.0675C4.11062 13.8705 4 13.6035 4 13.325V4.125H12Z"
+              fill="#000101" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+    <div class="pst-basket__bot">
+      <div class="pst-basket__bot-line">Замовленно артикулів: <span>2</span></div>
+      <div class="pst-basket__bot-line">Закальна кількість: <span>45</span></div>
+      <div class="pst-basket__total-sum"> загальна сума: 966,30 ₴</div>
+      <a href="#" class="btn btn--black">ПЕРЕЙТИ ДО КОШИКА</a>
+    </div>
+  </div>
+  <div class="wrapper">
+    <main class="main">
+      <div class="container">
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li><a href="#">Головна </a></li>
+              <li><span>Взуття</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="dss-filter">
+        <div class="container">
+          <div class="dss-filter__inner">
+            <div class="dss-filter__left">
+              <button class="dss-filter__close">
+                <img src="images/icons/close.svg" alt="icon">
+              </button>
+              <button class="btn btn--black dss-filter__clear">Очистити</button>
+              <div class="dss-filter__choicen">
+                <div class="dss-filter__choicen-title">Обрано:</div>
+                <div class="dss-filter__choicen-box">
+                  <button class="dss-filter__choicen-item">
+                    Kеди
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3"
+                        d="M5 5.52688L6.5365 7.0635C6.60575 7.13267 6.69279 7.16808 6.79763 7.16975C6.90238 7.17133 6.991 7.13592 7.0635 7.0635C7.13592 6.991 7.17213 6.90317 7.17213 6.8C7.17213 6.69683 7.13592 6.609 7.0635 6.5365L5.52688 5L7.0635 3.4635C7.13267 3.39425 7.16808 3.30721 7.16975 3.20238C7.17133 3.09763 7.13592 3.009 7.0635 2.9365C6.991 2.86408 6.90317 2.82787 6.8 2.82787C6.69683 2.82787 6.609 2.86408 6.5365 2.9365L5 4.47312L3.4635 2.9365C3.39425 2.86733 3.30721 2.83192 3.20238 2.83025C3.09763 2.82867 3.009 2.86408 2.9365 2.9365C2.86408 3.009 2.82788 3.09683 2.82788 3.2C2.82788 3.30317 2.86408 3.391 2.9365 3.4635L4.47312 5L2.9365 6.5365C2.86733 6.60575 2.83192 6.69279 2.83025 6.79763C2.82867 6.90238 2.86408 6.991 2.9365 7.0635C3.009 7.13592 3.09683 7.17213 3.2 7.17213C3.30317 7.17213 3.391 7.13592 3.4635 7.0635L5 5.52688ZM5.00087 9.75C4.34387 9.75 3.72633 9.62533 3.14825 9.376C2.57017 9.12667 2.06733 8.78829 1.63975 8.36088C1.21217 7.93346 0.873625 7.43083 0.624125 6.853C0.374708 6.27517 0.25 5.65779 0.25 5.00087C0.25 4.34387 0.374667 3.72633 0.624 3.14825C0.873333 2.57017 1.21171 2.06733 1.63913 1.63975C2.06654 1.21217 2.56917 0.873625 3.147 0.624125C3.72483 0.374708 4.34221 0.25 4.99913 0.25C5.65613 0.25 6.27367 0.374666 6.85175 0.624C7.42983 0.873333 7.93267 1.21171 8.36025 1.63913C8.78783 2.06654 9.12638 2.56917 9.37588 3.147C9.62529 3.72483 9.75 4.34221 9.75 4.99913C9.75 5.65613 9.62533 6.27367 9.376 6.85175C9.12667 7.42983 8.78829 7.93267 8.36088 8.36025C7.93346 8.78783 7.43083 9.12638 6.853 9.37588C6.27517 9.62529 5.65779 9.75 5.00087 9.75Z"
+                        fill="#D31217" />
+                    </svg>
+                  </button>
+                  <button class="dss-filter__choicen-item">
+                    Kросівки для бігу
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3"
+                        d="M5 5.52688L6.5365 7.0635C6.60575 7.13267 6.69279 7.16808 6.79763 7.16975C6.90238 7.17133 6.991 7.13592 7.0635 7.0635C7.13592 6.991 7.17213 6.90317 7.17213 6.8C7.17213 6.69683 7.13592 6.609 7.0635 6.5365L5.52688 5L7.0635 3.4635C7.13267 3.39425 7.16808 3.30721 7.16975 3.20238C7.17133 3.09763 7.13592 3.009 7.0635 2.9365C6.991 2.86408 6.90317 2.82787 6.8 2.82787C6.69683 2.82787 6.609 2.86408 6.5365 2.9365L5 4.47312L3.4635 2.9365C3.39425 2.86733 3.30721 2.83192 3.20238 2.83025C3.09763 2.82867 3.009 2.86408 2.9365 2.9365C2.86408 3.009 2.82788 3.09683 2.82788 3.2C2.82788 3.30317 2.86408 3.391 2.9365 3.4635L4.47312 5L2.9365 6.5365C2.86733 6.60575 2.83192 6.69279 2.83025 6.79763C2.82867 6.90238 2.86408 6.991 2.9365 7.0635C3.009 7.13592 3.09683 7.17213 3.2 7.17213C3.30317 7.17213 3.391 7.13592 3.4635 7.0635L5 5.52688ZM5.00087 9.75C4.34387 9.75 3.72633 9.62533 3.14825 9.376C2.57017 9.12667 2.06733 8.78829 1.63975 8.36088C1.21217 7.93346 0.873625 7.43083 0.624125 6.853C0.374708 6.27517 0.25 5.65779 0.25 5.00087C0.25 4.34387 0.374667 3.72633 0.624 3.14825C0.873333 2.57017 1.21171 2.06733 1.63913 1.63975C2.06654 1.21217 2.56917 0.873625 3.147 0.624125C3.72483 0.374708 4.34221 0.25 4.99913 0.25C5.65613 0.25 6.27367 0.374666 6.85175 0.624C7.42983 0.873333 7.93267 1.21171 8.36025 1.63913C8.78783 2.06654 9.12638 2.56917 9.37588 3.147C9.62529 3.72483 9.75 4.34221 9.75 4.99913C9.75 5.65613 9.62533 6.27367 9.376 6.85175C9.12667 7.42983 8.78829 7.93267 8.36088 8.36025C7.93346 8.78783 7.43083 9.12638 6.853 9.37588C6.27517 9.62529 5.65779 9.75 5.00087 9.75Z"
+                        fill="#D31217" />
+                    </svg>
+                  </button>
+                  <button class="dss-filter__choicen-item">
+                    Kеди
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3"
+                        d="M5 5.52688L6.5365 7.0635C6.60575 7.13267 6.69279 7.16808 6.79763 7.16975C6.90238 7.17133 6.991 7.13592 7.0635 7.0635C7.13592 6.991 7.17213 6.90317 7.17213 6.8C7.17213 6.69683 7.13592 6.609 7.0635 6.5365L5.52688 5L7.0635 3.4635C7.13267 3.39425 7.16808 3.30721 7.16975 3.20238C7.17133 3.09763 7.13592 3.009 7.0635 2.9365C6.991 2.86408 6.90317 2.82787 6.8 2.82787C6.69683 2.82787 6.609 2.86408 6.5365 2.9365L5 4.47312L3.4635 2.9365C3.39425 2.86733 3.30721 2.83192 3.20238 2.83025C3.09763 2.82867 3.009 2.86408 2.9365 2.9365C2.86408 3.009 2.82788 3.09683 2.82788 3.2C2.82788 3.30317 2.86408 3.391 2.9365 3.4635L4.47312 5L2.9365 6.5365C2.86733 6.60575 2.83192 6.69279 2.83025 6.79763C2.82867 6.90238 2.86408 6.991 2.9365 7.0635C3.009 7.13592 3.09683 7.17213 3.2 7.17213C3.30317 7.17213 3.391 7.13592 3.4635 7.0635L5 5.52688ZM5.00087 9.75C4.34387 9.75 3.72633 9.62533 3.14825 9.376C2.57017 9.12667 2.06733 8.78829 1.63975 8.36088C1.21217 7.93346 0.873625 7.43083 0.624125 6.853C0.374708 6.27517 0.25 5.65779 0.25 5.00087C0.25 4.34387 0.374667 3.72633 0.624 3.14825C0.873333 2.57017 1.21171 2.06733 1.63913 1.63975C2.06654 1.21217 2.56917 0.873625 3.147 0.624125C3.72483 0.374708 4.34221 0.25 4.99913 0.25C5.65613 0.25 6.27367 0.374666 6.85175 0.624C7.42983 0.873333 7.93267 1.21171 8.36025 1.63913C8.78783 2.06654 9.12638 2.56917 9.37588 3.147C9.62529 3.72483 9.75 4.34221 9.75 4.99913C9.75 5.65613 9.62533 6.27367 9.376 6.85175C9.12667 7.42983 8.78829 7.93267 8.36088 8.36025C7.93346 8.78783 7.43083 9.12638 6.853 9.37588C6.27517 9.62529 5.65779 9.75 5.00087 9.75Z"
+                        fill="#D31217" />
+                    </svg>
+                  </button>
+                  <button class="dss-filter__choicen-item">
+                    Kеди
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3"
+                        d="M5 5.52688L6.5365 7.0635C6.60575 7.13267 6.69279 7.16808 6.79763 7.16975C6.90238 7.17133 6.991 7.13592 7.0635 7.0635C7.13592 6.991 7.17213 6.90317 7.17213 6.8C7.17213 6.69683 7.13592 6.609 7.0635 6.5365L5.52688 5L7.0635 3.4635C7.13267 3.39425 7.16808 3.30721 7.16975 3.20238C7.17133 3.09763 7.13592 3.009 7.0635 2.9365C6.991 2.86408 6.90317 2.82787 6.8 2.82787C6.69683 2.82787 6.609 2.86408 6.5365 2.9365L5 4.47312L3.4635 2.9365C3.39425 2.86733 3.30721 2.83192 3.20238 2.83025C3.09763 2.82867 3.009 2.86408 2.9365 2.9365C2.86408 3.009 2.82788 3.09683 2.82788 3.2C2.82788 3.30317 2.86408 3.391 2.9365 3.4635L4.47312 5L2.9365 6.5365C2.86733 6.60575 2.83192 6.69279 2.83025 6.79763C2.82867 6.90238 2.86408 6.991 2.9365 7.0635C3.009 7.13592 3.09683 7.17213 3.2 7.17213C3.30317 7.17213 3.391 7.13592 3.4635 7.0635L5 5.52688ZM5.00087 9.75C4.34387 9.75 3.72633 9.62533 3.14825 9.376C2.57017 9.12667 2.06733 8.78829 1.63975 8.36088C1.21217 7.93346 0.873625 7.43083 0.624125 6.853C0.374708 6.27517 0.25 5.65779 0.25 5.00087C0.25 4.34387 0.374667 3.72633 0.624 3.14825C0.873333 2.57017 1.21171 2.06733 1.63913 1.63975C2.06654 1.21217 2.56917 0.873625 3.147 0.624125C3.72483 0.374708 4.34221 0.25 4.99913 0.25C5.65613 0.25 6.27367 0.374666 6.85175 0.624C7.42983 0.873333 7.93267 1.21171 8.36025 1.63913C8.78783 2.06654 9.12638 2.56917 9.37588 3.147C9.62529 3.72483 9.75 4.34221 9.75 4.99913C9.75 5.65613 9.62533 6.27367 9.376 6.85175C9.12667 7.42983 8.78829 7.93267 8.36088 8.36025C7.93346 8.78783 7.43083 9.12638 6.853 9.37588C6.27517 9.62529 5.65779 9.75 5.00087 9.75Z"
+                        fill="#D31217" />
+                    </svg>
+                  </button>
+                  <button class="dss-filter__choicen-item">
+                    Kросівки
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3"
+                        d="M5 5.52688L6.5365 7.0635C6.60575 7.13267 6.69279 7.16808 6.79763 7.16975C6.90238 7.17133 6.991 7.13592 7.0635 7.0635C7.13592 6.991 7.17213 6.90317 7.17213 6.8C7.17213 6.69683 7.13592 6.609 7.0635 6.5365L5.52688 5L7.0635 3.4635C7.13267 3.39425 7.16808 3.30721 7.16975 3.20238C7.17133 3.09763 7.13592 3.009 7.0635 2.9365C6.991 2.86408 6.90317 2.82787 6.8 2.82787C6.69683 2.82787 6.609 2.86408 6.5365 2.9365L5 4.47312L3.4635 2.9365C3.39425 2.86733 3.30721 2.83192 3.20238 2.83025C3.09763 2.82867 3.009 2.86408 2.9365 2.9365C2.86408 3.009 2.82788 3.09683 2.82788 3.2C2.82788 3.30317 2.86408 3.391 2.9365 3.4635L4.47312 5L2.9365 6.5365C2.86733 6.60575 2.83192 6.69279 2.83025 6.79763C2.82867 6.90238 2.86408 6.991 2.9365 7.0635C3.009 7.13592 3.09683 7.17213 3.2 7.17213C3.30317 7.17213 3.391 7.13592 3.4635 7.0635L5 5.52688ZM5.00087 9.75C4.34387 9.75 3.72633 9.62533 3.14825 9.376C2.57017 9.12667 2.06733 8.78829 1.63975 8.36088C1.21217 7.93346 0.873625 7.43083 0.624125 6.853C0.374708 6.27517 0.25 5.65779 0.25 5.00087C0.25 4.34387 0.374667 3.72633 0.624 3.14825C0.873333 2.57017 1.21171 2.06733 1.63913 1.63975C2.06654 1.21217 2.56917 0.873625 3.147 0.624125C3.72483 0.374708 4.34221 0.25 4.99913 0.25C5.65613 0.25 6.27367 0.374666 6.85175 0.624C7.42983 0.873333 7.93267 1.21171 8.36025 1.63913C8.78783 2.06654 9.12638 2.56917 9.37588 3.147C9.62529 3.72483 9.75 4.34221 9.75 4.99913C9.75 5.65613 9.62533 6.27367 9.376 6.85175C9.12667 7.42983 8.78829 7.93267 8.36088 8.36025C7.93346 8.78783 7.43083 9.12638 6.853 9.37588C6.27517 9.62529 5.65779 9.75 5.00087 9.75Z"
+                        fill="#D31217" />
+                    </svg>
+                  </button>
+                  <button class="dss-filter__choicen-item">
+                    Kеди
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3"
+                        d="M5 5.52688L6.5365 7.0635C6.60575 7.13267 6.69279 7.16808 6.79763 7.16975C6.90238 7.17133 6.991 7.13592 7.0635 7.0635C7.13592 6.991 7.17213 6.90317 7.17213 6.8C7.17213 6.69683 7.13592 6.609 7.0635 6.5365L5.52688 5L7.0635 3.4635C7.13267 3.39425 7.16808 3.30721 7.16975 3.20238C7.17133 3.09763 7.13592 3.009 7.0635 2.9365C6.991 2.86408 6.90317 2.82787 6.8 2.82787C6.69683 2.82787 6.609 2.86408 6.5365 2.9365L5 4.47312L3.4635 2.9365C3.39425 2.86733 3.30721 2.83192 3.20238 2.83025C3.09763 2.82867 3.009 2.86408 2.9365 2.9365C2.86408 3.009 2.82788 3.09683 2.82788 3.2C2.82788 3.30317 2.86408 3.391 2.9365 3.4635L4.47312 5L2.9365 6.5365C2.86733 6.60575 2.83192 6.69279 2.83025 6.79763C2.82867 6.90238 2.86408 6.991 2.9365 7.0635C3.009 7.13592 3.09683 7.17213 3.2 7.17213C3.30317 7.17213 3.391 7.13592 3.4635 7.0635L5 5.52688ZM5.00087 9.75C4.34387 9.75 3.72633 9.62533 3.14825 9.376C2.57017 9.12667 2.06733 8.78829 1.63975 8.36088C1.21217 7.93346 0.873625 7.43083 0.624125 6.853C0.374708 6.27517 0.25 5.65779 0.25 5.00087C0.25 4.34387 0.374667 3.72633 0.624 3.14825C0.873333 2.57017 1.21171 2.06733 1.63913 1.63975C2.06654 1.21217 2.56917 0.873625 3.147 0.624125C3.72483 0.374708 4.34221 0.25 4.99913 0.25C5.65613 0.25 6.27367 0.374666 6.85175 0.624C7.42983 0.873333 7.93267 1.21171 8.36025 1.63913C8.78783 2.06654 9.12638 2.56917 9.37588 3.147C9.62529 3.72483 9.75 4.34221 9.75 4.99913C9.75 5.65613 9.62533 6.27367 9.376 6.85175C9.12667 7.42983 8.78829 7.93267 8.36088 8.36025C7.93346 8.78783 7.43083 9.12638 6.853 9.37588C6.27517 9.62529 5.65779 9.75 5.00087 9.75Z"
+                        fill="#D31217" />
+                    </svg>
+                  </button>
+                  <button class="dss-filter__choicen-item">
+                    Kеди
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3"
+                        d="M5 5.52688L6.5365 7.0635C6.60575 7.13267 6.69279 7.16808 6.79763 7.16975C6.90238 7.17133 6.991 7.13592 7.0635 7.0635C7.13592 6.991 7.17213 6.90317 7.17213 6.8C7.17213 6.69683 7.13592 6.609 7.0635 6.5365L5.52688 5L7.0635 3.4635C7.13267 3.39425 7.16808 3.30721 7.16975 3.20238C7.17133 3.09763 7.13592 3.009 7.0635 2.9365C6.991 2.86408 6.90317 2.82787 6.8 2.82787C6.69683 2.82787 6.609 2.86408 6.5365 2.9365L5 4.47312L3.4635 2.9365C3.39425 2.86733 3.30721 2.83192 3.20238 2.83025C3.09763 2.82867 3.009 2.86408 2.9365 2.9365C2.86408 3.009 2.82788 3.09683 2.82788 3.2C2.82788 3.30317 2.86408 3.391 2.9365 3.4635L4.47312 5L2.9365 6.5365C2.86733 6.60575 2.83192 6.69279 2.83025 6.79763C2.82867 6.90238 2.86408 6.991 2.9365 7.0635C3.009 7.13592 3.09683 7.17213 3.2 7.17213C3.30317 7.17213 3.391 7.13592 3.4635 7.0635L5 5.52688ZM5.00087 9.75C4.34387 9.75 3.72633 9.62533 3.14825 9.376C2.57017 9.12667 2.06733 8.78829 1.63975 8.36088C1.21217 7.93346 0.873625 7.43083 0.624125 6.853C0.374708 6.27517 0.25 5.65779 0.25 5.00087C0.25 4.34387 0.374667 3.72633 0.624 3.14825C0.873333 2.57017 1.21171 2.06733 1.63913 1.63975C2.06654 1.21217 2.56917 0.873625 3.147 0.624125C3.72483 0.374708 4.34221 0.25 4.99913 0.25C5.65613 0.25 6.27367 0.374666 6.85175 0.624C7.42983 0.873333 7.93267 1.21171 8.36025 1.63913C8.78783 2.06654 9.12638 2.56917 9.37588 3.147C9.62529 3.72483 9.75 4.34221 9.75 4.99913C9.75 5.65613 9.62533 6.27367 9.376 6.85175C9.12667 7.42983 8.78829 7.93267 8.36088 8.36025C7.93346 8.78783 7.43083 9.12638 6.853 9.37588C6.27517 9.62529 5.65779 9.75 5.00087 9.75Z"
+                        fill="#D31217" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="dss-filter__col">
+                <div class="dss-filter__col-title">взуття</div>
+                <div class="dss-filter__col-box">
+                  <div class="dss-filter__col-subtitle">черевики, чоботи <span></span> </div>
+                  <div class="dss-filter__col-check">
+                    <div class="dss-filter__clear-twoo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.89379 2.33325H1.45689C0.962703 2.33325 0.672695 2.89049 0.956223 3.2954C0.959859 3.30084 0.861941 3.16737 4.51157 8.1354C4.67347 8.3702 4.62502 8.11903 4.62502 13.3577C4.62502 13.8839 5.22639 14.1878 5.65155 13.8715C7.2248 12.6856 7.60707 12.552 7.60707 11.9313C7.60707 8.26977 7.56001 8.36815 7.72052 8.1354L8.48207 7.09845C6.56577 6.40129 5.41719 4.37479 5.89379 2.33325Z"
+                          fill="black" />
+                        <path
+                          d="M7.70948 0.824855C5.65662 2.66536 6.65169 5.94771 9.23969 6.45903C11.3036 6.89511 13.1551 5.25955 13.1551 3.26132C13.1551 0.456015 9.80923 -1.036 7.70948 0.824855ZM10.9505 3.74528C11.2107 4.00411 11.0247 4.44735 10.6606 4.44735C10.4415 4.44735 10.3865 4.34372 9.88232 3.84147C9.38839 4.33322 9.32807 4.44735 9.10379 4.44735C8.73878 4.44735 8.5552 4.00264 8.81387 3.74528L9.29974 3.26132L8.81387 2.77736C8.42813 2.39359 9.00916 1.81153 9.39399 2.19502L9.88232 2.68117L10.3704 2.19502C10.7552 1.81153 11.3365 2.39337 10.9505 2.77736L10.4646 3.26132L10.9505 3.74528Z"
+                          fill="black" />
+                      </svg>
+                      Очистити фільтр
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="dss-filter__col-subtitle">кросівки, кеди <span></span></div>
+                  <div class="dss-filter__col-check">
+                    <div class="dss-filter__clear-twoo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.89379 2.33325H1.45689C0.962703 2.33325 0.672695 2.89049 0.956223 3.2954C0.959859 3.30084 0.861941 3.16737 4.51157 8.1354C4.67347 8.3702 4.62502 8.11903 4.62502 13.3577C4.62502 13.8839 5.22639 14.1878 5.65155 13.8715C7.2248 12.6856 7.60707 12.552 7.60707 11.9313C7.60707 8.26977 7.56001 8.36815 7.72052 8.1354L8.48207 7.09845C6.56577 6.40129 5.41719 4.37479 5.89379 2.33325Z"
+                          fill="black" />
+                        <path
+                          d="M7.70948 0.824855C5.65662 2.66536 6.65169 5.94771 9.23969 6.45903C11.3036 6.89511 13.1551 5.25955 13.1551 3.26132C13.1551 0.456015 9.80923 -1.036 7.70948 0.824855ZM10.9505 3.74528C11.2107 4.00411 11.0247 4.44735 10.6606 4.44735C10.4415 4.44735 10.3865 4.34372 9.88232 3.84147C9.38839 4.33322 9.32807 4.44735 9.10379 4.44735C8.73878 4.44735 8.5552 4.00264 8.81387 3.74528L9.29974 3.26132L8.81387 2.77736C8.42813 2.39359 9.00916 1.81153 9.39399 2.19502L9.88232 2.68117L10.3704 2.19502C10.7552 1.81153 11.3365 2.39337 10.9505 2.77736L10.4646 3.26132L10.9505 3.74528Z"
+                          fill="black" />
+                      </svg>
+                      Очистити фільтр
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="dss-filter__col-subtitle">тапочки, сандалі <span></span></div>
+                  <div class="dss-filter__col-check">
+                    <div class="dss-filter__clear-twoo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.89379 2.33325H1.45689C0.962703 2.33325 0.672695 2.89049 0.956223 3.2954C0.959859 3.30084 0.861941 3.16737 4.51157 8.1354C4.67347 8.3702 4.62502 8.11903 4.62502 13.3577C4.62502 13.8839 5.22639 14.1878 5.65155 13.8715C7.2248 12.6856 7.60707 12.552 7.60707 11.9313C7.60707 8.26977 7.56001 8.36815 7.72052 8.1354L8.48207 7.09845C6.56577 6.40129 5.41719 4.37479 5.89379 2.33325Z"
+                          fill="black" />
+                        <path
+                          d="M7.70948 0.824855C5.65662 2.66536 6.65169 5.94771 9.23969 6.45903C11.3036 6.89511 13.1551 5.25955 13.1551 3.26132C13.1551 0.456015 9.80923 -1.036 7.70948 0.824855ZM10.9505 3.74528C11.2107 4.00411 11.0247 4.44735 10.6606 4.44735C10.4415 4.44735 10.3865 4.34372 9.88232 3.84147C9.38839 4.33322 9.32807 4.44735 9.10379 4.44735C8.73878 4.44735 8.5552 4.00264 8.81387 3.74528L9.29974 3.26132L8.81387 2.77736C8.42813 2.39359 9.00916 1.81153 9.39399 2.19502L9.88232 2.68117L10.3704 2.19502C10.7552 1.81153 11.3365 2.39337 10.9505 2.77736L10.4646 3.26132L10.9505 3.74528Z"
+                          fill="black" />
+                      </svg>
+                      Очистити фільтр
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="dss-filter__col-subtitle">інше життя <span></span></div>
+                  <div class="dss-filter__col-check">
+                    <div class="dss-filter__clear-twoo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.89379 2.33325H1.45689C0.962703 2.33325 0.672695 2.89049 0.956223 3.2954C0.959859 3.30084 0.861941 3.16737 4.51157 8.1354C4.67347 8.3702 4.62502 8.11903 4.62502 13.3577C4.62502 13.8839 5.22639 14.1878 5.65155 13.8715C7.2248 12.6856 7.60707 12.552 7.60707 11.9313C7.60707 8.26977 7.56001 8.36815 7.72052 8.1354L8.48207 7.09845C6.56577 6.40129 5.41719 4.37479 5.89379 2.33325Z"
+                          fill="black" />
+                        <path
+                          d="M7.70948 0.824855C5.65662 2.66536 6.65169 5.94771 9.23969 6.45903C11.3036 6.89511 13.1551 5.25955 13.1551 3.26132C13.1551 0.456015 9.80923 -1.036 7.70948 0.824855ZM10.9505 3.74528C11.2107 4.00411 11.0247 4.44735 10.6606 4.44735C10.4415 4.44735 10.3865 4.34372 9.88232 3.84147C9.38839 4.33322 9.32807 4.44735 9.10379 4.44735C8.73878 4.44735 8.5552 4.00264 8.81387 3.74528L9.29974 3.26132L8.81387 2.77736C8.42813 2.39359 9.00916 1.81153 9.39399 2.19502L9.88232 2.68117L10.3704 2.19502C10.7552 1.81153 11.3365 2.39337 10.9505 2.77736L10.4646 3.26132L10.9505 3.74528Z"
+                          fill="black" />
+                      </svg>
+                      Очистити фільтр
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="dss-filter__col">
+                <div class="dss-filter__col-title">фільтри</div>
+                <div class="dss-filter__col-box">
+
+                  <div class="dss-filter__col-subtitle">стать <span></span></div>
+                  <div class="dss-filter__col-check">
+                    <div class="dss-filter__clear-twoo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.89379 2.33325H1.45689C0.962703 2.33325 0.672695 2.89049 0.956223 3.2954C0.959859 3.30084 0.861941 3.16737 4.51157 8.1354C4.67347 8.3702 4.62502 8.11903 4.62502 13.3577C4.62502 13.8839 5.22639 14.1878 5.65155 13.8715C7.2248 12.6856 7.60707 12.552 7.60707 11.9313C7.60707 8.26977 7.56001 8.36815 7.72052 8.1354L8.48207 7.09845C6.56577 6.40129 5.41719 4.37479 5.89379 2.33325Z"
+                          fill="black" />
+                        <path
+                          d="M7.70948 0.824855C5.65662 2.66536 6.65169 5.94771 9.23969 6.45903C11.3036 6.89511 13.1551 5.25955 13.1551 3.26132C13.1551 0.456015 9.80923 -1.036 7.70948 0.824855ZM10.9505 3.74528C11.2107 4.00411 11.0247 4.44735 10.6606 4.44735C10.4415 4.44735 10.3865 4.34372 9.88232 3.84147C9.38839 4.33322 9.32807 4.44735 9.10379 4.44735C8.73878 4.44735 8.5552 4.00264 8.81387 3.74528L9.29974 3.26132L8.81387 2.77736C8.42813 2.39359 9.00916 1.81153 9.39399 2.19502L9.88232 2.68117L10.3704 2.19502C10.7552 1.81153 11.3365 2.39337 10.9505 2.77736L10.4646 3.26132L10.9505 3.74528Z"
+                          fill="black" />
+                      </svg>
+                      Очистити фільтр
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+
+                  </div>
+
+                  <div class="dss-filter__col-subtitle">сезон <span></span></div>
+                  <div class="dss-filter__col-check">
+                    <div class="dss-filter__clear-twoo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.89379 2.33325H1.45689C0.962703 2.33325 0.672695 2.89049 0.956223 3.2954C0.959859 3.30084 0.861941 3.16737 4.51157 8.1354C4.67347 8.3702 4.62502 8.11903 4.62502 13.3577C4.62502 13.8839 5.22639 14.1878 5.65155 13.8715C7.2248 12.6856 7.60707 12.552 7.60707 11.9313C7.60707 8.26977 7.56001 8.36815 7.72052 8.1354L8.48207 7.09845C6.56577 6.40129 5.41719 4.37479 5.89379 2.33325Z"
+                          fill="black" />
+                        <path
+                          d="M7.70948 0.824855C5.65662 2.66536 6.65169 5.94771 9.23969 6.45903C11.3036 6.89511 13.1551 5.25955 13.1551 3.26132C13.1551 0.456015 9.80923 -1.036 7.70948 0.824855ZM10.9505 3.74528C11.2107 4.00411 11.0247 4.44735 10.6606 4.44735C10.4415 4.44735 10.3865 4.34372 9.88232 3.84147C9.38839 4.33322 9.32807 4.44735 9.10379 4.44735C8.73878 4.44735 8.5552 4.00264 8.81387 3.74528L9.29974 3.26132L8.81387 2.77736C8.42813 2.39359 9.00916 1.81153 9.39399 2.19502L9.88232 2.68117L10.3704 2.19502C10.7552 1.81153 11.3365 2.39337 10.9505 2.77736L10.4646 3.26132L10.9505 3.74528Z"
+                          fill="black" />
+                      </svg>
+                      Очистити фільтр
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="dss-filter__col-subtitle">бренд <span></span></div>
+                  <div class="dss-filter__col-check">
+                    <div class="dss-filter__clear-twoo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.89379 2.33325H1.45689C0.962703 2.33325 0.672695 2.89049 0.956223 3.2954C0.959859 3.30084 0.861941 3.16737 4.51157 8.1354C4.67347 8.3702 4.62502 8.11903 4.62502 13.3577C4.62502 13.8839 5.22639 14.1878 5.65155 13.8715C7.2248 12.6856 7.60707 12.552 7.60707 11.9313C7.60707 8.26977 7.56001 8.36815 7.72052 8.1354L8.48207 7.09845C6.56577 6.40129 5.41719 4.37479 5.89379 2.33325Z"
+                          fill="black" />
+                        <path
+                          d="M7.70948 0.824855C5.65662 2.66536 6.65169 5.94771 9.23969 6.45903C11.3036 6.89511 13.1551 5.25955 13.1551 3.26132C13.1551 0.456015 9.80923 -1.036 7.70948 0.824855ZM10.9505 3.74528C11.2107 4.00411 11.0247 4.44735 10.6606 4.44735C10.4415 4.44735 10.3865 4.34372 9.88232 3.84147C9.38839 4.33322 9.32807 4.44735 9.10379 4.44735C8.73878 4.44735 8.5552 4.00264 8.81387 3.74528L9.29974 3.26132L8.81387 2.77736C8.42813 2.39359 9.00916 1.81153 9.39399 2.19502L9.88232 2.68117L10.3704 2.19502C10.7552 1.81153 11.3365 2.39337 10.9505 2.77736L10.4646 3.26132L10.9505 3.74528Z"
+                          fill="black" />
+                      </svg>
+                      Очистити фільтр
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="dss-filter__col-subtitle">найменування <span></span></div>
+                  <div class="dss-filter__col-check">
+                    <div class="dss-filter__clear-twoo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.89379 2.33325H1.45689C0.962703 2.33325 0.672695 2.89049 0.956223 3.2954C0.959859 3.30084 0.861941 3.16737 4.51157 8.1354C4.67347 8.3702 4.62502 8.11903 4.62502 13.3577C4.62502 13.8839 5.22639 14.1878 5.65155 13.8715C7.2248 12.6856 7.60707 12.552 7.60707 11.9313C7.60707 8.26977 7.56001 8.36815 7.72052 8.1354L8.48207 7.09845C6.56577 6.40129 5.41719 4.37479 5.89379 2.33325Z"
+                          fill="black" />
+                        <path
+                          d="M7.70948 0.824855C5.65662 2.66536 6.65169 5.94771 9.23969 6.45903C11.3036 6.89511 13.1551 5.25955 13.1551 3.26132C13.1551 0.456015 9.80923 -1.036 7.70948 0.824855ZM10.9505 3.74528C11.2107 4.00411 11.0247 4.44735 10.6606 4.44735C10.4415 4.44735 10.3865 4.34372 9.88232 3.84147C9.38839 4.33322 9.32807 4.44735 9.10379 4.44735C8.73878 4.44735 8.5552 4.00264 8.81387 3.74528L9.29974 3.26132L8.81387 2.77736C8.42813 2.39359 9.00916 1.81153 9.39399 2.19502L9.88232 2.68117L10.3704 2.19502C10.7552 1.81153 11.3365 2.39337 10.9505 2.77736L10.4646 3.26132L10.9505 3.74528Z"
+                          fill="black" />
+                      </svg>
+                      Очистити фільтр
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                    <div class="form__box">
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="checkbox__custom"></span>
+                        <p class="checkbox__text">Кеди</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="dss-filter__col-subtitle">ціна <span></span></div>
+                  <div class="dss-filter__col-check">
+                    <div class="dss-filter__price-box">
+                      <input type="text" id="price-range">
+                      <div class="dss-filter__price-box-inner">
+                        <input type="number" id="price-min" placeholder="Від">
+                        <input type="number" id="price-max" placeholder="До">
+                        <button class="dss-filter__price-btn">ОК</button>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="dss-filter__col-subtitle">розміри <span></span></div>
+                  <div class="dss-filter__col-check dss-filter__size-box">
+                    <div class="dss-filter__clear-twoo">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.89379 2.33325H1.45689C0.962703 2.33325 0.672695 2.89049 0.956223 3.2954C0.959859 3.30084 0.861941 3.16737 4.51157 8.1354C4.67347 8.3702 4.62502 8.11903 4.62502 13.3577C4.62502 13.8839 5.22639 14.1878 5.65155 13.8715C7.2248 12.6856 7.60707 12.552 7.60707 11.9313C7.60707 8.26977 7.56001 8.36815 7.72052 8.1354L8.48207 7.09845C6.56577 6.40129 5.41719 4.37479 5.89379 2.33325Z"
+                          fill="black" />
+                        <path
+                          d="M7.70948 0.824855C5.65662 2.66536 6.65169 5.94771 9.23969 6.45903C11.3036 6.89511 13.1551 5.25955 13.1551 3.26132C13.1551 0.456015 9.80923 -1.036 7.70948 0.824855ZM10.9505 3.74528C11.2107 4.00411 11.0247 4.44735 10.6606 4.44735C10.4415 4.44735 10.3865 4.34372 9.88232 3.84147C9.38839 4.33322 9.32807 4.44735 9.10379 4.44735C8.73878 4.44735 8.5552 4.00264 8.81387 3.74528L9.29974 3.26132L8.81387 2.77736C8.42813 2.39359 9.00916 1.81153 9.39399 2.19502L9.88232 2.68117L10.3704 2.19502C10.7552 1.81153 11.3365 2.39337 10.9505 2.77736L10.4646 3.26132L10.9505 3.74528Z"
+                          fill="black" />
+                      </svg>
+                      Очистити фільтр
+                    </div>
+                    <div class="dss-size-wrap">
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                      <div class="dss-size">23</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="dss-filter__right">
+              <div class="dss-filter__right-top">
+                <div class="dss-filter__righr-box">
+                  <button class="dss-filter__filter-btn">
+                    <img src="images/icons/filter.svg" alt="icon"> Фільтр
+                  </button>
+                  <div class="dss-filter__category-wrap">
+                    Сортувати:
+                    <select>
+                      <option>Спочатку новинки</option>
+                      <option>Спочатку новинки 2</option>
+                      <option>Спочатку новинки 3</option>
+                    </select>
+                  </div>
+                  <div class="dss-filter__size-wrap">
+                    Показати:
+                    <select>
+                      <option>48</option>
+                      <option>49</option>
+                      <option>50</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="pagination-wrap">
+                  <div class="pagination">
+                    <ul class="pagination__list">
+                      <li><span class="active">1</span></li>
+                      <li><a href="#">2</a></li>
+                      <li><span>...</span></li>
+                      <li><a href="#">21</a></li>
+                      <li><a href="#">22</a></li>
+                      <li><a href="#">23</a></li>
+                      <li><span>...</span></li>
+                      <li><a href="#">98</a></li>
+                      <li><a href="#">99</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+              <div class="dss-filter__right-list">
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+                <div class="dss-item">
+                  <ul class="dss-item__stickers">
+                    <li class="dss-item__sticker-red">Популярний</li>
+                  </ul>
+                  <div class="dss-item__add-favorite">
+                    <img src="images/icons/heart-1.svg" alt="cion">
+                    <img src="images/icons/heart-2.svg" alt="cion">
+                  </div>
+                  <div class="dss-item__img">
+                    <div class="swiper mainSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/product-1.webp" alt="img">
+                        </div>
+                      </div>
+                      <div class="swiper-button-next">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                      <div class="swiper-button-prev">
+                        <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dss-item__bot-content">
+                    <div class="dss-item__gender">Жінкам</div>
+                    <div class="dss-item__title">New Balance U530CRB </div>
+                    <div class="dss-item__size"><span>Розмір:</span> 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 5, 46
+                      1/3,
+                      47 2/3</div>
+                    <div class="btn btn--black">Ціна гурт: <strong>50,90 ₴</strong></div>
+                    <div class="dss-item__price-total">РРЦ: <strong>150,90 ₴</strong></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination-wrap">
+                <div class="pagination">
+                  <ul class="pagination__list">
+                    <li><span class="active">1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">21</a></li>
+                    <li><a href="#">22</a></li>
+                    <li><a href="#">23</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">98</a></li>
+                    <li><a href="#">99</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="dss-brand">
+        <div class="container">
+          <div class="dss-brand__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/content/logo-1.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-2.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-3.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-4.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-5.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-6.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-7.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-8.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-1.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-2.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-3.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-4.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-5.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-6.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-7.webp" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/logo-8.webp" alt="logo">
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="images/icons/arrow-dark-slider.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    <footer class="footer">
+      <a href="#" class="up-page">
+        <img src="images/icons/arrow-up.svg" alt="arrow">
+      </a>
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__logo">
+            <img src="images/content/logo.png" alt="logo">
+          </a>
+          <div class="footer__col">
+            <div class="footer__title">Політика співпраці компанії </div>
+            <ul>
+              <li>
+                <a href="#">Умови торгівлі B2B</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">Проекти</div>
+            <ul>
+              <li>
+                <a href="#">Магазин B2B</a>
+              </li>
+              <li>
+                <a href="#">Передзамовлення</a>
+              </li>
+              <li>
+                <a href="#">Файли завантаження</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            Цей веб-сайт використовує файли cookie, щоб покращити роботу нашого веб-сайту.
+            <div class="footer__btns">
+              <a href="#" class="btn btn--black">Дізнатися більше</a>
+              <a href="#" class="btn btn--white">Розумію</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
+    integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+$drop-card-green: #00bc38;
+$drop-card-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+
+.drop-card {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: calc((100% - 10px) / 2);
+	padding: 6px;
+	border: 1px solid $drop-grey-light;
+	border-radius: $drop-radius-small;
+	background: $drop-white;
+
+	@include drop-desktop {
+		gap: 19px;
+		width: calc((100% - 36px) / 4);
+		padding: 20px;
+		border-radius: $drop-radius;
+	}
+
+	&__media {
+		position: relative;
+		flex-shrink: 0;
+	}
+
+	&__stickers {
+		position: absolute;
+		z-index: 2;
+		top: 6px;
+		left: -6px;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		@include drop-desktop {
+			top: 10px;
+			left: -20px;
+			gap: 4px;
+		}
+	}
+
+	&__sticker {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 19px;
+		padding: 3px 6px;
+		border-radius: 0 $drop-radius-small $drop-radius-small 0;
+		color: $drop-white;
+		font-size: 9px;
+		font-weight: 400;
+		line-height: 1.4;
+		white-space: nowrap;
+
+		@include drop-desktop {
+			min-height: 0;
+			padding: 8px 10px;
+			border-radius: 0 $drop-radius $drop-radius 0;
+			font-size: 12px;
+		}
+	}
+
+	&__sticker--new {
+		background: $drop-card-green;
+	}
+
+	&__sticker--sale {
+		background: $drop-red;
+	}
+
+	&__favorite {
+		position: absolute;
+		z-index: 2;
+		top: 6px;
+		right: 6px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+		border-radius: $drop-radius-small;
+		background: $drop-white;
+
+		@include drop-desktop {
+			top: 10px;
+			right: 10px;
+			width: 34px;
+			height: 34px;
+			border-radius: $drop-radius;
+		}
+
+		img {
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			object-fit: contain;
+			transition: opacity 0.2s linear;
+
+			@include drop-desktop {
+				width: 18px;
+				height: 16px;
+			}
+
+			&:last-child {
+				width: 10px;
+				height: 10px;
+				opacity: 0;
+
+				@include drop-desktop {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+
+		&.is-active img:first-child,
+		&:hover img:first-child {
+			opacity: 0;
+		}
+
+		&.is-active img:last-child,
+		&:hover img:last-child {
+			opacity: 1;
+		}
+	}
+
+	&__photo,
+	&__body {
+		display: flex;
+		color: inherit;
+	}
+
+	&__photo {
+		overflow: hidden;
+		border-radius: $drop-radius-small;
+		background: #eeeeee;
+
+		@include drop-desktop {
+			border-radius: $drop-radius;
+		}
+	}
+
+	&__main {
+		width: 100%;
+		height: 169px;
+
+		@include drop-desktop {
+			height: 300px;
+		}
+
+		.swiper-slide {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 169px;
+			background: #eeeeee;
+
+			@include drop-desktop {
+				height: 300px;
+			}
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__thumbs {
+		position: absolute;
+		right: 0;
+		bottom: -58px;
+		left: 0;
+		z-index: 3;
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		height: 50px;
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+
+		@include drop-desktop {
+			transition: opacity 0.2s linear;
+		}
+	}
+
+	&__thumbs-swiper {
+		flex: 1 1 auto;
+		min-width: 0;
+		height: 50px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.swiper-slide {
+			height: 50px;
+			overflow: hidden;
+			border: 1px solid transparent;
+			cursor: pointer;
+
+			&:hover {
+				border-color: $drop-black;
+			}
+		}
+	}
+
+	&__prev,
+	&__next {
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+		justify-content: center;
+		width: 10px;
+		height: 10px;
+
+		img {
+			width: 7px;
+			height: 12px;
+			object-fit: contain;
+		}
+	}
+
+	&__prev {
+		transform: rotate(180deg);
+	}
+
+	&__body {
+		flex: 1 1 auto;
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+		width: 100%;
+		min-width: 0;
+
+		@include drop-desktop {
+			gap: 26px;
+		}
+	}
+
+	&__gender {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 6px 10px;
+		border-radius: 12px;
+		background: $drop-grey-light;
+		color: $drop-grey;
+		font-size: 9px;
+		font-weight: 400;
+		line-height: 1.4;
+		transition: opacity 0.2s linear;
+
+		@include drop-desktop {
+			font-size: 11px;
+		}
+	}
+
+	&__title {
+		width: 100%;
+		min-width: 0;
+		color: $drop-black;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.4;
+		text-align: center;
+		overflow-wrap: break-word;
+		transition: opacity 0.2s linear;
+
+		@include drop-desktop {
+			font-size: 16px;
+		}
+	}
+
+	&__sizes {
+		width: 100%;
+		margin-top: auto;
+		max-height: 36px;
+		overflow: hidden;
+		color: $drop-grey;
+		font-size: 9px;
+		font-weight: 400;
+		line-height: 1.4;
+		text-align: center;
+
+		@include drop-desktop {
+			max-height: none;
+			font-size: 12px;
+		}
+
+		strong {
+			font-weight: 400;
+			color: $drop-black;
+		}
+	}
+
+	&__wholesale {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 8px 8px;
+		border-radius: $drop-radius-small;
+		background: $drop-black;
+		color: $drop-white;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 1.4;
+		text-align: center;
+
+		@include drop-desktop {
+			padding: 14px 16px;
+			border-radius: $drop-radius;
+			font-size: 14px;
+		}
+
+		strong {
+			font-weight: 700;
+		}
+	}
+
+	&__retail {
+		color: $drop-black;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 1.4;
+		text-align: center;
+
+		@include drop-desktop {
+			padding: 6px 0;
+			font-size: 14px;
+		}
+
+		strong {
+			font-weight: 700;
+		}
+	}
+
+	@include drop-desktop {
+		&:hover {
+			position: relative;
+			z-index: 2;
+			box-shadow: $drop-card-shadow;
+
+			.drop-card__thumbs {
+				visibility: visible;
+				opacity: 1;
+				pointer-events: auto;
+			}
+
+			.drop-card__gender,
+			.drop-card__title {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.drop-catalog__grid .drop-card__stickers {
+	display: none;
+}
+
+.drop-catalog__grid .drop-card:nth-child(-n + 4) .drop-card__stickers {
+	display: flex;
+}
+
+.drop-catalog__grid .drop-card:nth-child(even) .drop-card__sticker--new {
+	display: none;
+}
+
+@include drop-desktop {
+	.drop-catalog__grid .drop-card:nth-child(-n + 8) .drop-card__stickers {
+		display: flex;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.drop-card__favorite img,
+	.drop-card__gender,
+	.drop-card__title,
+	.drop-card__thumbs {
+		transition: none;
+	}
+}

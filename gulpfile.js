@@ -53,7 +53,10 @@ function orderNewScripts() {
 }
 
 function dropScripts() {
-    return src(APP_DIR + '/js/Drop/drop.js')
+    return src([
+        APP_DIR + '/js/Drop/drop.js',
+        APP_DIR + '/js/Drop/catalog.js'
+    ])
         .pipe(uglify())
         .pipe(concat('drop.min.js'))
         .pipe(dest(APP_DIR + '/js/Drop'))
@@ -178,7 +181,7 @@ function watching() {
     watch([APP_DIR + '/js/main.js'], scripts);
     watch([APP_DIR + '/js/order_new.js'], orderNewScripts);
     watch([APP_DIR + '/js/header-user-menu.js'], headerUserMenuScripts);
-    watch([APP_DIR + '/js/Drop/drop.js'], dropScripts);
+    watch([APP_DIR + '/js/Drop/drop.js', APP_DIR + '/js/Drop/catalog.js'], dropScripts);
     watch([APP_DIR + '/images/**/*'], copyBuildAssets);
     watch([
         APP_DIR + '/*.html',
