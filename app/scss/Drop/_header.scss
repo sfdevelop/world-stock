@@ -240,17 +240,29 @@
 
 		@include drop-desktop {
 			display: block;
+			align-self: stretch;
 
-			ul {
+			> ul {
 				display: flex;
 				align-items: center;
+				height: 100%;
 				gap: 32px;
 			}
 
-			a {
+			> ul a {
 				@include drop-text(16px, 600);
 				text-transform: uppercase;
 			}
+		}
+	}
+
+	&__item {
+		@include drop-desktop {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			margin-bottom: -26px;
+			padding-bottom: 26px;
 		}
 	}
 
