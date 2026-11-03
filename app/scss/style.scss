@@ -1405,11 +1405,6 @@
 		max-width: 240px;
 		width: 100%;
 		margin: 0 0 15px 0;
-		transition: linear .2s;
-
-		&:hover {
-			box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
-		}
 
 		p {
 			color: rgba(85, 85, 85, 1);
