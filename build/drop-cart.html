@@ -7,7 +7,7 @@
   <title>Кошик — WORLD STOCK DROP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/Drop/drop.min.css">
 </head>
 
@@ -167,7 +167,7 @@
               <button class="drop-header__tool" type="button" aria-label="Пошук">
                 <img class="drop-header__icon" src="images/Drop/icon-search.svg" alt="">
               </button>
-              <a class="drop-header__tool" href="#" aria-label="Кабінет">
+              <a class="drop-header__tool" href="drop-information.html" aria-label="Кабінет">
                 <img class="drop-header__icon" src="images/Drop/icon-user.svg" alt="">
               </a>
               <button class="drop-header__tool drop-header__tool--cart" type="button" aria-label="Кошик" aria-expanded="false" aria-controls="drop-cart" data-drop-cart-open>
@@ -410,15 +410,15 @@
                   </div>
                 </div>
                 <div class="drop-basket__pair">
-                  <label class="drop-basket__field">
+                  <label class="drop-basket__field drop-basket__field--valid">
                     <div class="drop-basket__label"><p>Номер ТТН</p></div>
-                    <input type="text" name="ttn-bucha" placeholder="Введіть номер" autocomplete="off">
+                    <input type="text" name="ttn-bucha" value="20450000000000" placeholder="Введіть номер" autocomplete="off">
                   </label>
-                  <div class="drop-basket__field drop-basket__field--file">
+                  <div class="drop-basket__field drop-basket__field--file drop-basket__field--valid">
                     <div class="drop-basket__label"><p>Завантажте ТТН (лише у форматі PDF)</p></div>
                     <label class="drop-basket__upload">
                       <input type="file" accept="application/pdf" data-drop-basket-file>
-                      <div class="drop-basket__file"><p>Додати ТТН</p></div>
+                      <div class="drop-basket__file is-filled"><p>ttn-bucha-38-5.pdf</p></div>
                       <div class="drop-basket__action"><p>Завантажити</p></div>
                     </label>
                   </div>
@@ -620,17 +620,32 @@
           </div>
           <div class="drop-basket__rule"></div>
           <div class="drop-basket__warehouses">
-            <div class="drop-basket__row">
-              <div class="drop-basket__key"><p>Буча · 4 шт</p></div>
-              <div class="drop-basket__value"><p>2 782,00 ₴</p></div>
+            <div class="drop-basket__warehouse" data-drop-basket-warehouse="bucha">
+              <div class="drop-basket__row">
+                <div class="drop-basket__key"><p>Буча · 4 шт</p></div>
+                <div class="drop-basket__value"><p>2 782,00 ₴</p></div>
+              </div>
+              <div class="drop-basket__status drop-basket__status--ok" aria-live="polite">
+                <p>Готове до оформлення</p>
+              </div>
             </div>
-            <div class="drop-basket__row">
-              <div class="drop-basket__key"><p>Київ · 1 шт</p></div>
-              <div class="drop-basket__value"><p>1 012,00 ₴</p></div>
+            <div class="drop-basket__warehouse" data-drop-basket-warehouse="kyiv">
+              <div class="drop-basket__row">
+                <div class="drop-basket__key"><p>Київ · 1 шт</p></div>
+                <div class="drop-basket__value"><p>1 012,00 ₴</p></div>
+              </div>
+              <div class="drop-basket__status drop-basket__status--error" aria-live="polite">
+                <p>Відсутнє ТТН або відмітка</p>
+              </div>
             </div>
-            <div class="drop-basket__row">
-              <div class="drop-basket__key"><p>Львів · 1 шт</p></div>
-              <div class="drop-basket__value"><p>590,00 ₴</p></div>
+            <div class="drop-basket__warehouse" data-drop-basket-warehouse="lviv">
+              <div class="drop-basket__row">
+                <div class="drop-basket__key"><p>Львів · 1 шт</p></div>
+                <div class="drop-basket__value"><p>590,00 ₴</p></div>
+              </div>
+              <div class="drop-basket__status drop-basket__status--ok" aria-live="polite">
+                <p>Готове до оформлення</p>
+              </div>
             </div>
           </div>
           <div class="drop-basket__rule"></div>
@@ -639,7 +654,7 @@
             <div class="drop-basket__amount"><p>3 794,00 ₴</p></div>
             <div class="drop-basket__note"><p>Загальна сума товарів, які додані в корзину для оформлення.</p></div>
           </div>
-          <button class="drop-basket__submit" type="button">
+          <button class="drop-basket__submit" type="button" data-drop-basket-submit>
             <p>Оформити замовлення</p>
           </button>
         </aside>
@@ -879,6 +894,96 @@
           </div>
           <a class="drop-cart__checkout" href="drop-cart.html" data-drop-cart-checkout>
             <p>Перейти до кошика</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="drop-modal" data-drop-modal="reject" aria-hidden="true" inert>
+    <div class="drop-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="drop-modal-reject-title">
+      <div class="drop-modal__head">
+        <button class="drop-modal__close" type="button" aria-label="Закрити" data-drop-modal-close>
+          <img src="images/Drop/cart/icon-close.svg" alt="" width="24" height="24">
+        </button>
+        <div class="drop-modal__heading">
+          <div class="drop-modal__title">
+            <h2 id="drop-modal-reject-title">ТТН для складу Київ</h2>
+          </div>
+        </div>
+      </div>
+      <div class="drop-modal__reject">
+        <div class="drop-modal__file">
+          <div class="drop-modal__name"><p>ttn.jpg</p></div>
+          <div class="drop-modal__fail"><p>Не додано</p></div>
+        </div>
+        <div class="drop-modal__reason">
+          <div class="drop-modal__error"><p>Дозволено лише PDF</p></div>
+          <div class="drop-modal__copy">
+            <p>Файл JPG відхилено. Оберіть ТТН у форматі PDF або позначте, що додасте її пізніше.</p>
+          </div>
+        </div>
+      </div>
+      <button class="drop-modal__submit" type="button" data-drop-modal-retry>
+        <p>Обрати PDF повторно</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="drop-modal drop-modal--success" data-drop-modal="success" aria-hidden="true" inert>
+    <div class="drop-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="drop-modal-success-title">
+      <div class="drop-modal__head">
+        <button class="drop-modal__close" type="button" aria-label="Закрити" data-drop-modal-close>
+          <img src="images/Drop/cart/icon-close.svg" alt="" width="24" height="24">
+        </button>
+        <div class="drop-modal__heading">
+          <div class="drop-modal__title">
+            <h2 id="drop-modal-success-title">Усі замовлення оформлено</h2>
+          </div>
+          <div class="drop-modal__lead">
+            <p>Ми створили окреме замовлення для кожного складу.</p>
+          </div>
+        </div>
+      </div>
+      <div class="drop-modal__orders">
+        <div class="drop-modal__order">
+          <div class="drop-modal__order-copy">
+            <div class="drop-modal__warehouse"><p>Склад: БУЧА</p></div>
+            <div class="drop-modal__number"><p>Замовлення № 1234</p></div>
+          </div>
+          <div class="drop-modal__sticker"><p>Нове</p></div>
+        </div>
+        <div class="drop-modal__order">
+          <div class="drop-modal__order-copy">
+            <div class="drop-modal__warehouse"><p>Склад: Київ</p></div>
+            <div class="drop-modal__number"><p>Замовлення № 1235</p></div>
+          </div>
+          <div class="drop-modal__sticker"><p>Нове</p></div>
+        </div>
+        <div class="drop-modal__order">
+          <div class="drop-modal__order-copy">
+            <div class="drop-modal__warehouse"><p>Склад: Львів</p></div>
+            <div class="drop-modal__number"><p>Замовлення № 1236</p></div>
+          </div>
+          <div class="drop-modal__sticker"><p>Нове</p></div>
+        </div>
+      </div>
+      <div class="drop-modal__notice">
+        <img src="images/Drop/product/icon-info.svg" alt="" width="20" height="20">
+        <div class="drop-modal__notice-copy">
+          <p>Переглянути замовлення та їхні статуси можна в розділі «Замовлення (DROP)»</p>
+        </div>
+      </div>
+      <div class="drop-modal__actions">
+        <div class="drop-modal__action">
+          <a class="drop-modal__submit" href="#" data-drop-modal-close>
+            <p>Переглянути замовлення</p>
+          </a>
+        </div>
+        <div class="drop-modal__action">
+          <a class="drop-modal__ghost" href="drop-index.html">
+            <p>Продовжити покупки</p>
           </a>
         </div>
       </div>

@@ -1,0 +1,399 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+$drop-grey-label: #6a6a6a;
+$drop-grey-back: rgba(237, 237, 237, 0.4);
+
+.drop-information {
+	padding: 56px 16px 0;
+
+	@include drop-desktop {
+		padding: 103px 92px 0;
+	}
+
+	/* Information: stacked cards on mobile, sidebar + two columns from 1200px */
+	&__crumbs {
+		margin-bottom: 20px;
+		font-size: 12px;
+
+		@include drop-desktop {
+			margin-bottom: 60px;
+			font-size: 14px;
+		}
+	}
+
+	&__layout {
+		display: flex;
+		flex-direction: column;
+
+		@include drop-desktop {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 24px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		min-width: 0;
+	}
+
+	&__heading {
+		margin-bottom: 12px;
+
+		h1 {
+			margin: 0;
+			color: $drop-grey;
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 1.4;
+		}
+
+		@include drop-desktop {
+			margin-bottom: 24px;
+
+			h1 {
+				font-size: 24px;
+			}
+		}
+	}
+
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		margin-bottom: 24px;
+
+		@include drop-desktop {
+			flex-direction: row;
+			align-items: stretch;
+		}
+	}
+}
+
+.drop-info-card {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background: $drop-grey-back;
+	border-radius: $drop-radius;
+
+	&--person {
+		align-items: center;
+		padding: 16px;
+		gap: 6px;
+		text-align: center;
+
+		@include drop-desktop {
+			flex-shrink: 0;
+			width: 296px;
+			padding: 24px;
+			gap: 12px;
+		}
+	}
+
+	&--shop {
+		padding: 24px;
+		gap: 12px;
+
+		@include drop-desktop {
+			flex: 1 1 auto;
+			min-width: 0;
+		}
+	}
+
+	&__head {
+		width: 100%;
+		padding-bottom: 6px;
+		border-bottom: 1px solid $drop-grey-link;
+		text-align: center;
+
+		p {
+			color: $drop-grey;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 1.4;
+			text-transform: uppercase;
+		}
+
+		@include drop-desktop {
+			padding-bottom: 12px;
+
+			p {
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	&__name {
+		width: 100%;
+
+		p {
+			color: $drop-black;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 1.4;
+			text-transform: uppercase;
+		}
+
+		@include drop-desktop {
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 6px;
+		width: 100%;
+
+		p {
+			color: $drop-grey;
+			font-size: 11px;
+			font-weight: 400;
+			line-height: 1.4;
+			text-box-trim: trim-both;
+			text-box-edge: cap alphabetic;
+		}
+
+		@include drop-desktop {
+			gap: 12px;
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__fields {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		width: 100%;
+
+		@include drop-desktop {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 24px;
+		}
+	}
+
+	&__field {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+		gap: 2px;
+		width: 100%;
+		min-width: 0;
+
+		@include drop-desktop {
+			flex: 1 1 0;
+			width: 0;
+		}
+
+		p:first-child {
+			color: $drop-grey-label;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 1.4;
+		}
+
+		p:last-child {
+			overflow: hidden;
+			color: $drop-black;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.4;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+
+			@include drop-desktop {
+				height: 44px;
+				padding-top: 6px;
+			}
+		}
+	}
+}
+
+.drop-discount {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 100%;
+
+	@include drop-desktop {
+		gap: 24px;
+	}
+
+	&__head {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		width: 100%;
+
+		@include drop-desktop {
+			gap: 12px;
+		}
+	}
+
+	&__title {
+		p {
+			color: $drop-grey;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 1.4;
+			text-transform: uppercase;
+		}
+
+		@include drop-desktop {
+			p {
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	&__text {
+		p {
+			color: $drop-grey;
+			font-size: 11px;
+			font-weight: 400;
+			line-height: 1.4;
+		}
+
+		@include drop-desktop {
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		width: 100%;
+
+		@include drop-desktop {
+			flex-wrap: nowrap;
+			gap: 24px;
+		}
+	}
+}
+
+.drop-discount-card {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	width: calc((100% - 10px) / 2);
+	padding: 13px;
+	border: 1px solid $drop-grey-link;
+	border-radius: 2px;
+	background: $drop-white;
+
+	@include drop-desktop {
+		flex: 1 0 0;
+		width: auto;
+		gap: 9px;
+		padding: 17px;
+	}
+
+	&__ring {
+		position: relative;
+		flex-shrink: 0;
+		width: 48px;
+		height: 48px;
+
+		@include drop-desktop {
+			width: 63px;
+			height: 63px;
+		}
+	}
+
+	&__track,
+	&__progress {
+		position: absolute;
+		display: block;
+		max-width: none;
+	}
+
+	&__track {
+		top: 0;
+		left: 0;
+		width: 48px;
+		height: 48px;
+
+		@include drop-desktop {
+			width: 63px;
+			height: 63px;
+		}
+	}
+
+	&__progress {
+		top: 0;
+		right: 0;
+		width: 24px;
+		height: 42px;
+
+		@include drop-desktop {
+			width: 32px;
+			height: 55px;
+		}
+	}
+
+	&__value {
+		position: absolute;
+		inset: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $drop-black;
+
+		p {
+			font-size: 22px;
+			font-weight: 400;
+			line-height: 1;
+			white-space: nowrap;
+
+			&::after {
+				content: '%';
+				font-size: 9px;
+				vertical-align: super;
+			}
+		}
+
+		@include drop-desktop {
+			p {
+				font-size: 29px;
+
+				&::after {
+					font-size: 11px;
+				}
+			}
+		}
+	}
+
+	&__brand {
+		flex-shrink: 0;
+		width: 77px;
+		height: 49px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+
+		@include drop-desktop {
+			width: 101px;
+			height: 64px;
+		}
+	}
+}

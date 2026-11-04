@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інформація — WORLD STOCK DROP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/Drop/drop.min.css">
+</head>
+
+<body>
+  <div class="drop-page">
+    <div data-partial="Drop/header"></div>
+    <main class="drop-information">
+      <nav class="drop-breadcrumbs drop-information__crumbs" aria-label="Хлібні крихти">
+        <a href="drop-index.html">Головна</a>
+        <img src="images/Drop/catalog/icon-crumb.svg" alt="" width="5" height="8">
+        <div class="drop-breadcrumbs__current">
+          <p>Інформація</p>
+        </div>
+      </nav>
+
+      <div class="drop-information__layout">
+        <div data-partial="Drop/cabinet-sidebar"></div>
+
+        <div class="drop-information__content">
+          <div class="drop-information__heading">
+            <h1>Інформація</h1>
+          </div>
+
+          <div class="drop-information__cards">
+            <section class="drop-info-card drop-info-card--person">
+              <div class="drop-info-card__head">
+                <p>особисті дані</p>
+              </div>
+              <div class="drop-info-card__name">
+                <p>Кулаков Станислав</p>
+                <p>Віталійович</p>
+              </div>
+              <div class="drop-info-card__contacts">
+                <p>+38 (093) 123-45-67</p>
+                <p>Exemle@email.com</p>
+              </div>
+            </section>
+
+            <section class="drop-info-card drop-info-card--shop">
+              <div class="drop-info-card__head">
+                <p>інформація про магазин</p>
+              </div>
+              <div class="drop-info-card__fields">
+                <div class="drop-info-card__field">
+                  <p>Instagram</p>
+                  <p>https://www.instagram.com/yourstars_ua?cplk=Yng3NTd6ODN2dnEy&amp;utm_source=qr</p>
+                </div>
+                <div class="drop-info-card__field">
+                  <p>TikTok</p>
+                  <p>https://tiktok/@...</p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="drop-discount">
+            <div class="drop-discount__head">
+              <div class="drop-discount__title">
+                <p>Персональна знижка</p>
+              </div>
+              <div class="drop-discount__text">
+                <p>Встановлюється після авторизації вашого облікового запису на сайті. Знижка на “Бренд” розраховується з урахуванням ваших об'ємів замовлення і продажу, та автоматично змінюється від кількості проданих пар за сезон SS (Весна-Літо або AW (Осінь-Зима) в ту чи іншу сторону.</p>
+              </div>
+            </div>
+            <div class="drop-discount__list">
+              <!-- @include partials/Drop/discount-card.html -->
+              <!-- @include partials/Drop/discount-card.html -->
+              <!-- @include partials/Drop/discount-card.html -->
+              <!-- @include partials/Drop/discount-card.html -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <div data-partial="Drop/footer"></div>
+  </div>
+  <div data-partial="Drop/cart"></div>
+  <script src="js/Drop/partials-loader.js"></script>
+  <script src="js/Drop/drop.min.js"></script>
+</body>
+
+</html>
