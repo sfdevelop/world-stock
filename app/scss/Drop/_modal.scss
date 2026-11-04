@@ -1,0 +1,338 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+$drop-modal-overlay: rgba(0, 0, 0, 0.2);
+$drop-modal-stroke: #d9d9d9;
+$drop-modal-reject-back: #fff5f5;
+$drop-modal-sticker-back: #eaeae8;
+$drop-modal-sticker-text: #2b2b2b;
+$drop-modal-order: #222222;
+$drop-modal-notice-text: #361b00;
+$drop-modal-width: 476px;
+$drop-modal-width-success: 573px;
+
+@mixin drop-modal-trim {
+	text-box-trim: trim-both;
+	text-box-edge: cap alphabetic;
+}
+
+@mixin drop-modal-action {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 42px;
+	padding: 0 16px;
+	border-radius: $drop-radius;
+	text-align: center;
+
+	@include drop-desktop {
+		padding: 0 32px;
+	}
+
+	p {
+		@include drop-modal-trim;
+		text-align: center;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+}
+
+html.drop-modal-open,
+html.drop-modal-open body {
+	overflow: hidden;
+}
+
+.drop-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 70;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	visibility: hidden;
+	pointer-events: none;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: $drop-modal-overlay;
+	}
+
+	&.is-open {
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	h2 {
+		margin: 0;
+	}
+
+	&__dialog {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+		width: 100%;
+		max-width: $drop-modal-width;
+		max-height: calc(100dvh - 32px);
+		padding: 20px 16px;
+		overflow: auto;
+		border: 1px solid $drop-modal-stroke;
+		border-radius: $drop-radius;
+		background: $drop-white;
+
+		@include drop-desktop {
+			padding: 28px;
+		}
+	}
+
+	&--success &__dialog {
+		gap: 24px;
+		max-width: $drop-modal-width-success;
+
+		@include drop-desktop {
+			gap: 32px;
+		}
+	}
+
+	&__head {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 6px;
+		width: 100%;
+	}
+
+	&__close {
+		flex-shrink: 0;
+		width: 24px;
+		height: 24px;
+
+		img {
+			width: 24px;
+			height: 24px;
+		}
+
+		&:focus-visible {
+			outline: 2px solid $drop-black;
+			outline-offset: 2px;
+		}
+	}
+
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 6px;
+		width: 100%;
+		min-width: 0;
+	}
+
+	&__title h2 {
+		@include drop-text(22px, 600);
+		width: 100%;
+	}
+
+	&--success &__title h2 {
+		font-size: 24px;
+	}
+
+	&__lead p {
+		@include drop-text(14px);
+		@include drop-modal-trim;
+		width: 100%;
+	}
+
+	&__reject {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		width: 100%;
+		padding: 24px;
+		border: 1px solid $drop-red;
+		border-radius: $drop-radius;
+		background: $drop-modal-reject-back;
+	}
+
+	&__file {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		width: 100%;
+		min-width: 0;
+	}
+
+	&__name {
+		flex-shrink: 0;
+		min-width: 0;
+
+		p {
+			@include drop-text(14px);
+			@include drop-modal-trim;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+
+	&__fail {
+		flex: 1 1 auto;
+		min-width: 0;
+
+		p {
+			@include drop-text(12px);
+			color: $drop-red;
+			text-align: right;
+		}
+	}
+
+	&__reason {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		width: 100%;
+	}
+
+	&__error p {
+		@include drop-text(16px, 600);
+		color: $drop-red;
+	}
+
+	&__copy p {
+		@include drop-text(14px);
+		@include drop-modal-trim;
+	}
+
+	&__orders {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		width: 100%;
+	}
+
+	&__order {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		width: 100%;
+		padding: 12px;
+		border: 1px solid $drop-grey-light;
+		border-radius: $drop-radius;
+		background: $drop-white;
+	}
+
+	&__order-copy {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		align-items: flex-start;
+		min-width: 0;
+	}
+
+	&__warehouse p {
+		@include drop-text(14px);
+		@include drop-modal-trim;
+		color: $drop-grey-3;
+	}
+
+	&__number p {
+		@include drop-text(16px, 600);
+		color: $drop-modal-order;
+	}
+
+	&__sticker {
+		flex-shrink: 0;
+		padding: 10px;
+		border-radius: $drop-radius;
+		background: $drop-modal-sticker-back;
+
+		p {
+			font-family: "Manrope", $drop-font;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 1.4;
+			letter-spacing: 0.02em;
+			color: $drop-modal-sticker-text;
+			@include drop-modal-trim;
+			white-space: nowrap;
+		}
+	}
+
+	&__notice {
+		display: flex;
+		align-items: flex-start;
+		gap: 8px;
+		width: 100%;
+		padding: 14px;
+		border: 1px solid $drop-grey-link;
+		border-radius: 4px;
+		background: rgba(237, 237, 237, 0.4);
+
+		img {
+			flex-shrink: 0;
+			width: 20px;
+			height: 20px;
+		}
+
+		p {
+			@include drop-text(12px);
+			color: $drop-modal-notice-text;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		width: 100%;
+
+		@include drop-desktop {
+			flex-direction: row;
+			gap: 20px;
+		}
+	}
+
+	&__action {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		width: 100%;
+		min-width: 0;
+	}
+
+	&__submit {
+		@include drop-modal-action;
+		background: $drop-black;
+		color: $drop-white;
+
+		p {
+			@include drop-text(13px, 700);
+		}
+
+		&:focus-visible {
+			outline: 2px solid $drop-black;
+			outline-offset: 2px;
+		}
+	}
+
+	&__ghost {
+		@include drop-modal-action;
+		border: 1px solid $drop-black;
+		background: $drop-white;
+		color: $drop-black;
+
+		p {
+			@include drop-text(14px, 700);
+		}
+
+		&:focus-visible {
+			outline: 2px solid $drop-black;
+			outline-offset: 2px;
+		}
+	}
+}

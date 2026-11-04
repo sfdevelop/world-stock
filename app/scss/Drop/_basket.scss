@@ -1,0 +1,781 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+$drop-basket-back: rgba(237, 237, 237, 0.4);
+$drop-basket-stroke: #d9d9d9;
+$drop-basket-label: #6a6a6a;
+$drop-basket-ttn: #f7f7f7;
+$drop-basket-notice: #ffedda;
+$drop-basket-notice-border: #f0bd55;
+$drop-basket-notice-text: #361b00;
+$drop-basket-valid: #008237;
+
+@mixin drop-basket-trim {
+	text-box-trim: trim-both;
+	text-box-edge: cap alphabetic;
+}
+
+.drop-basket {
+	padding: 56px 16px 24px;
+
+	h1,
+	h2,
+	h3 {
+		margin: 0;
+	}
+
+	@include drop-desktop {
+		padding: 103px 92px 80px;
+	}
+
+	&__crumbs {
+		margin-bottom: 20px;
+		font-size: 12px;
+
+		@include drop-desktop {
+			margin-bottom: 60px;
+			font-size: 14px;
+		}
+	}
+
+	&__intro {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		margin-bottom: 12px;
+
+		h1 {
+			@include drop-text(18px, 600);
+		}
+
+		@include drop-desktop {
+			gap: 24px;
+			margin-bottom: 24px;
+
+			h1 {
+				font-size: 24px;
+			}
+		}
+	}
+
+	&__notice {
+		display: flex;
+		align-items: flex-start;
+		gap: 8px;
+		width: 100%;
+		padding: 14px;
+		border: 1px solid $drop-basket-notice-border;
+		border-radius: 4px;
+		background: $drop-basket-notice;
+
+		img {
+			flex-shrink: 0;
+			width: 20px;
+			height: 20px;
+		}
+
+		p {
+			@include drop-text(12px);
+			color: $drop-basket-notice-text;
+		}
+
+		&--head p {
+			font-size: 14px;
+		}
+
+		&--head p:first-child {
+			font-weight: 700;
+		}
+	}
+
+	&__notice-copy {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	&__layout {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		width: 100%;
+
+		@include drop-desktop {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 24px;
+		}
+	}
+
+	&__orders {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		width: 100%;
+		min-width: 0;
+
+		@include drop-desktop {
+			flex: 1 1 auto;
+			gap: 53px;
+		}
+	}
+
+	&__order {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 12px;
+		border-radius: $drop-radius;
+		background: $drop-white;
+
+		@include drop-desktop {
+			padding: 24px;
+			border: 1px solid $drop-basket-stroke;
+		}
+	}
+
+	&__order-head {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding-bottom: 12px;
+		border-bottom: 1px solid $drop-grey-link;
+
+		h2 {
+			@include drop-text(16px, 700);
+			text-transform: uppercase;
+		}
+	}
+
+	&__products {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__product {
+		width: 100%;
+		min-width: 0;
+		padding: 12px 0 6px;
+		border-bottom: 1px solid $drop-grey-light;
+
+		& + & {
+			padding-top: 6px;
+		}
+
+		@include drop-desktop {
+			padding: 20px 0;
+
+			& + & {
+				padding-top: 20px;
+			}
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		gap: 12px;
+		width: 100%;
+		min-width: 0;
+
+		@include drop-desktop {
+			flex-wrap: nowrap;
+			align-items: flex-start;
+		}
+	}
+
+	&__photo {
+		flex-shrink: 0;
+		width: 38px;
+		height: 46px;
+
+		img {
+			width: 38px;
+			height: 46px;
+			object-fit: cover;
+		}
+
+		@include drop-desktop {
+			width: 71px;
+			height: 85px;
+
+			img {
+				width: 71px;
+				height: 85px;
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex: 1 1 0;
+		flex-direction: column;
+		min-width: 0;
+	}
+
+	&__lead {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 8px;
+		gap: 8px;
+	}
+
+	&__badge {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 6px 10px;
+		border-radius: 12px;
+		background: $drop-grey-light;
+
+		p {
+			@include drop-text(11px);
+			@include drop-basket-trim;
+			color: $drop-grey;
+			text-align: center;
+			white-space: nowrap;
+		}
+
+	}
+
+	&__name {
+		min-width: 0;
+		margin-bottom: 12px;
+
+		p {
+			@include drop-text(14px);
+			@include drop-basket-trim;
+		}
+
+		@include drop-desktop {
+			p {
+				white-space: nowrap;
+			}
+		}
+	}
+
+	&__sizes {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		gap: 4px;
+	}
+
+	&__size {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 4px 8px;
+		border-radius: $drop-radius-small;
+		background: $drop-basket-back;
+
+		p {
+			@include drop-text(12px);
+			text-align: center;
+			white-space: nowrap;
+		}
+
+		span {
+			color: $drop-grey-3;
+		}
+
+		@include drop-desktop {
+			padding: 10px 6px;
+			border: 1px solid $drop-grey-light;
+			border-radius: 4px;
+
+			p {
+				@include drop-basket-trim;
+			}
+		}
+	}
+
+	&__cost {
+		display: flex;
+		flex: 1 0 100%;
+		align-items: flex-end;
+		justify-content: space-between;
+		width: 100%;
+		height: 40px;
+		padding-bottom: 12px;
+
+		@include drop-desktop {
+			flex: 0 0 115px;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-end;
+			gap: 8px;
+			width: 115px;
+			height: 70px;
+			margin-left: auto;
+		}
+	}
+
+	&__unit {
+		p {
+			@include drop-text(14px);
+			@include drop-basket-trim;
+			white-space: nowrap;
+		}
+
+		&--desktop {
+			display: none;
+		}
+
+		@include drop-desktop {
+			&--mobile {
+				display: none;
+			}
+
+			&--desktop {
+				display: block;
+			}
+		}
+	}
+
+	&__sum p {
+		@include drop-text(14px, 700);
+		@include drop-basket-trim;
+		color: $drop-red;
+		white-space: nowrap;
+	}
+
+	&__delete {
+		position: relative;
+		flex-shrink: 0;
+		width: 20px;
+		height: 20px;
+		overflow: hidden;
+
+		&--desktop {
+			display: none;
+		}
+
+		@include drop-desktop {
+			&--mobile {
+				display: none;
+			}
+
+			&--desktop {
+				display: block;
+				align-self: flex-start;
+			}
+		}
+	}
+
+	&__delete-lid,
+	&__delete-bin {
+		position: absolute;
+		display: block;
+	}
+
+	&__delete-lid {
+		top: 7.03%;
+		left: 34.38%;
+		width: 6.25px;
+		height: 13.4375px;
+	}
+
+	&__delete-bin {
+		top: 16.41%;
+		left: 12.5%;
+		width: 15px;
+		height: 15.3125px;
+	}
+
+	&__ttn {
+		display: flex;
+		width: 100%;
+		padding: 16px 0 0;
+
+		@include drop-desktop {
+			padding: 20px 0 0;
+		}
+	}
+
+	&__ttn-box {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		gap: 24px;
+		width: 100%;
+		min-width: 0;
+		padding: 12px;
+		border-radius: 4px;
+		background: $drop-basket-ttn;
+
+		@include drop-desktop {
+			padding: 24px;
+		}
+
+		h3 {
+			@include drop-text(16px, 600);
+		}
+	}
+
+	&__ttn-head {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		width: 100%;
+	}
+
+	&__pair {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+
+		@include drop-desktop {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
+
+	&__field {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		width: 100%;
+		min-width: 0;
+
+		@include drop-desktop {
+			flex: 1 1 auto;
+
+			&:first-child {
+				flex: 0 0 311px;
+				width: 311px;
+			}
+		}
+
+		input[type="text"] {
+			width: 100%;
+			height: 44px;
+			padding: 12px 16px;
+			border: 1px solid $drop-grey-link;
+			border-radius: $drop-radius;
+			background: $drop-white;
+			color: $drop-black;
+			font-family: inherit;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.4;
+			appearance: none;
+
+			&::placeholder {
+				color: $drop-grey-link;
+			}
+
+			&:focus {
+				outline: 2px solid $drop-black;
+				outline-offset: 2px;
+			}
+		}
+
+		@include drop-desktop {
+			&--error {
+				.drop-basket__label p {
+					color: $drop-red;
+				}
+
+				input[type="text"] {
+					border-color: $drop-red;
+					color: $drop-red;
+
+					&::placeholder {
+						color: $drop-red;
+					}
+				}
+
+				.drop-basket__upload {
+					border-color: $drop-red;
+				}
+
+				.drop-basket__file p {
+					color: $drop-red;
+				}
+
+				.drop-basket__action p {
+					color: $drop-grey-3;
+					font-size: 14px;
+				}
+
+				.drop-basket__hint {
+					display: block;
+				}
+			}
+		}
+
+		&--valid,
+		&:has(input[type="text"][name^="ttn-"]:not(:placeholder-shown)),
+		&--file:has(.is-filled) {
+			&:not(.drop-basket__field--error) {
+				input[type="text"] {
+					border-color: $drop-basket-valid;
+
+					&:focus {
+						outline-color: $drop-basket-valid;
+					}
+				}
+
+				.drop-basket__upload {
+					border-color: $drop-basket-valid;
+
+					&:focus-within {
+						outline-color: $drop-basket-valid;
+					}
+				}
+
+				.drop-basket__file p {
+					color: $drop-black;
+				}
+			}
+		}
+	}
+
+	&__label p {
+		@include drop-text(12px);
+		color: $drop-basket-label;
+	}
+
+	&__hint {
+		display: none;
+
+		p {
+			@include drop-text(12px);
+			color: $drop-red;
+		}
+	}
+
+	&__upload {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		width: 100%;
+		height: 44px;
+		padding: 0 12px;
+		overflow: hidden;
+		border: 1px solid $drop-grey-link;
+		border-radius: $drop-radius;
+		background: $drop-white;
+		cursor: pointer;
+
+		input {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+		}
+
+		&:focus-within {
+			outline: 2px solid $drop-black;
+			outline-offset: 2px;
+		}
+	}
+
+	&__file {
+		flex: 1 1 auto;
+		min-width: 0;
+
+		p {
+			@include drop-text(12px);
+			overflow: hidden;
+			color: $drop-grey-link;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		&.is-filled p {
+			color: $drop-black;
+		}
+	}
+
+	&__action {
+		flex-shrink: 0;
+
+		p {
+			@include drop-text(12px);
+			color: $drop-grey;
+			white-space: nowrap;
+		}
+	}
+
+	&__check {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		width: 100%;
+		cursor: pointer;
+
+		input {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+		}
+	}
+
+	&__box {
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+		justify-content: center;
+		width: 14px;
+		height: 14px;
+		border: 1px solid $drop-grey-link;
+		border-radius: 1px;
+		background: $drop-white;
+
+		img {
+			width: 10px;
+			height: 10px;
+			opacity: 0;
+		}
+	}
+
+	&__check input:checked + &__box {
+		border-color: $drop-black;
+		background: $drop-black;
+
+		img {
+			opacity: 1;
+		}
+	}
+
+	&__check input:focus-visible + &__box {
+		outline: 2px solid $drop-black;
+		outline-offset: 2px;
+	}
+
+	&__check-text p {
+		@include drop-text(14px);
+		@include drop-basket-trim;
+	}
+
+	&__summary {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+		width: 100%;
+		padding: 24px;
+		border-radius: $drop-radius;
+		background: $drop-basket-back;
+
+		@include drop-desktop {
+			align-self: start;
+			flex: 0 0 328px;
+			width: 328px;
+		}
+	}
+
+	&__title p {
+		@include drop-text(16px, 600);
+	}
+
+	&__row {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+		gap: 8px;
+
+		p {
+			@include drop-text(14px);
+			@include drop-basket-trim;
+			white-space: nowrap;
+		}
+
+		&--soft .drop-basket__key p {
+			color: $drop-grey;
+		}
+	}
+
+	&__rule {
+		width: 100%;
+		height: 1px;
+		background: $drop-grey-link;
+	}
+
+	&__warehouses {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		width: 100%;
+	}
+
+	&__warehouse {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		width: 100%;
+		min-width: 0;
+	}
+
+	&__status {
+		p {
+			@include drop-text(12px);
+		}
+
+		&--ok p {
+			color: $drop-basket-valid;
+		}
+
+		&--error p {
+			color: $drop-red;
+		}
+	}
+
+	&__total {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 6px;
+		width: 100%;
+		min-width: 0;
+	}
+
+	&__caption p {
+		@include drop-text(14px);
+		@include drop-basket-trim;
+		color: $drop-grey;
+	}
+
+	&__amount p {
+		@include drop-text(24px, 600);
+		color: $drop-red;
+	}
+
+	&__note p {
+		@include drop-text(12px);
+		color: $drop-grey;
+	}
+
+	&__submit {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 42px;
+		padding: 0 32px;
+		border-radius: $drop-radius;
+		background: $drop-black;
+		color: $drop-white;
+
+		p {
+			@include drop-text(13px, 700);
+			@include drop-basket-trim;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}

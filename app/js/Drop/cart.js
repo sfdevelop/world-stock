@@ -237,14 +237,6 @@
       }
     });
 
-    var checkout = root.querySelector("[data-drop-cart-checkout]");
-
-    if (checkout) {
-      checkout.addEventListener("click", function (event) {
-        event.preventDefault();
-      });
-    }
-
     panel.addEventListener("transitionend", function (event) {
       if (event.target !== panel || event.propertyName !== "transform") {
         return;
