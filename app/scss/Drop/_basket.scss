@@ -672,6 +672,9 @@ $drop-basket-valid: #008237;
 		background: $drop-basket-back;
 
 		@include drop-desktop {
+			position: sticky;
+			top: 90px;
+			z-index: 1;
 			align-self: start;
 			flex: 0 0 328px;
 			width: 328px;
