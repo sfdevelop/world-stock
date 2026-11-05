@@ -1,0 +1,178 @@
+<div class="drop-auth__card">
+  <div class="drop-auth__tabs" role="tablist" aria-label="Авторизація">
+    <a class="drop-auth__tab" href="drop-login.html" id="auth-tab-login" role="tab" aria-controls="auth-panel-login" data-drop-auth-tab="login">
+      <p>Вхід</p>
+    </a>
+    <a class="drop-auth__tab" href="drop-registration.html" id="auth-tab-register" role="tab" aria-controls="auth-panel-register" data-drop-auth-tab="register">
+      <p>Реєстрація</p>
+    </a>
+  </div>
+
+  <div class="drop-auth__panel drop-auth__panel--login" id="auth-panel-login" role="tabpanel" aria-labelledby="auth-tab-login" data-drop-auth-panel="login">
+    <div class="drop-auth__sr">
+      <h1>Вхід</h1>
+    </div>
+    <form class="drop-auth__login" action="#" method="post" onsubmit="return false">
+      <div class="drop-auth__login-fields">
+        <div class="drop-auth__stack drop-auth__stack--login">
+          <div class="drop-auth__field">
+            <label for="login-email">Електронна пошта</label>
+            <input id="login-email" type="email" name="email" placeholder="Електронна пошта" autocomplete="email">
+          </div>
+          <div class="drop-auth__field">
+            <label for="login-password">Пароль</label>
+            <input id="login-password" type="password" name="password" placeholder="Пароль" autocomplete="current-password">
+          </div>
+        </div>
+        <div class="drop-auth__tools">
+          <label class="drop-auth__check">
+            <input type="checkbox" name="remember">
+            <div class="drop-auth__box">
+              <img src="images/Drop/auth/check.svg" alt="" width="8.76871" height="8.54797">
+            </div>
+            <p>Запам’ятати мене</p>
+          </label>
+          <a href="#">Забули пароль?</a>
+        </div>
+      </div>
+      <button class="drop-auth__submit" type="submit">
+        <p>Увійти</p>
+      </button>
+    </form>
+  </div>
+
+  <div class="drop-auth__panel drop-auth__panel--register" id="auth-panel-register" role="tabpanel" aria-labelledby="auth-tab-register" data-drop-auth-panel="register">
+    <form class="drop-auth__register" action="#" method="post" onsubmit="return false">
+      <div class="drop-auth__intro">
+        <h1>Створити акаунт</h1>
+        <p>Оберіть напрям роботи. Для заявки на Дропшипінг обов'язково треба вказати мінімім одну Веб сторінку вашого магазину. При реєстрації в розділ ГУРТ доступ до Дропшипінгу вам буде надано автоматично.</p>
+      </div>
+
+      <div class="drop-auth__direction">
+        <div class="drop-auth__label">
+          <p>Напрям роботи</p>
+        </div>
+        <div class="drop-auth__options" role="radiogroup" aria-label="Напрям роботи">
+          <label class="drop-auth__option">
+            <input type="radio" name="direction" value="wholesale">
+            <img class="drop-auth__radio" src="images/Drop/auth/radio.svg" alt="" width="20" height="20">
+            <img class="drop-auth__radio drop-auth__radio--on" src="images/Drop/auth/radio-checked.svg" alt="" width="20" height="20">
+            <div class="drop-auth__option-copy">
+              <div class="drop-auth__option-name">
+                <p>ГУРТ</p>
+              </div>
+              <div class="drop-auth__option-note">
+                <p>Закупівля товарів собі на склад</p>
+              </div>
+            </div>
+          </label>
+          <label class="drop-auth__option">
+            <input type="radio" name="direction" value="dropshipping" checked>
+            <img class="drop-auth__radio" src="images/Drop/auth/radio.svg" alt="" width="20" height="20">
+            <img class="drop-auth__radio drop-auth__radio--on" src="images/Drop/auth/radio-checked.svg" alt="" width="20" height="20">
+            <div class="drop-auth__option-copy">
+              <div class="drop-auth__option-name">
+                <p>ДРОПШИПІНГ</p>
+              </div>
+              <div class="drop-auth__option-note">
+                <p>Продаж товарів з нашого складу</p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div class="drop-auth__block">
+        <div class="drop-auth__label">
+          <p>Заповніть ваші дані</p>
+        </div>
+        <div class="drop-auth__rows">
+          <div class="drop-auth__row drop-auth__row--names">
+            <div class="drop-auth__field">
+              <label for="register-first-name">Ім'я</label>
+              <input id="register-first-name" type="text" name="first_name" placeholder="Ім'я" autocomplete="given-name">
+            </div>
+            <div class="drop-auth__field">
+              <label for="register-last-name">Прізвище</label>
+              <input id="register-last-name" type="text" name="last_name" placeholder="Прізвище" autocomplete="family-name">
+            </div>
+            <div class="drop-auth__field">
+              <label for="register-patronymic">По батькові</label>
+              <input id="register-patronymic" type="text" name="patronymic" placeholder="По батькові" autocomplete="additional-name">
+            </div>
+          </div>
+          <div class="drop-auth__row">
+            <div class="drop-auth__field">
+              <label for="register-phone">Номер телефону</label>
+              <input id="register-phone" type="tel" name="phone" placeholder="+380 (__) ___-__-__ " autocomplete="tel">
+            </div>
+            <div class="drop-auth__field">
+              <label for="register-email">Електронна пошта</label>
+              <input id="register-email" type="email" name="email" placeholder="Електронна пошта" autocomplete="email">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drop-auth__line"></div>
+
+      <div class="drop-auth__block">
+        <div class="drop-auth__label">
+          <p>Посилання на ваші сторінки</p>
+        </div>
+        <div class="drop-auth__rows">
+          <div class="drop-auth__row">
+            <div class="drop-auth__field">
+              <label for="register-instagram">Instagram</label>
+              <input id="register-instagram" type="url" name="instagram" placeholder="https://Instagram..." autocomplete="url">
+            </div>
+            <div class="drop-auth__field">
+              <label for="register-tiktok">TikTok</label>
+              <input id="register-tiktok" type="url" name="tiktok" placeholder="https://tiktok/@..." autocomplete="url">
+            </div>
+          </div>
+          <div class="drop-auth__row">
+            <div class="drop-auth__field">
+              <label for="register-olx">OLX</label>
+              <input id="register-olx" type="url" name="olx" placeholder="Послання на профіль OLX" autocomplete="url">
+            </div>
+            <div class="drop-auth__field">
+              <label for="register-shafa">Shafa</label>
+              <input id="register-shafa" type="url" name="shafa" placeholder="Посилання на профіль Shafa" autocomplete="url">
+            </div>
+          </div>
+          <div class="drop-auth__field">
+            <label for="register-other">Інший ресурс</label>
+            <input id="register-other" type="url" name="other" placeholder="Додайте посилання" autocomplete="url">
+          </div>
+        </div>
+      </div>
+
+      <div class="drop-auth__line"></div>
+
+      <div class="drop-auth__pass">
+        <div class="drop-auth__row">
+          <div class="drop-auth__field">
+            <label for="register-password">Пароль</label>
+            <input id="register-password" type="password" name="password" placeholder="Пароль" autocomplete="new-password">
+          </div>
+          <div class="drop-auth__field">
+            <label for="register-password-repeat">Повторити пароль</label>
+            <input id="register-password-repeat" type="password" name="password_repeat" placeholder="Пароль" autocomplete="new-password">
+          </div>
+        </div>
+        <label class="drop-auth__check">
+          <input type="checkbox" name="terms">
+          <div class="drop-auth__box">
+            <img src="images/Drop/auth/check.svg" alt="" width="8.76871" height="8.54797">
+          </div>
+          <p>Я прочитав і приймаю <a href="drop-terms.html">умови співпраці</a></p>
+        </label>
+      </div>
+
+      <button class="drop-auth__submit" type="submit">
+        <p>зареєструватися</p>
+      </button>
+    </form>
+  </div>
+</div>
