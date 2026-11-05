@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Умови торгівлі — WORLD STOCK DROP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/Drop/drop.min.css">
+</head>
+
+<body>
+  <div class="drop-page drop-page--terms">
+    <div data-partial="Drop/header"></div>
+    <main class="drop-terms">
+      <nav class="drop-breadcrumbs drop-terms__crumbs" aria-label="Хлібні крихти">
+        <a href="drop-index.html">Головна</a>
+        <img src="images/Drop/catalog/icon-crumb.svg" alt="" width="5" height="8">
+        <div class="drop-breadcrumbs__current">
+          <p>Умови торгівлі</p>
+        </div>
+      </nav>
+
+      <div class="drop-terms__layout">
+        <div data-partial="Drop/cabinet-sidebar"></div>
+
+        <div class="drop-terms__content">
+          <div class="drop-terms__heading">
+            <h1>Умови торгівлі</h1>
+          </div>
+
+          <div class="drop-terms__list">
+            <section class="drop-terms__item is-open" data-drop-terms-item>
+              <!-- @include partials/Drop/terms-faq.html -->
+            </section>
+            <section class="drop-terms__item" data-drop-terms-item>
+              <!-- @include partials/Drop/terms-faq.html -->
+            </section>
+            <section class="drop-terms__item" data-drop-terms-item>
+              <!-- @include partials/Drop/terms-faq.html -->
+            </section>
+            <section class="drop-terms__item" data-drop-terms-item>
+              <!-- @include partials/Drop/terms-faq.html -->
+            </section>
+            <section class="drop-terms__item" data-drop-terms-item>
+              <!-- @include partials/Drop/terms-faq.html -->
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div data-partial="Drop/footer"></div>
+  </div>
+  <div data-partial="Drop/cart"></div>
+  <script src="js/Drop/partials-loader.js"></script>
+  <script src="js/Drop/drop.min.js"></script>
+</body>
+
+</html>

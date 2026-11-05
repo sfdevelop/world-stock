@@ -60,7 +60,8 @@ function dropScripts() {
         APP_DIR + '/js/Drop/cart.js',
         APP_DIR + '/js/Drop/basket.js',
         APP_DIR + '/js/Drop/orders.js',
-        APP_DIR + '/js/Drop/preference.js'
+        APP_DIR + '/js/Drop/preference.js',
+        APP_DIR + '/js/Drop/terms.js'
     ])
         .pipe(uglify())
         .pipe(concat('drop.min.js'))
@@ -186,7 +187,7 @@ function watching() {
     watch([APP_DIR + '/js/main.js'], scripts);
     watch([APP_DIR + '/js/order_new.js'], orderNewScripts);
     watch([APP_DIR + '/js/header-user-menu.js'], headerUserMenuScripts);
-    watch([APP_DIR + '/js/Drop/drop.js', APP_DIR + '/js/Drop/catalog.js', APP_DIR + '/js/Drop/product.js', APP_DIR + '/js/Drop/cart.js', APP_DIR + '/js/Drop/basket.js', APP_DIR + '/js/Drop/orders.js', APP_DIR + '/js/Drop/preference.js'], dropScripts);
+    watch([APP_DIR + '/js/Drop/drop.js', APP_DIR + '/js/Drop/catalog.js', APP_DIR + '/js/Drop/product.js', APP_DIR + '/js/Drop/cart.js', APP_DIR + '/js/Drop/basket.js', APP_DIR + '/js/Drop/orders.js', APP_DIR + '/js/Drop/preference.js', APP_DIR + '/js/Drop/terms.js'], dropScripts);
     watch([APP_DIR + '/images/**/*'], copyBuildAssets);
     watch([
         APP_DIR + '/*.html',
