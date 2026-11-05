@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Особисті дані — WORLD STOCK DROP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/Drop/drop.min.css">
+</head>
+
+<body>
+  <div class="drop-page drop-page--personal">
+    <div data-partial="Drop/header"></div>
+    <main class="drop-personal">
+      <nav class="drop-breadcrumbs drop-personal__crumbs" aria-label="Хлібні крихти">
+        <a href="drop-index.html">Головна</a>
+        <img src="images/Drop/catalog/icon-crumb.svg" alt="" width="5" height="8">
+        <div class="drop-breadcrumbs__current">
+          <p>Особисті дані</p>
+        </div>
+      </nav>
+
+      <div class="drop-personal__layout">
+        <div data-partial="Drop/cabinet-sidebar"></div>
+
+        <div class="drop-personal__content">
+          <div class="drop-personal__heading">
+            <h1>Особисті дані</h1>
+          </div>
+
+          <div class="drop-personal__cards">
+            <section class="drop-personal__card drop-personal__card--contacts" aria-labelledby="personal-contacts-title">
+              <div class="drop-personal__head">
+                <h2 id="personal-contacts-title">контакти</h2>
+              </div>
+              <form class="drop-personal__body" action="#" method="post" onsubmit="return false">
+                <div class="drop-personal__fields">
+                  <div class="drop-personal__row">
+                    <div class="drop-personal__field">
+                      <label for="personal-first-name">Ім'я</label>
+                      <input id="personal-first-name" type="text" name="first_name" value="Станислав" autocomplete="given-name">
+                    </div>
+                    <div class="drop-personal__field">
+                      <label for="personal-last-name">Прізвище</label>
+                      <input id="personal-last-name" type="text" name="last_name" value="Кулаков" autocomplete="family-name">
+                    </div>
+                    <div class="drop-personal__field">
+                      <label for="personal-patronymic">По батькові</label>
+                      <input id="personal-patronymic" type="text" name="patronymic" value="Віталійович" autocomplete="additional-name">
+                    </div>
+                  </div>
+                  <div class="drop-personal__row">
+                    <div class="drop-personal__field drop-personal__field--compact">
+                      <label for="personal-phone">Номер телефону</label>
+                      <input id="personal-phone" type="tel" name="phone" value="+38 (093) 123-45-67" autocomplete="tel">
+                    </div>
+                    <div class="drop-personal__field drop-personal__field--compact drop-personal__field--muted">
+                      <label for="personal-email">Електронна адреса</label>
+                      <input id="personal-email" type="email" name="email" value="Exemle@email.com" autocomplete="email">
+                    </div>
+                  </div>
+                </div>
+                <button class="drop-personal__save" type="submit">
+                  <p>зберегти</p>
+                </button>
+              </form>
+            </section>
+
+            <section class="drop-personal__card drop-personal__card--links" aria-labelledby="personal-links-title">
+              <div class="drop-personal__head">
+                <h2 id="personal-links-title">Посилання на сторінки</h2>
+              </div>
+              <form class="drop-personal__body" action="#" method="post" onsubmit="return false">
+                <div class="drop-personal__fields">
+                  <div class="drop-personal__row drop-personal__row--wide">
+                    <div class="drop-personal__field drop-personal__field--clip">
+                      <label for="personal-instagram">Instagram</label>
+                      <input id="personal-instagram" type="url" name="instagram" value="https://www.instagram.com/yourstars_ua?cplk=Yng3NTd6ODN2dnEy&amp;utm_source=qr">
+                    </div>
+                    <div class="drop-personal__field">
+                      <label for="personal-tiktok">TikTok</label>
+                      <input id="personal-tiktok" type="url" name="tiktok" value="https://tiktok/@...">
+                    </div>
+                  </div>
+                  <div class="drop-personal__row drop-personal__row--wide">
+                    <div class="drop-personal__field">
+                      <label for="personal-olx">OLX</label>
+                      <input id="personal-olx" type="url" name="olx" placeholder="Послання на профіль OLX">
+                    </div>
+                    <div class="drop-personal__field">
+                      <label for="personal-shafa">Shafa</label>
+                      <input id="personal-shafa" type="url" name="shafa" placeholder="Посилання на профіль Shafa">
+                    </div>
+                  </div>
+                  <div class="drop-personal__row">
+                    <div class="drop-personal__field">
+                      <label for="personal-other">Інший ресурс</label>
+                      <input id="personal-other" type="url" name="other" placeholder="Додайте посилання майданчик або сайт">
+                    </div>
+                  </div>
+                </div>
+                <button class="drop-personal__save" type="submit">
+                  <p>зберегти</p>
+                </button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div data-partial="Drop/footer"></div>
+  </div>
+  <div data-partial="Drop/cart"></div>
+  <script src="js/Drop/partials-loader.js"></script>
+  <script src="js/Drop/drop.min.js"></script>
+</body>
+
+</html>
