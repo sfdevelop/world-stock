@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+$drop-search-title: #171717;
+
+.drop-orders-search {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	&__bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+		padding-bottom: 6px;
+		border-bottom: 1px solid $drop-grey-light;
+	}
+
+	&__title h2 {
+		margin: 0;
+		color: $drop-search-title;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 26.1px;
+	}
+
+	&__back {
+		display: inline-flex;
+		flex-shrink: 0;
+		align-items: center;
+		border-bottom: 1px solid $drop-grey-3;
+
+		p {
+			color: $drop-grey;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 1.4;
+		}
+
+		&:focus-visible {
+			outline: 2px solid $drop-black;
+			outline-offset: 2px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+}

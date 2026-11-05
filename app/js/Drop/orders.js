@@ -407,8 +407,12 @@
     searchForm.addEventListener("submit", function (event) {
       event.preventDefault();
       lastSearchValue = searchInput ? searchInput.value : "";
-      setSearchQuery(lastSearchValue);
-      closeModals();
+
+      if (!lastSearchValue.replace(/\s+/g, " ").trim()) {
+        return;
+      }
+
+      window.location.href = "drop-orders-search.html";
     });
   }
 

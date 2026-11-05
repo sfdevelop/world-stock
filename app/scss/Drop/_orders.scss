@@ -331,6 +331,10 @@ $drop-order-cancel: #70566a;
 		color: $drop-grey-3;
 	}
 
+	&__track--return p:last-child {
+		color: $drop-red;
+	}
+
 	&__badge {
 		display: flex;
 		align-items: center;
