@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вподобання — WORLD STOCK DROP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/Drop/drop.min.css">
+</head>
+
+<body>
+  <div class="drop-page drop-page--preference">
+    <div data-partial="Drop/header"></div>
+    <main class="drop-preference">
+      <nav class="drop-breadcrumbs drop-preference__crumbs" aria-label="Хлібні крихти">
+        <a href="drop-index.html">Головна</a>
+        <img src="images/Drop/catalog/icon-crumb.svg" alt="" width="5" height="8">
+        <div class="drop-breadcrumbs__current">
+          <p>Вподобання</p>
+        </div>
+      </nav>
+
+      <div class="drop-preference__layout">
+        <div data-partial="Drop/cabinet-sidebar"></div>
+
+        <div class="drop-preference__content">
+          <div class="drop-preference__heading">
+            <h1>Вподобання</h1>
+          </div>
+
+          <div class="drop-preference__tabs" role="tablist" aria-label="Групування вподобань">
+            <button class="drop-preference__tab is-active" type="button" role="tab" aria-selected="true" data-pref-tab="brand">Бренд</button>
+            <button class="drop-preference__tab" type="button" role="tab" aria-selected="false" data-pref-tab="gender">Стать</button>
+            <button class="drop-preference__tab" type="button" role="tab" aria-selected="false" data-pref-tab="category">Категорія</button>
+          </div>
+
+          <div class="drop-preference__groups">
+            <section class="drop-preference__group is-open" data-drop-pref-group>
+              <div class="drop-preference__head">
+                <button class="drop-preference__toggle" type="button" aria-expanded="true" data-drop-pref-toggle>
+                  <p>Adidas</p>
+                  <img class="drop-preference__minus" src="images/Drop/preference/icon-minus.svg" alt="" width="24" height="24">
+                  <img class="drop-preference__plus" src="images/Drop/preference/icon-plus.svg" alt="" width="24" height="24">
+                </button>
+              </div>
+              <div class="drop-preference__panel" data-drop-pref-panel>
+                <div class="drop-preference__cards">
+                  <!-- @include partials/Drop/preference-cards.html -->
+                </div>
+              </div>
+            </section>
+
+            <section class="drop-preference__group" data-drop-pref-group>
+              <div class="drop-preference__head">
+                <button class="drop-preference__toggle" type="button" aria-expanded="false" data-drop-pref-toggle>
+                  <p>Skechers</p>
+                  <img class="drop-preference__minus" src="images/Drop/preference/icon-minus.svg" alt="" width="24" height="24">
+                  <img class="drop-preference__plus" src="images/Drop/preference/icon-plus.svg" alt="" width="24" height="24">
+                </button>
+              </div>
+              <div class="drop-preference__panel" data-drop-pref-panel hidden>
+                <div class="drop-preference__cards">
+                  <!-- @include partials/Drop/preference-cards.html -->
+                </div>
+              </div>
+            </section>
+
+            <section class="drop-preference__group" data-drop-pref-group>
+              <div class="drop-preference__head">
+                <button class="drop-preference__toggle" type="button" aria-expanded="false" data-drop-pref-toggle>
+                  <p>Saucony</p>
+                  <img class="drop-preference__minus" src="images/Drop/preference/icon-minus.svg" alt="" width="24" height="24">
+                  <img class="drop-preference__plus" src="images/Drop/preference/icon-plus.svg" alt="" width="24" height="24">
+                </button>
+              </div>
+              <div class="drop-preference__panel" data-drop-pref-panel hidden>
+                <div class="drop-preference__cards">
+                  <!-- @include partials/Drop/preference-cards.html -->
+                </div>
+              </div>
+            </section>
+
+            <section class="drop-preference__group" data-drop-pref-group>
+              <div class="drop-preference__head">
+                <button class="drop-preference__toggle" type="button" aria-expanded="false" data-drop-pref-toggle>
+                  <p>Saucony</p>
+                  <img class="drop-preference__minus" src="images/Drop/preference/icon-minus.svg" alt="" width="24" height="24">
+                  <img class="drop-preference__plus" src="images/Drop/preference/icon-plus.svg" alt="" width="24" height="24">
+                </button>
+              </div>
+              <div class="drop-preference__panel" data-drop-pref-panel hidden>
+                <div class="drop-preference__cards">
+                  <!-- @include partials/Drop/preference-cards.html -->
+                </div>
+              </div>
+            </section>
+
+            <section class="drop-preference__group" data-drop-pref-group>
+              <div class="drop-preference__head">
+                <button class="drop-preference__toggle" type="button" aria-expanded="false" data-drop-pref-toggle>
+                  <p>Saucony</p>
+                  <img class="drop-preference__minus" src="images/Drop/preference/icon-minus.svg" alt="" width="24" height="24">
+                  <img class="drop-preference__plus" src="images/Drop/preference/icon-plus.svg" alt="" width="24" height="24">
+                </button>
+              </div>
+              <div class="drop-preference__panel" data-drop-pref-panel hidden>
+                <div class="drop-preference__cards">
+                  <!-- @include partials/Drop/preference-cards.html -->
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div data-partial="Drop/footer"></div>
+  </div>
+  <div data-partial="Drop/cart"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/Drop/partials-loader.js"></script>
+  <script src="js/Drop/drop.min.js"></script>
+</body>
+
+</html>
