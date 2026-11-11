@@ -14,6 +14,10 @@ $drop-card-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 	border-radius: $drop-radius-small;
 	background: $drop-white;
 
+	@include drop-tablet {
+		width: calc((100% - 20px) / 3);
+	}
+
 	@include drop-desktop {
 		gap: 19px;
 		width: calc((100% - 36px) / 4);
@@ -147,8 +151,20 @@ $drop-card-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 		width: 100%;
 		height: 169px;
 
+		@include drop-tablet {
+			height: auto;
+			aspect-ratio: 1070 / 1600;
+		}
+
 		@include drop-desktop {
 			height: 300px;
+			aspect-ratio: auto;
+		}
+
+		.swiper-wrapper {
+			@include drop-tablet {
+				height: 100%;
+			}
 		}
 
 		.swiper-slide {
@@ -157,6 +173,10 @@ $drop-card-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 			justify-content: center;
 			height: 169px;
 			background: #eeeeee;
+
+			@include drop-tablet {
+				height: 100%;
+			}
 
 			@include drop-desktop {
 				height: 300px;

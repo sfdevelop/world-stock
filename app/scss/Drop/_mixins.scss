@@ -6,6 +6,12 @@
 	}
 }
 
+@mixin drop-tablet {
+	@media (min-width: $drop-tablet-width) {
+		@content;
+	}
+}
+
 @mixin drop-tablet-frame {
 	@media (min-width: $drop-bp-tablet) and (max-width: ($drop-bp-desktop - 1px)) {
 		@content;

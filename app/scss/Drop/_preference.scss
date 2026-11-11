@@ -256,6 +256,10 @@ $drop-pref-unavailable: #c5c5c5;
 		.drop-card {
 			width: calc((100% - 6px) / 2);
 
+			@include drop-tablet {
+				width: calc((100% - 12px) / 3);
+			}
+
 			@include drop-desktop {
 				width: calc((100% - 48px) / 3);
 			}

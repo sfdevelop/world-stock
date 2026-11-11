@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Прибрати стікер зі знижкою –35, вона зараз не потрібна.">
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Зменшити відступ, він не такий.">
       <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partials/Drop/catalog-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partials/Drop/catalog-card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partials/Drop/catalog-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partials/Drop/catalog-grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partials/Drop/preference-card-unavailable.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partials/Drop/preference-card-unavailable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partials/Drop/preference-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partials/Drop/preference-card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/Drop/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_preference.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_preference.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-preference.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-preference.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +227,7 @@
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
-      <workItem from="1794388591463" duration="3378000" />
+      <workItem from="1794388591463" duration="3771000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -417,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794391310202</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Зменшити відступ, він не такий.">
+      <option name="closed" value="true" />
+      <created>1794392174446</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1794392174446</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,6 +456,7 @@
     <MESSAGE value="Цифри відображуються вкругу, повинні відображуватися." />
     <MESSAGE value="Не такі методи сортування повинні бути новинки, популярні, за збільшенням ціни, за зменшенням ціни." />
     <MESSAGE value="Прибрати стікер зі знижкою –35, вона зараз не потрібна." />
-    <option name="LAST_COMMIT_MESSAGE" value="Прибрати стікер зі знижкою –35, вона зараз не потрібна." />
+    <MESSAGE value="Зменшити відступ, він не такий." />
+    <option name="LAST_COMMIT_MESSAGE" value="Зменшити відступ, він не такий." />
   </component>
 </project>
