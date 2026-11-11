@@ -246,6 +246,23 @@ $drop-card-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 		}
 	}
 
+	&__lead,
+	&__prices {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__lead {
+		gap: 8px;
+	}
+
+	&__prices {
+		gap: 6px;
+		margin-top: auto;
+	}
+
 	&__gender {
 		display: flex;
 		align-items: center;
@@ -282,7 +299,6 @@ $drop-card-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 
 	&__sizes {
 		width: 100%;
-		margin-top: auto;
 		max-height: 36px;
 		overflow: hidden;
 		color: $drop-grey;
