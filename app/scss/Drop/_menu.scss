@@ -49,7 +49,7 @@ $drop-menu-offset: calc(#{$drop-header-pad-y} * 2 + 30.222px + 16px);
 		color: $drop-black;
 		text-align: left;
 		text-transform: uppercase;
-		@include drop-text(12px, 600);
+		@include drop-text(14px, 600);
 	}
 
 	&__toggle {
@@ -79,14 +79,10 @@ $drop-menu-offset: calc(#{$drop-header-pad-y} * 2 + 30.222px + 16px);
 	}
 
 	&__item.is-open &__toggle {
-		align-items: center;
+		align-items: flex-start;
 		min-height: 0;
-		padding-top: 12px;
+		padding: 12px 0 2px;
 		border-bottom: 0;
-
-		span {
-			line-height: 14px;
-		}
 	}
 
 	&__item.is-open {
@@ -102,43 +98,67 @@ $drop-menu-offset: calc(#{$drop-header-pad-y} * 2 + 30.222px + 16px);
 	&__groups {
 		display: flex;
 		flex-direction: column;
-		gap: 8px;
-		margin-top: 10px;
+		gap: 12px;
+		margin-top: 6px;
 		padding-bottom: 12px;
 	}
 
 	&__group {
 		display: flex;
 		flex-direction: column;
-		gap: 3px;
+		gap: 6px;
 		padding-left: 12px;
 
 		p {
+			color: $drop-black;
 			text-transform: uppercase;
-			font-size: 12px;
-			font-weight: 600;
-			line-height: 14px;
+			@include drop-text(14px, 600);
 		}
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
 	}
 
 	&__links {
 		display: flex;
 		flex-direction: column;
-		gap: 4px;
+		gap: 10px;
 		padding-left: 12px;
 
 		li {
 			display: block;
-			line-height: 14px;
 		}
 
 		a {
 			display: block;
-			color: $drop-grey-3;
-			font-size: 12px;
-			font-weight: 400;
-			line-height: 14px;
+			color: $drop-black;
+			letter-spacing: 0;
+			text-box-trim: trim-both;
+			text-box-edge: cap alphabetic;
+			@include drop-text(14px);
 		}
+	}
+
+	&__all {
+		display: flex;
+		align-items: flex-start;
+		gap: 12px;
+		padding-left: 12px;
+		color: $drop-grey-3;
+		letter-spacing: 0.84px;
+		@include drop-text(14px);
+	}
+
+	&__arrow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 20px;
+		height: 20px;
 	}
 }
 
