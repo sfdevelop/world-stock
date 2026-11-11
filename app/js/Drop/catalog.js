@@ -134,10 +134,7 @@
   function initToolbar(catalog) {
     catalog.querySelectorAll("[data-drop-choice]").forEach(function (button) {
       button.addEventListener("click", function () {
-        catalog.querySelectorAll("[data-drop-choice]").forEach(function (item) {
-          item.classList.toggle("is-active", item === button);
-        });
-        setSortLabel(catalog, button.textContent.trim());
+        setActiveSort(catalog, button.getAttribute("data-drop-sort"), button.textContent.trim());
       });
     });
 
@@ -163,10 +160,7 @@
           });
 
           if (option.hasAttribute("data-drop-sort")) {
-            setSortLabel(catalog, option.textContent.trim());
-            catalog.querySelectorAll("[data-drop-choice]").forEach(function (choice) {
-              choice.classList.toggle("is-active", choice.textContent.trim() === option.textContent.trim());
-            });
+            setActiveSort(catalog, option.getAttribute("data-drop-sort"), option.textContent.trim());
           }
 
           if (option.hasAttribute("data-drop-per-page")) {
@@ -188,6 +182,13 @@
         closeDropdowns(catalog);
       }
     });
+  }
+
+  function setActiveSort(catalog, value, label) {
+    catalog.querySelectorAll("[data-drop-sort]").forEach(function (item) {
+      item.classList.toggle("is-active", item.getAttribute("data-drop-sort") === value);
+    });
+    setSortLabel(catalog, label);
   }
 
   function setSortLabel(catalog, label) {

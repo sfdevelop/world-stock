@@ -105,7 +105,6 @@ $drop-catalog-muted: #757575;
 
 	&__sort-label {
 		align-items: center;
-		margin-right: 12px;
 		color: $drop-black;
 		font-size: 14px;
 		font-weight: 400;
@@ -113,6 +112,12 @@ $drop-catalog-muted: #757575;
 	}
 
 	&__choices {
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__sort {
+		display: flex;
 		align-items: center;
 		gap: 8px;
 	}
@@ -245,6 +250,7 @@ $drop-catalog-muted: #757575;
 			background: $drop-grey-light;
 
 			@include drop-desktop {
+				display: flex;
 				gap: 18px;
 				height: 36px;
 				padding: 6px 12px;

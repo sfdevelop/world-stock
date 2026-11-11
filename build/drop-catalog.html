@@ -689,13 +689,14 @@
             </button>
             <div class="drop-toolbar__dropdown" data-drop-dropdown>
               <button class="drop-toolbar__select" type="button" aria-expanded="false" data-drop-dropdown-toggle>
-                <span data-drop-sort-label>Спочатку нові</span>
+                <span data-drop-sort-label>Новинки</span>
                 <div class="drop-toolbar__chevron">
                   <img src="images/Drop/catalog/icon-chevron.svg" alt="" width="5" height="8">
                 </div>
               </button>
               <div class="drop-toolbar__menu" data-drop-dropdown-menu hidden>
-                <button type="button" class="is-active" data-drop-sort="new">Спочатку нові</button>
+                <button type="button" class="is-active" data-drop-sort="new">Новинки</button>
+                <button type="button" data-drop-sort="popular">Популярні</button>
                 <button type="button" data-drop-sort="price-asc">За збільшенням ціни</button>
                 <button type="button" data-drop-sort="price-desc">За зменшенням ціни</button>
               </div>
@@ -704,9 +705,12 @@
               <div class="drop-toolbar__sort-label">
                 <p>Сортувати:</p>
               </div>
-              <button class="drop-toolbar__choice is-active" type="button" data-drop-choice>Спочатку нові</button>
-              <button class="drop-toolbar__choice" type="button" data-drop-choice>За збільшенням ціни</button>
-              <button class="drop-toolbar__choice" type="button" data-drop-choice>За зменшенням ціни</button>
+              <div class="drop-toolbar__sort">
+                <button class="drop-toolbar__choice is-active" type="button" data-drop-choice data-drop-sort="new">Новинки</button>
+                <button class="drop-toolbar__choice" type="button" data-drop-choice data-drop-sort="popular">Популярні</button>
+                <button class="drop-toolbar__choice" type="button" data-drop-choice data-drop-sort="price-asc">За збільшенням ціни</button>
+                <button class="drop-toolbar__choice" type="button" data-drop-choice data-drop-sort="price-desc">За зменшенням ціни</button>
+              </div>
             </div>
             <div class="drop-toolbar__count drop-toolbar__dropdown" data-drop-dropdown>
               <button class="drop-toolbar__select" type="button" aria-expanded="false" aria-label="Кількість на сторінці" data-drop-dropdown-toggle>
