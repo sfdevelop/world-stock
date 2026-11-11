@@ -303,6 +303,9 @@ $drop-filter-chip: rgba(237, 237, 237, 0.4);
 		color: $drop-grey-3;
 	}
 
+	transition: background 0.2s linear, border-color 0.2s linear, color 0.2s linear;
+
+	&:hover:not(.is-active),
 	&.is-active {
 		border-color: $drop-black;
 		background: $drop-black;

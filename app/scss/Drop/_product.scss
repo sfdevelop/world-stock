@@ -813,8 +813,12 @@ $drop-product-swatch: #d4d4d4;
 			color: $drop-grey-3;
 		}
 
+		transition: background 0.2s linear, border-color 0.2s linear;
+
+		&:hover:not(.is-active),
 		&.is-active {
 			background: $drop-black;
+			border-color: $drop-black;
 
 			span:first-child {
 				color: $drop-white;
@@ -995,7 +999,8 @@ $drop-product-swatch: #d4d4d4;
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.drop-product__favorite img {
+	.drop-product__favorite img,
+	.drop-product__size {
 		transition: none;
 	}
 }
