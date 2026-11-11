@@ -212,6 +212,11 @@ $drop-basket-valid: #008237;
 		flex: 1 1 0;
 		flex-direction: column;
 		min-width: 0;
+
+		@include drop-desktop {
+			flex: 0 1 481px;
+			max-width: 481px;
+		}
 	}
 
 	&__lead {
@@ -310,7 +315,8 @@ $drop-basket-valid: #008237;
 			gap: 8px;
 			width: 115px;
 			height: 70px;
-			margin-left: auto;
+			margin-left: 0;
+			margin-right: auto;
 		}
 	}
 
