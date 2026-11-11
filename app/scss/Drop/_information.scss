@@ -297,6 +297,10 @@ $drop-grey-back: rgba(237, 237, 237, 0.4);
 	border-radius: 2px;
 	background: $drop-white;
 
+	@include drop-tablet {
+		width: calc((100% - 20px) / 3);
+	}
+
 	@include drop-desktop {
 		flex: 1 0 0;
 		width: auto;

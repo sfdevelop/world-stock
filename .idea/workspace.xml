@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="При наведенні на стрілочку… якась лажа виходить.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Цифри в корзині відображуються не там. Змістити лівіше." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -223,7 +221,7 @@
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
-      <workItem from="1794388591463" duration="7180000" />
+      <workItem from="1794388591463" duration="7550000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -457,7 +455,23 @@
       <option name="project" value="LOCAL" />
       <updated>1794417969620</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Перевір відступ у мобільній версії, він там менший.">
+      <option name="closed" value="true" />
+      <created>1794418399003</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1794418399003</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Цифри в корзині відображуються не там. Змістити лівіше.">
+      <option name="closed" value="true" />
+      <created>1794418661853</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1794418661853</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,6 +509,8 @@
     <MESSAGE value="Зменшити відступ, він не такий." />
     <MESSAGE value="Відсутні ховер‑ефекти." />
     <MESSAGE value="При наведенні на стрілочку… якась лажа виходить." />
-    <option name="LAST_COMMIT_MESSAGE" value="При наведенні на стрілочку… якась лажа виходить." />
+    <MESSAGE value="Перевір відступ у мобільній версії, він там менший." />
+    <MESSAGE value="Цифри в корзині відображуються не там. Змістити лівіше." />
+    <option name="LAST_COMMIT_MESSAGE" value="Цифри в корзині відображуються не там. Змістити лівіше." />
   </component>
 </project>
