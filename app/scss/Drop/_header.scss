@@ -252,6 +252,21 @@
 			> ul a {
 				@include drop-text(16px, 600);
 				text-transform: uppercase;
+				text-decoration: underline;
+				text-decoration-color: transparent;
+				transition: color 0.2s linear, text-decoration-color 0.2s linear;
+
+				&:hover,
+				&:focus-visible {
+					color: $drop-red;
+					text-decoration-color: $drop-red;
+				}
+			}
+
+			> ul .drop-header__item:hover > a,
+			> ul .drop-header__item:focus-within > a {
+				color: $drop-red;
+				text-decoration-color: $drop-red;
 			}
 		}
 	}

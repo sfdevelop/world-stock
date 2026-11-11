@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Implement &quot;Drop&quot; cart structure with HTML, SCSS, and JavaScript. Includes visuals, animations, accessibility features, and detailed product grouping, stepper, and summary functionality.">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partials/Drop/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partials/Drop/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/drop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/drop.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-product.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +21,9 @@
           <execution>
             <execution>
               <execution>
-                <execution />
+                <execution>
+                  <execution />
+                </execution>
               </execution>
             </execution>
           </execution>
@@ -36,7 +32,7 @@
     </execution>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="406" />
+    <option name="cachedIndexableFilesCount" value="672" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -94,23 +90,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.1830107119932032" />
-      <entry key="MS500" value="1.7121045671774309" />
-      <entry key="S2" value="2.184940718851954" />
-      <entry key="S5" value="3.3196881896345007" />
-      <entry key="S10" value="4.309521957703403" />
-      <entry key="S30" value="5.3331958337420104" />
-      <entry key="S60" value="5.651669044485318" />
-      <entry key="M2" value="5.821931817310804" />
-      <entry key="M5" value="5.9278133568993985" />
-      <entry key="M10" value="5.96374485130475" />
-      <entry key="M15" value="5.975793794755526" />
-      <entry key="M30" value="5.987878808052736" />
-      <entry key="H1" value="5.99393487488207" />
-      <entry key="H2" value="5.996966304302208" />
-      <entry key="H4" value="5.998482868759733" />
-      <entry key="D1" value="5.999747105424319" />
-      <entry key="W1" value="5.999963871239218" />
+      <entry key="MS100" value="1.0000863178315118" />
+      <entry key="MS500" value="1.1847481903831802" />
+      <entry key="S2" value="2.649222943149625" />
+      <entry key="S5" value="4.556365921668064" />
+      <entry key="S10" value="6.123458900525873" />
+      <entry key="S30" value="7.830504138393329" />
+      <entry key="S60" value="8.383283611641382" />
+      <entry key="M2" value="8.683149414680788" />
+      <entry key="M5" value="8.871153806925314" />
+      <entry key="M10" value="8.935220097530031" />
+      <entry key="M15" value="8.956733671578299" />
+      <entry key="M30" value="8.978326862676553" />
+      <entry key="H1" value="8.989153417431748" />
+      <entry key="H2" value="8.99457420265588" />
+      <entry key="H4" value="8.99728647448972" />
+      <entry key="D1" value="8.999547658659974" />
+      <entry key="W1" value="8.999935377675435" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -132,23 +128,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9453952056005664" />
-      <entry key="MS500" value="1.4625479931518346" />
-      <entry key="S2" value="2.093034116864651" />
-      <entry key="S5" value="3.2782298937868837" />
-      <entry key="S10" value="4.2874697361664795" />
-      <entry key="S30" value="5.3254458461323475" />
-      <entry key="S60" value="5.647735124174191" />
-      <entry key="M2" value="5.8199493311612835" />
-      <entry key="M5" value="5.927016528906387" />
-      <entry key="M10" value="5.9633457892005275" />
-      <entry key="M15" value="5.975527608639466" />
-      <entry key="M30" value="5.987745642464889" />
-      <entry key="H1" value="5.99386827392314" />
-      <entry key="H2" value="5.996932999277412" />
-      <entry key="H4" value="5.998466215110493" />
-      <entry key="D1" value="5.999744329658175" />
-      <entry key="W1" value="5.999963474697328" />
+      <entry key="MS100" value="0.001461694906868127" />
+      <entry key="MS500" value="0.3639916855620543" />
+      <entry key="S2" value="2.183827557278942" />
+      <entry key="S5" value="4.308362960640626" />
+      <entry key="S10" value="5.984519183235525" />
+      <entry key="S30" value="7.7801961055446744" />
+      <entry key="S60" value="8.357577680656279" />
+      <entry key="M2" value="8.67015402600497" />
+      <entry key="M5" value="8.865920876849415" />
+      <entry key="M10" value="8.93259778625002" />
+      <entry key="M15" value="8.954984161116045" />
+      <entry key="M30" value="8.97745145502622" />
+      <entry key="H1" value="8.988715550323665" />
+      <entry key="H2" value="8.99435522825881" />
+      <entry key="H4" value="8.997176977077638" />
+      <entry key="D1" value="8.99952940767251" />
+      <entry key="W1" value="8.999932770356763" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
@@ -226,6 +222,7 @@
       <workItem from="1793740066775" duration="476000" />
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
+      <workItem from="1793897910810" duration="773000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -315,7 +312,31 @@
       <option name="project" value="LOCAL" />
       <updated>1793719560968</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implement &quot;Drop&quot; cart structure with HTML, SCSS, and JavaScript. Includes visuals, animations, accessibility features, and detailed product grouping, stepper, and summary functionality.">
+      <option name="closed" value="true" />
+      <created>1793897917714</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1793897917714</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Implement &quot;Drop&quot; cart structure with HTML, SCSS, and JavaScript. Includes visuals, animations, accessibility features, and detailed product grouping, stepper, and summary functionality.">
+      <option name="closed" value="true" />
+      <created>1793897921998</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1793897921998</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implement &quot;Drop&quot; cart structure with HTML, SCSS, and JavaScript. Includes visuals, animations, accessibility features, and detailed product grouping, stepper, and summary functionality.">
+      <option name="closed" value="true" />
+      <created>1793897944803</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1793897944803</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
