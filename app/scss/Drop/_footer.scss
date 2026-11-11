@@ -48,7 +48,7 @@
 	&__col {
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 2px;
 
 		a {
 			@include drop-text(11px);
@@ -57,28 +57,12 @@
 		ul {
 			display: flex;
 			flex-direction: column;
-			gap: 16px;
+			gap: 5px;
 		}
 
 		@include drop-desktop {
 			a {
 				font-size: 14px;
-			}
-		}
-
-		&--projects {
-			gap: 12px;
-
-			ul {
-				gap: 12px;
-			}
-
-			@include drop-desktop {
-				gap: 16px;
-
-				ul {
-					gap: 16px;
-				}
 			}
 		}
 	}
