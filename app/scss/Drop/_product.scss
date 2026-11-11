@@ -282,20 +282,30 @@ $drop-product-swatch: #d4d4d4;
 
 	&__download {
 		position: relative;
+		z-index: 3;
 		display: flex;
 		justify-content: flex-end;
+		width: fit-content;
 		margin-top: 6px;
+		margin-left: auto;
 	}
 
 	&__download-tip {
 		position: absolute;
 		right: 0;
-		bottom: calc(100% + 7px);
-		display: none;
-		padding: 6px;
+		bottom: calc(100% + 8px);
+		z-index: 1;
+		width: max-content;
+		max-width: none;
+		padding: 4px 8px;
+		border: 1px solid $drop-grey-link;
 		border-radius: $drop-radius;
 		background: $drop-white;
-		box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity 0.2s linear, visibility 0.2s linear;
 
 		p {
 			font-size: 12px;
@@ -307,7 +317,8 @@ $drop-product-swatch: #d4d4d4;
 
 	&__download:hover &__download-tip,
 	&__download:focus-within &__download-tip {
-		display: block;
+		opacity: 1;
+		visibility: visible;
 	}
 
 	&__download-btn {
@@ -316,15 +327,24 @@ $drop-product-swatch: #d4d4d4;
 		justify-content: center;
 		width: 26px;
 		height: 26px;
+		color: $drop-grey-3;
+		transition: color 0.2s linear;
 
 		@include drop-desktop {
 			width: 34px;
 			height: 34px;
 		}
 
-		img {
+		&:hover,
+		&:focus-visible {
+			color: $drop-red;
+		}
+
+		svg {
+			display: block;
 			width: 20px;
 			height: 18px;
+			fill: currentColor;
 
 			@include drop-desktop {
 				width: 26px;
@@ -1000,7 +1020,9 @@ $drop-product-swatch: #d4d4d4;
 
 @media (prefers-reduced-motion: reduce) {
 	.drop-product__favorite img,
-	.drop-product__size {
+	.drop-product__size,
+	.drop-product__download-tip,
+	.drop-product__download-btn {
 		transition: none;
 	}
 }
