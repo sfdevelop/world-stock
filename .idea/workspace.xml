@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="У футері замінити логотип на логотип з дроп." />
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="В меню не такі відступи міжбуквенного інтервалу в «Показати всі» та не такі стрілочки." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,7 +221,7 @@
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
-      <workItem from="1794388591463" duration="953000" />
+      <workItem from="1794388591463" duration="1259000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -359,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794389544987</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="В меню не такі відступи міжбуквенного інтервалу в «Показати всі» та не такі стрілочки.">
+      <option name="closed" value="true" />
+      <created>1794389797990</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1794389797990</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +396,7 @@
     <MESSAGE value="При наведенні Кнопки меню мають бути червоними і підкресленими." />
     <MESSAGE value="Не такі відступи між пунктами меню в футері." />
     <MESSAGE value="У футері замінити логотип на логотип з дроп." />
-    <option name="LAST_COMMIT_MESSAGE" value="У футері замінити логотип на логотип з дроп." />
+    <MESSAGE value="В меню не такі відступи міжбуквенного інтервалу в «Показати всі» та не такі стрілочки." />
+    <option name="LAST_COMMIT_MESSAGE" value="В меню не такі відступи міжбуквенного інтервалу в «Показати всі» та не такі стрілочки." />
   </component>
 </project>

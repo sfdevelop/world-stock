@@ -99,16 +99,6 @@ $drop-menu-offset: calc(#{$drop-header-pad-y} * 2 + 30.222px + 16px);
 		transition: height $drop-menu-reveal $drop-menu-ease;
 	}
 
-	&__all {
-		display: block;
-		margin-top: 4px;
-		padding-left: 12px;
-		color: $drop-grey-3;
-		font-size: 12px;
-		font-weight: 400;
-		line-height: 14px;
-	}
-
 	&__groups {
 		display: flex;
 		flex-direction: column;
