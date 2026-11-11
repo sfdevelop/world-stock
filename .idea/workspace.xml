@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Зменшити відступ, він не такий.">
-      <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_preference.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_preference.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
-    </list>
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Зменшити відступ, він не такий." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +221,7 @@
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
-      <workItem from="1794388591463" duration="3771000" />
+      <workItem from="1794388591463" duration="4102000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -421,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794392174446</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Зменшити відступ, він не такий.">
+      <option name="closed" value="true" />
+      <created>1794392878013</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1794392878013</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

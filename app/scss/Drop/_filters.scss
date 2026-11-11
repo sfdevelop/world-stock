@@ -25,7 +25,8 @@ $drop-filter-chip: rgba(237, 237, 237, 0.4);
 	transition: transform 0.35s ease;
 
 	@include drop-tablet-frame {
-		left: calc(50% - #{$drop-tablet-width} / 2);
+		left: max(0px, calc((100vw - #{$drop-tablet-width}) / 2));
+		transform: translateX(calc(-100% - max(0px, (100vw - #{$drop-tablet-width}) / 2)));
 	}
 
 	&.is-open {
