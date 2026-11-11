@@ -357,9 +357,14 @@ $drop-product-swatch: #d4d4d4;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: flex-start;
+		column-gap: 16px;
 		row-gap: 24px;
 		min-width: 0;
+
+		@media (min-width: 360px) {
+			column-gap: 87px;
+		}
 
 		@include drop-desktop {
 			position: relative;
@@ -577,7 +582,9 @@ $drop-product-swatch: #d4d4d4;
 		order: 2;
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		justify-content: center;
+		flex-shrink: 0;
 		gap: 6px;
 		min-height: 80px;
 		padding: 16px 32px;
