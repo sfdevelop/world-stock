@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="В мобільному меню цього не потрібно.">
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Відсутня вкладка «Показати всі».">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partials/Drop/menu-groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partials/Drop/menu-groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-information.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-orders-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-orders-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-orders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-personal-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-personal-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-preference.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-preference.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-terms.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-terms.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +226,7 @@
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
-      <workItem from="1794388591463" duration="1598000" />
+      <workItem from="1794388591463" duration="2220000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -392,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794389956469</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Відсутня вкладка «Показати всі».">
+      <option name="closed" value="true" />
+      <created>1794390493291</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1794390493291</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,6 +419,7 @@
     <MESSAGE value="У футері замінити логотип на логотип з дроп." />
     <MESSAGE value="В меню не такі відступи міжбуквенного інтервалу в «Показати всі» та не такі стрілочки." />
     <MESSAGE value="В мобільному меню цього не потрібно." />
-    <option name="LAST_COMMIT_MESSAGE" value="В мобільному меню цього не потрібно." />
+    <MESSAGE value="Відсутня вкладка «Показати всі»." />
+    <option name="LAST_COMMIT_MESSAGE" value="Відсутня вкладка «Показати всі»." />
   </component>
 </project>
