@@ -221,9 +221,10 @@ html.drop-menu-open .drop-top {
 
 	&__all {
 		display: flex;
-		align-items: center;
-		gap: 24px;
-		color: $drop-grey;
+		align-items: flex-start;
+		gap: 12px;
+		color: $drop-grey-3;
+		letter-spacing: 0.96px;
 		@include drop-text(16px);
 	}
 
@@ -234,12 +235,6 @@ html.drop-menu-open .drop-top {
 		flex-shrink: 0;
 		width: 24px;
 		height: 24px;
-		transform: rotate(-90deg);
-
-		img {
-			width: 12.8333px;
-			height: 7px;
-		}
 	}
 
 	&__brands {
