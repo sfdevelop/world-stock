@@ -3,6 +3,8 @@
 
 $drop-order-green: #008237;
 $drop-order-green-soft: #f4faf6;
+$drop-order-save: #35645f;
+$drop-order-save-back: #f1f6f5;
 $drop-order-muted: #c5c5c5;
 $drop-order-back: rgba(237, 237, 237, 0.4);
 $drop-order-label: #6a6a6a;
@@ -569,24 +571,47 @@ $drop-order-cancel: #70566a;
 	&__chooser {
 		position: relative;
 		display: flex;
+		align-items: center;
+		gap: 10px;
+		width: 100%;
 		height: 44px;
+		padding: 0 12px;
 		overflow: hidden;
 		border: 1px solid $drop-order-muted;
 		border-radius: $drop-radius;
 		background: $drop-white;
 
 		button {
-			flex: 1 1 50%;
+			min-width: 0;
+			padding: 0;
+			border: 0;
+			background: transparent;
+			text-align: left;
+			cursor: pointer;
+		}
+	}
+
+	&__chooser-name {
+		flex: 1 1 auto;
+
+		p {
+			overflow: hidden;
+			color: $drop-order-muted;
+			font-size: 12px;
+			line-height: 1.4;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+
+	&__chooser-action {
+		flex-shrink: 0;
+
+		p {
 			color: $drop-grey;
-
-			& + button {
-				border-left: 1px solid $drop-grey-light;
-			}
-
-			p {
-				font-size: 14px;
-				line-height: 1.4;
-			}
+			font-size: 12px;
+			line-height: 1.4;
+			white-space: nowrap;
 		}
 	}
 
@@ -628,9 +653,15 @@ $drop-order-cancel: #70566a;
 	}
 
 	&__save--ghost {
-		border: 1px solid $drop-order-green;
-		background: $drop-white;
-		color: $drop-order-green;
+		height: 42px;
+		padding: 0 24px;
+		border: 1px solid $drop-order-save;
+		background: $drop-order-save-back;
+		color: $drop-order-save;
+
+		p {
+			font-size: 13px;
+		}
 	}
 
 	&__docs--draft &__save {
@@ -1056,6 +1087,7 @@ $drop-order-cancel: #70566a;
 		&__panels {
 			flex-direction: row;
 			align-items: stretch;
+			min-width: 0;
 			padding: 0 24px;
 		}
 
@@ -1065,6 +1097,12 @@ $drop-order-cancel: #70566a;
 		}
 
 		&__panel--side {
+			flex: 0 0 374px;
+			width: 374px;
+			min-width: 0;
+		}
+
+		&__panel--cancel {
 			flex: 0 0 271px;
 			width: 271px;
 		}
@@ -1081,7 +1119,8 @@ $drop-order-cancel: #70566a;
 		}
 
 		&__control,
-		&__file {
+		&__file,
+		&__chooser {
 			width: 100%;
 		}
 
@@ -1093,9 +1132,16 @@ $drop-order-cancel: #70566a;
 		&__return-row {
 			flex-direction: row;
 			align-items: center;
+			min-width: 0;
+
+			.drop-order__control {
+				flex: 1 1 auto;
+				min-width: 0;
+			}
 		}
 
 		&__save {
+			flex-shrink: 0;
 			width: auto;
 			height: 42px;
 		}
