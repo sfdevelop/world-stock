@@ -8,11 +8,15 @@
 }
 
 html {
+	overflow-x: hidden;
+	overflow-x: clip;
 	scroll-behavior: smooth;
 }
 
 body {
 	margin: 0;
+	overflow-x: hidden;
+	overflow-x: clip;
 	font-family: $drop-font;
 	color: $drop-black;
 	background: $drop-white;
@@ -45,7 +49,10 @@ img {
 .drop-page {
 	display: flex;
 	flex-direction: column;
+	max-width: 100%;
 	min-height: 100vh;
+	overflow-x: hidden;
+	overflow-x: clip;
 	background: $drop-white;
 
 	@include drop-tablet-frame {

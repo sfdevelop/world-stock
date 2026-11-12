@@ -1330,8 +1330,16 @@ $drop-order-cancel: #70566a;
 }
 
 .drop-modal--search {
+	align-items: flex-start;
+	justify-content: flex-end;
+	padding: 0;
+
 	.drop-modal__dialog {
+		position: absolute;
+		top: 0;
+		right: 16px;
 		gap: 6px;
+		width: calc(100% - 32px);
 		max-width: 511px;
 		padding: 24px;
 		overflow: visible;

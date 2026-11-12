@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Цей блок повинен бути вужчим по ширині.">
       <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/drop-orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/drop-orders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partials/Drop/order-cancel.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partials/Drop/order-cancel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/Drop/drop.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/drop.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/Drop/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_cart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/Drop/_orders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_orders.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/Drop/drop.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/Drop/drop.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +231,7 @@
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
-      <workItem from="1794388591463" duration="9289000" />
+      <workItem from="1794388591463" duration="9946000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -502,7 +505,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794496207215</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Цей блок повинен бути вужчим по ширині.">
+      <option name="closed" value="true" />
+      <created>1794496725925</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1794496725925</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

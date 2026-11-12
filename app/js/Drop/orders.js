@@ -12,6 +12,8 @@
   var exportForm = exportModal ? exportModal.querySelector(".drop-export") : null;
   var searchForm = searchModal ? searchModal.querySelector(".drop-search") : null;
   var searchInput = searchForm ? searchForm.querySelector('input[type="search"]') : null;
+  var searchTriggerBtn = root.querySelector("[data-orders-search]");
+  var searchDialog = searchModal ? searchModal.querySelector(".drop-modal__dialog") : null;
   var returnValue = returnModal ? returnModal.querySelector(".drop-return__value p") : null;
   var pageModals = [exportModal, searchModal, returnModal];
   var lastFocus = null;
@@ -207,8 +209,42 @@
     openModal(exportModal);
   }
 
+  function positionSearchModal() {
+    var rect;
+    var pad = 16;
+    var gap = 8;
+    var width;
+    var left;
+    var top;
+
+    if (!searchModal || !searchDialog || !searchTriggerBtn || !searchModal.classList.contains("is-open")) {
+      return;
+    }
+
+    rect = searchTriggerBtn.getBoundingClientRect();
+    width = Math.min(511, window.innerWidth - pad * 2);
+    left = rect.right - width;
+
+    if (left < pad) {
+      left = pad;
+    }
+
+    if (left + width > window.innerWidth - pad) {
+      left = window.innerWidth - pad - width;
+    }
+
+    top = Math.round(rect.bottom + gap);
+
+    searchDialog.style.width = width + "px";
+    searchDialog.style.maxWidth = width + "px";
+    searchDialog.style.left = Math.round(left) + "px";
+    searchDialog.style.right = "auto";
+    searchDialog.style.top = top + "px";
+  }
+
   function openSearchModal() {
     openModal(searchModal);
+    positionSearchModal();
   }
 
   function openReturnModal(trigger) {
@@ -421,4 +457,6 @@
       closeModals();
     }
   });
+
+  window.addEventListener("resize", positionSearchModal);
 })();
