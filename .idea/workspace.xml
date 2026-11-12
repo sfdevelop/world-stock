@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Цифри в корзині відображуються не там. Змістити лівіше." />
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="В таблет‑версіях теж можна розташовувати вже по три в ряд" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,23 +88,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000863178315118" />
-      <entry key="MS500" value="1.1847481903831802" />
-      <entry key="S2" value="2.649222943149625" />
-      <entry key="S5" value="4.556365921668064" />
-      <entry key="S10" value="6.123458900525873" />
-      <entry key="S30" value="7.830504138393329" />
-      <entry key="S60" value="8.383283611641382" />
-      <entry key="M2" value="8.683149414680788" />
-      <entry key="M5" value="8.871153806925314" />
-      <entry key="M10" value="8.935220097530031" />
-      <entry key="M15" value="8.956733671578299" />
-      <entry key="M30" value="8.978326862676553" />
-      <entry key="H1" value="8.989153417431748" />
-      <entry key="H2" value="8.99457420265588" />
-      <entry key="H4" value="8.99728647448972" />
-      <entry key="D1" value="8.999547658659974" />
-      <entry key="W1" value="8.999935377675435" />
+      <entry key="MS100" value="1.0000145361485715" />
+      <entry key="MS500" value="1.1163798767283242" />
+      <entry key="S2" value="2.0289232445066148" />
+      <entry key="S5" value="4.0988442560720415" />
+      <entry key="S10" value="7.08385047160563" />
+      <entry key="S30" value="11.815698220462219" />
+      <entry key="S60" value="13.695672820156542" />
+      <entry key="M2" value="14.788627299442853" />
+      <entry key="M5" value="15.500362699848155" />
+      <entry key="M10" value="15.747589405202511" />
+      <entry key="M15" value="15.831144408613836" />
+      <entry key="M30" value="15.915279790107913" />
+      <entry key="H1" value="15.957566511941275" />
+      <entry key="H2" value="15.978764875122424" />
+      <entry key="H4" value="15.989377837957587" />
+      <entry key="D1" value="15.998229000452652" />
+      <entry key="W1" value="15.99974698440575" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -126,23 +126,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.001461694906868127" />
-      <entry key="MS500" value="0.3639916855620543" />
-      <entry key="S2" value="2.183827557278942" />
-      <entry key="S5" value="4.308362960640626" />
-      <entry key="S10" value="5.984519183235525" />
-      <entry key="S30" value="7.7801961055446744" />
-      <entry key="S60" value="8.357577680656279" />
-      <entry key="M2" value="8.67015402600497" />
-      <entry key="M5" value="8.865920876849415" />
-      <entry key="M10" value="8.93259778625002" />
-      <entry key="M15" value="8.954984161116045" />
-      <entry key="M30" value="8.97745145502622" />
-      <entry key="H1" value="8.988715550323665" />
-      <entry key="H2" value="8.99435522825881" />
-      <entry key="H4" value="8.997176977077638" />
-      <entry key="D1" value="8.99952940767251" />
-      <entry key="W1" value="8.999932770356763" />
+      <entry key="MS100" value="1.7872396160039237E-4" />
+      <entry key="MS500" value="0.20116735207519648" />
+      <entry key="S2" value="1.4121361824022498" />
+      <entry key="S5" value="3.703157150308041" />
+      <entry key="S10" value="6.816637954573843" />
+      <entry key="S30" value="11.697670657551363" />
+      <entry key="S60" value="13.63157484536953" />
+      <entry key="M2" value="14.755161015179636" />
+      <entry key="M5" value="15.48661537981806" />
+      <entry key="M10" value="15.740653802054306" />
+      <entry key="M15" value="15.82650677081085" />
+      <entry key="M30" value="15.912953985394642" />
+      <entry key="H1" value="15.956401856609126" />
+      <entry key="H2" value="15.978182108394504" />
+      <entry key="H4" value="15.989086344725752" />
+      <entry key="D1" value="15.998180402979225" />
+      <entry key="W1" value="15.999740041535519" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
@@ -221,7 +221,7 @@
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
-      <workItem from="1794388591463" duration="7550000" />
+      <workItem from="1794388591463" duration="8408000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -471,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794418661853</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="В таблет‑версіях теж можна розташовувати вже по три в ряд">
+      <option name="closed" value="true" />
+      <created>1794418874822</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1794418874822</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,6 +519,7 @@
     <MESSAGE value="При наведенні на стрілочку… якась лажа виходить." />
     <MESSAGE value="Перевір відступ у мобільній версії, він там менший." />
     <MESSAGE value="Цифри в корзині відображуються не там. Змістити лівіше." />
-    <option name="LAST_COMMIT_MESSAGE" value="Цифри в корзині відображуються не там. Змістити лівіше." />
+    <MESSAGE value="В таблет‑версіях теж можна розташовувати вже по три в ряд" />
+    <option name="LAST_COMMIT_MESSAGE" value="В таблет‑версіях теж можна розташовувати вже по три в ряд" />
   </component>
 </project>

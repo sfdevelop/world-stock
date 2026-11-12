@@ -1071,6 +1071,16 @@ $drop-order-cancel: #70566a;
 			flex-direction: row;
 			align-items: flex-end;
 			gap: 10px;
+
+			> .drop-order__field {
+				flex: 1 1 0;
+				width: 0;
+			}
+		}
+
+		&__control,
+		&__file {
+			width: 100%;
 		}
 
 		&__control p,
