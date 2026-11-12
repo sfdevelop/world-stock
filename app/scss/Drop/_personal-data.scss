@@ -285,7 +285,8 @@ $drop-personal-placeholder: rgba(106, 106, 106, 0.5);
 		}
 
 		&:hover {
-			background: $drop-personal-back;
+			background: $drop-black;
+			color: $drop-white;
 		}
 
 		&:focus-visible {

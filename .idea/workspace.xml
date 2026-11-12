@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Цей блок повинен бути вужчим по ширині.">
-      <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/Drop/drop.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/drop.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/Drop/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_cart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_orders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_orders.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/Drop/drop.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/Drop/drop.min.js" afterDir="false" />
-    </list>
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="В розгорнутому вигляді в мобільній версії тут загальної суми також не повинно бути." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,7 +221,7 @@
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
-      <workItem from="1794388591463" duration="9946000" />
+      <workItem from="1794388591463" duration="10263000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -513,7 +503,23 @@
       <option name="project" value="LOCAL" />
       <updated>1794496725925</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Можна, щоб пошук при натисканні на кнопку з'являвся не по центру екрана, а ближче, ніби під цією кнопкою.">
+      <option name="closed" value="true" />
+      <created>1794497674390</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1794497674390</updated>
+    </task>
+    <task id="LOCAL-00037" summary="В розгорнутому вигляді в мобільній версії тут загальної суми також не повинно бути.">
+      <option name="closed" value="true" />
+      <created>1794497848196</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1794497848196</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,8 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1" />
-    <MESSAGE value="start" />
     <MESSAGE value="Add support for partial HTML handling and &quot;Drop&quot; styles/scripts integration&#10;&#10;Enhance `html-assembler.js` with partials handling, including new regex patterns and recursive assembly logic. Update `gulpfile.js` to build and watch &quot;Drop&quot; styles and scripts, ensuring seamless integration with the project." />
     <MESSAGE value="**Add mobile drop-menu with HTML, SCSS, and JavaScript integration**  &#10;Implement a responsive mobile menu structure with animation and accessibility features. Includes SCSS styling, plus/minus icons for toggling, and JavaScript logic for functionality and events." />
     <MESSAGE value="Add desktop drop-menu with SVG icons and HTML structure&#10;&#10;Implement a detailed desktop dropdown menu with categorized sections for Men, Women, Kids, and Brands. Add support for SVG arrow icons, promo banners, and brand-specific logos. Update associated styles in `drop.min.css` for layout and responsiveness." />
@@ -556,6 +560,8 @@
     <MESSAGE value="В таблет‑версіях теж можна розташовувати вже по три в ряд" />
     <MESSAGE value="Імпути повинні бути однакових розмірів згідно ширини блоку." />
     <MESSAGE value="Цей блок повинен бути вужчим по ширині." />
-    <option name="LAST_COMMIT_MESSAGE" value="Цей блок повинен бути вужчим по ширині." />
+    <MESSAGE value="Можна, щоб пошук при натисканні на кнопку з'являвся не по центру екрана, а ближче, ніби під цією кнопкою." />
+    <MESSAGE value="В розгорнутому вигляді в мобільній версії тут загальної суми також не повинно бути." />
+    <option name="LAST_COMMIT_MESSAGE" value="В розгорнутому вигляді в мобільній версії тут загальної суми також не повинно бути." />
   </component>
 </project>
