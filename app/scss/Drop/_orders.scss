@@ -1060,11 +1060,13 @@ $drop-order-cancel: #70566a;
 		}
 
 		&__panel--docs {
-			flex: 1.4 1 0;
+			flex: 1 1 auto;
+			min-width: 0;
 		}
 
 		&__panel--side {
-			flex: 1 1 0;
+			flex: 0 0 271px;
+			width: 271px;
 		}
 
 		&__docs {
