@@ -963,6 +963,14 @@ $drop-order-cancel: #70566a;
 		border-bottom: 0;
 	}
 
+	&.is-open &__price--mobile {
+		display: none;
+	}
+
+	&.is-open &__meta {
+		justify-content: flex-start;
+	}
+
 	&.is-open &__toggle img {
 		transform: rotate(180deg);
 	}
