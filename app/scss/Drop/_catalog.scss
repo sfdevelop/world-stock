@@ -132,7 +132,9 @@ $drop-catalog-muted: #757575;
 		font-weight: 400;
 		line-height: 1.4;
 		white-space: nowrap;
+		transition: background 0.2s linear, border-color 0.2s linear, color 0.2s linear;
 
+		&:hover,
 		&.is-active {
 			border-color: $drop-grey-light;
 			background: $drop-black;
@@ -226,7 +228,9 @@ $drop-catalog-muted: #757575;
 			line-height: 1.4;
 			text-align: left;
 			white-space: nowrap;
+			transition: background 0.2s linear, color 0.2s linear;
 
+			&:hover,
 			&.is-active {
 				background: $drop-black;
 				color: $drop-white;

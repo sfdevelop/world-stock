@@ -931,6 +931,8 @@ $drop-product-swatch: #d4d4d4;
 			font-size: 14px;
 			line-height: 1.4;
 			color: $drop-product-summary-text;
+			text-box-trim: trim-both;
+			text-box-edge: cap alphabetic;
 		}
 	}
 
