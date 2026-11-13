@@ -11,6 +11,7 @@ $drop-order-label: #6a6a6a;
 $drop-order-metric: #f7f7f7;
 $drop-order-sum: #c00;
 $drop-order-cancel: #70566a;
+$drop-order-control-h: 44px;
 
 .drop-page--orders {
 	.drop-cabinet__link--active {
@@ -466,8 +467,8 @@ $drop-order-cancel: #70566a;
 		align-items: center;
 		justify-content: space-between;
 		gap: 12px;
-		min-height: 44px;
-		padding: 12px 16px;
+		height: $drop-order-control-h;
+		padding: 0 16px;
 		border: 1px solid $drop-order-green;
 		border-radius: $drop-radius;
 		background: $drop-white;
@@ -523,7 +524,7 @@ $drop-order-cancel: #70566a;
 		display: flex;
 		align-items: center;
 		gap: 10px;
-		height: 44px;
+		height: $drop-order-control-h;
 		padding-right: 12px;
 		overflow: hidden;
 		border: 1px solid $drop-order-green;
@@ -574,7 +575,7 @@ $drop-order-cancel: #70566a;
 		align-items: center;
 		gap: 10px;
 		width: 100%;
-		height: 44px;
+		height: $drop-order-control-h;
 		padding: 0 12px;
 		overflow: hidden;
 		border: 1px solid $drop-order-muted;
@@ -638,7 +639,7 @@ $drop-order-cancel: #70566a;
 		flex-shrink: 0;
 		align-items: center;
 		justify-content: center;
-		height: 44px;
+		height: $drop-order-control-h;
 		padding: 0 16px;
 		border-radius: $drop-radius;
 		background: $drop-black;
@@ -653,7 +654,7 @@ $drop-order-cancel: #70566a;
 	}
 
 	&__save--ghost {
-		height: 42px;
+		height: $drop-order-control-h;
 		padding: 0 24px;
 		border: 1px solid $drop-order-save;
 		background: $drop-order-save-back;
@@ -1151,7 +1152,7 @@ $drop-order-cancel: #70566a;
 		&__save {
 			flex-shrink: 0;
 			width: auto;
-			height: 42px;
+			height: $drop-order-control-h;
 		}
 
 		&__docs--draft &__save {

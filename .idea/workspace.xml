@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Не такі відступи, перевірити цей блок." />
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Повинна бути червоною при наведенні." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +224,7 @@
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
       <workItem from="1794388591463" duration="11127000" />
-      <workItem from="1794568898025" duration="1266000" />
+      <workItem from="1794568898025" duration="1751000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -562,7 +562,23 @@
       <option name="project" value="LOCAL" />
       <updated>1794570109892</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Повинна бути червоною при наведенні.">
+      <option name="closed" value="true" />
+      <created>1794570350056</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1794570350056</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Повинна бути червоною при наведенні.">
+      <option name="closed" value="true" />
+      <created>1794570621186</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1794570621186</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +596,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implement &quot;Drop&quot; cart structure with HTML, SCSS, and JavaScript. Includes visuals, animations, accessibility features, and detailed product grouping, stepper, and summary functionality." />
     <MESSAGE value="При наведенні Кнопки меню мають бути червоними і підкресленими." />
     <MESSAGE value="Не такі відступи між пунктами меню в футері." />
     <MESSAGE value="У футері замінити логотип на логотип з дроп." />
@@ -605,6 +620,7 @@
     <MESSAGE value="Перевір, будь ласка, відображення цифр розташування цього кружка не таке, як у дизайні." />
     <MESSAGE value="При наведенні в дизайні тут повинен бути чорний. Чорна заливка кнопки. Проте поки що теж під питанням. В старому дизайні гурту теж сіре." />
     <MESSAGE value="Не такі відступи, перевірити цей блок." />
-    <option name="LAST_COMMIT_MESSAGE" value="Не такі відступи, перевірити цей блок." />
+    <MESSAGE value="Повинна бути червоною при наведенні." />
+    <option name="LAST_COMMIT_MESSAGE" value="Повинна бути червоною при наведенні." />
   </component>
 </project>
