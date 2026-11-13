@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Повинна бути червоною при наведенні." />
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Перевір висоту імпутів і кнопки. Там різниця в 1-2 піксель, але я впевнена, що він її замітить." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,54 +97,54 @@
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
       <entry key="S60" value="0.0" />
-      <entry key="M2" value="1.571011293150047E-200" />
-      <entry key="M5" value="6.321824535861789E-80" />
-      <entry key="M10" value="1.0056905545861993E-39" />
-      <entry key="M15" value="2.5293708131456146E-26" />
-      <entry key="M30" value="6.361570934072051E-13" />
-      <entry key="H1" value="3.1903748375062954E-6" />
-      <entry key="H2" value="0.007144646244466566" />
-      <entry key="H4" value="0.33810401439393306" />
-      <entry key="D1" value="8.412822049894563" />
-      <entry key="W1" value="14.596118182962467" />
+      <entry key="M2" value="3.293476302178257E-203" />
+      <entry key="M5" value="5.363305456605854E-81" />
+      <entry key="M10" value="2.9292700987439486E-40" />
+      <entry key="M15" value="1.111414011609361E-26" />
+      <entry key="M30" value="4.216926743335196E-13" />
+      <entry key="H1" value="2.597511940015403E-6" />
+      <entry key="H2" value="0.006446717668561047" />
+      <entry key="H4" value="0.32116579649063903" />
+      <entry key="D1" value="8.341065458241488" />
+      <entry key="W1" value="14.578267596466711" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000383282" />
-      <entry key="S30" value="1.000337165314142" />
-      <entry key="S60" value="1.0184317605949686" />
-      <entry key="M2" value="1.147318613027226" />
-      <entry key="M5" value="1.706328912779902" />
-      <entry key="M10" value="2.387110094943908" />
-      <entry key="M15" value="2.7750070418380153" />
-      <entry key="M30" value="3.29577480556489" />
-      <entry key="H1" value="3.62108946311713" />
-      <entry key="H2" value="3.8032882474233376" />
-      <entry key="H4" value="3.899755159106571" />
-      <entry key="D1" value="3.9830235588408636" />
-      <entry key="W1" value="3.9975681191421186" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000000193219" />
+      <entry key="S60" value="1.0000044759209368" />
+      <entry key="M2" value="1.0024052447487355" />
+      <entry key="M5" value="1.1447614231740022" />
+      <entry key="M10" value="1.695292422867205" />
+      <entry key="M15" value="2.2193473936618324" />
+      <entry key="M30" value="3.184686936863374" />
+      <entry key="H1" value="3.948187468674565" />
+      <entry key="H2" value="4.431762008130779" />
+      <entry key="H4" value="4.7043865747587965" />
+      <entry key="D1" value="4.949050631164365" />
+      <entry key="W1" value="4.992679220971459" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0076517210748978624" />
-      <entry key="MS500" value="0.37735649213013994" />
-      <entry key="S2" value="0.7837687734420304" />
-      <entry key="S5" value="0.9071418071836509" />
-      <entry key="S10" value="0.9524399231734542" />
-      <entry key="S30" value="0.9842225013143515" />
-      <entry key="S60" value="1.0102572583174476" />
-      <entry key="M2" value="1.1428720971832163" />
-      <entry key="M5" value="1.7035939420424437" />
-      <entry key="M10" value="2.3850171729556577" />
-      <entry key="M15" value="2.773318203093499" />
-      <entry key="M30" value="3.294727644381712" />
-      <entry key="H1" value="3.6205045703478596" />
-      <entry key="H2" value="3.8101203736401676" />
-      <entry key="H4" value="4.2376920372685145" />
-      <entry key="D1" value="12.395792526136345" />
-      <entry key="W1" value="18.593676018419583" />
+      <entry key="MS100" value="0.009888723390392809" />
+      <entry key="MS500" value="0.39721720004805233" />
+      <entry key="S2" value="0.7938839309316525" />
+      <entry key="S5" value="0.911806753501677" />
+      <entry key="S10" value="0.9548857279809333" />
+      <entry key="S30" value="0.9847299208981406" />
+      <entry key="S60" value="0.9923400288350478" />
+      <entry key="M2" value="0.9985563462949832" />
+      <entry key="M5" value="1.1429917904859273" />
+      <entry key="M10" value="1.6939137210111233" />
+      <entry key="M15" value="2.2180925148698636" />
+      <entry key="M30" value="3.1837363682539084" />
+      <entry key="H1" value="3.947583041704214" />
+      <entry key="H2" value="4.437862620398343" />
+      <entry key="H4" value="5.0253615506073075" />
+      <entry key="D1" value="13.290058116575935" />
+      <entry key="W1" value="19.570935783043" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
@@ -224,7 +224,7 @@
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
       <workItem from="1794388591463" duration="11127000" />
-      <workItem from="1794568898025" duration="1751000" />
+      <workItem from="1794568898025" duration="2603000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -578,7 +578,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794570621186</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Перевір висоту імпутів і кнопки. Там різниця в 1-2 піксель, але я впевнена, що він її замітить.">
+      <option name="closed" value="true" />
+      <created>1794570861906</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1794570861906</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,7 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="При наведенні Кнопки меню мають бути червоними і підкресленими." />
     <MESSAGE value="Не такі відступи між пунктами меню в футері." />
     <MESSAGE value="У футері замінити логотип на логотип з дроп." />
     <MESSAGE value="В меню не такі відступи міжбуквенного інтервалу в «Показати всі» та не такі стрілочки." />
@@ -621,6 +628,7 @@
     <MESSAGE value="При наведенні в дизайні тут повинен бути чорний. Чорна заливка кнопки. Проте поки що теж під питанням. В старому дизайні гурту теж сіре." />
     <MESSAGE value="Не такі відступи, перевірити цей блок." />
     <MESSAGE value="Повинна бути червоною при наведенні." />
-    <option name="LAST_COMMIT_MESSAGE" value="Повинна бути червоною при наведенні." />
+    <MESSAGE value="Перевір висоту імпутів і кнопки. Там різниця в 1-2 піксель, але я впевнена, що він її замітить." />
+    <option name="LAST_COMMIT_MESSAGE" value="Перевір висоту імпутів і кнопки. Там різниця в 1-2 піксель, але я впевнена, що він її замітить." />
   </component>
 </project>
