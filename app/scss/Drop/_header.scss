@@ -291,30 +291,29 @@
 
 	&__badge {
 		position: absolute;
-		top: -5px;
-		right: -6px;
+		top: -5.33px;
+		left: 14.05px;
 		z-index: 1;
 		@include drop-flex-center;
-		width: 16px;
-		height: 16px;
+		width: 22.67px;
+		height: 22.67px;
 		padding: 0;
 		border-radius: 50%;
 		background: $drop-red;
 		color: $drop-white;
-		aspect-ratio: 1;
 
 		p {
-			font-size: 11px;
+			font-size: 10.67px;
 			font-weight: 400;
-			line-height: 1;
+			line-height: 1.4;
 			white-space: nowrap;
 		}
 
 		@include drop-desktop {
 			top: -6px;
-			right: -7px;
-			width: 18px;
-			height: 18px;
+			left: 15.81px;
+			width: 25.5px;
+			height: 25.5px;
 
 			p {
 				font-size: 12px;

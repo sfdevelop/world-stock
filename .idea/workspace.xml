@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="В розгорнутому вигляді в мобільній версії тут загальної суми також не повинно бути." />
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Ховер‑ефект повинен бути червоною кнопкою." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,25 +88,6 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000145361485715" />
-      <entry key="MS500" value="1.1163798767283242" />
-      <entry key="S2" value="2.0289232445066148" />
-      <entry key="S5" value="4.0988442560720415" />
-      <entry key="S10" value="7.08385047160563" />
-      <entry key="S30" value="11.815698220462219" />
-      <entry key="S60" value="13.695672820156542" />
-      <entry key="M2" value="14.788627299442853" />
-      <entry key="M5" value="15.500362699848155" />
-      <entry key="M10" value="15.747589405202511" />
-      <entry key="M15" value="15.831144408613836" />
-      <entry key="M30" value="15.915279790107913" />
-      <entry key="H1" value="15.957566511941275" />
-      <entry key="H2" value="15.978764875122424" />
-      <entry key="H4" value="15.989377837957587" />
-      <entry key="D1" value="15.998229000452652" />
-      <entry key="W1" value="15.99974698440575" />
-    </decayedCancelled>
-    <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
@@ -114,35 +95,54 @@
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
       <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="M2" value="2.6717234736200663E-198" />
+      <entry key="M5" value="4.9327296932503616E-79" />
+      <entry key="M10" value="2.8092268529026096E-39" />
+      <entry key="M15" value="5.0168077970806526E-26" />
+      <entry key="M30" value="8.959254098686358E-13" />
+      <entry key="H1" value="3.786129386104132E-6" />
+      <entry key="H2" value="0.00778318942412699" />
+      <entry key="H4" value="0.35288952102731264" />
+      <entry key="D1" value="8.47305011692802" />
+      <entry key="W1" value="14.611000409328971" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0" />
+      <entry key="M10" value="1.0" />
+      <entry key="M15" value="1.0" />
+      <entry key="M30" value="1.0" />
+      <entry key="H1" value="1.0" />
+      <entry key="H2" value="1.0" />
+      <entry key="H4" value="1.0" />
+      <entry key="D1" value="1.0" />
+      <entry key="W1" value="1.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.7872396160039237E-4" />
-      <entry key="MS500" value="0.20116735207519648" />
-      <entry key="S2" value="1.4121361824022498" />
-      <entry key="S5" value="3.703157150308041" />
-      <entry key="S10" value="6.816637954573843" />
-      <entry key="S30" value="11.697670657551363" />
-      <entry key="S60" value="13.63157484536953" />
-      <entry key="M2" value="14.755161015179636" />
-      <entry key="M5" value="15.48661537981806" />
-      <entry key="M10" value="15.740653802054306" />
-      <entry key="M15" value="15.82650677081085" />
-      <entry key="M30" value="15.912953985394642" />
-      <entry key="H1" value="15.956401856609126" />
-      <entry key="H2" value="15.978182108394504" />
-      <entry key="H4" value="15.989086344725752" />
-      <entry key="D1" value="15.998180402979225" />
-      <entry key="W1" value="15.999740041535519" />
+      <entry key="MS100" value="0.0033306050459685817" />
+      <entry key="MS500" value="0.3195248408007628" />
+      <entry key="S2" value="0.7518412622105121" />
+      <entry key="S5" value="0.8921758488010397" />
+      <entry key="S10" value="0.9445506067972429" />
+      <entry key="S30" value="0.9811643133692703" />
+      <entry key="S60" value="0.9905373861542381" />
+      <entry key="M2" value="0.9952574471734629" />
+      <entry key="M5" value="0.9981002730046015" />
+      <entry key="M10" value="0.9990496849529564" />
+      <entry key="M15" value="0.9993663562486004" />
+      <entry key="M30" value="0.9996831279212386" />
+      <entry key="H1" value="0.9998453372602503" />
+      <entry key="H2" value="1.0077036781259987" />
+      <entry key="H4" value="1.352843473197534" />
+      <entry key="D1" value="9.473017776001358" />
+      <entry key="W1" value="15.610993125865555" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
@@ -221,7 +221,7 @@
       <workItem from="1793813544493" duration="89000" />
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
-      <workItem from="1794388591463" duration="10263000" />
+      <workItem from="1794388591463" duration="11127000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -519,7 +519,23 @@
       <option name="project" value="LOCAL" />
       <updated>1794497848196</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="ховер‑ефект: повинна бути чорна кнопка, білий текст.">
+      <option name="closed" value="true" />
+      <created>1794497966813</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1794497966813</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Ховер‑ефект повинен бути червоною кнопкою.">
+      <option name="closed" value="true" />
+      <created>1794498080820</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1794498080820</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,8 +553,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add support for partial HTML handling and &quot;Drop&quot; styles/scripts integration&#10;&#10;Enhance `html-assembler.js` with partials handling, including new regex patterns and recursive assembly logic. Update `gulpfile.js` to build and watch &quot;Drop&quot; styles and scripts, ensuring seamless integration with the project." />
-    <MESSAGE value="**Add mobile drop-menu with HTML, SCSS, and JavaScript integration**  &#10;Implement a responsive mobile menu structure with animation and accessibility features. Includes SCSS styling, plus/minus icons for toggling, and JavaScript logic for functionality and events." />
     <MESSAGE value="Add desktop drop-menu with SVG icons and HTML structure&#10;&#10;Implement a detailed desktop dropdown menu with categorized sections for Men, Women, Kids, and Brands. Add support for SVG arrow icons, promo banners, and brand-specific logos. Update associated styles in `drop.min.css` for layout and responsiveness." />
     <MESSAGE value="Add styles and markup for &quot;Drop&quot; card layout, catalog, filters, and basket components" />
     <MESSAGE value="&quot;Add styles and markup for the product page layout and visuals&quot;" />
@@ -562,6 +576,8 @@
     <MESSAGE value="Цей блок повинен бути вужчим по ширині." />
     <MESSAGE value="Можна, щоб пошук при натисканні на кнопку з'являвся не по центру екрана, а ближче, ніби під цією кнопкою." />
     <MESSAGE value="В розгорнутому вигляді в мобільній версії тут загальної суми також не повинно бути." />
-    <option name="LAST_COMMIT_MESSAGE" value="В розгорнутому вигляді в мобільній версії тут загальної суми також не повинно бути." />
+    <MESSAGE value="ховер‑ефект: повинна бути чорна кнопка, білий текст." />
+    <MESSAGE value="Ховер‑ефект повинен бути червоною кнопкою." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ховер‑ефект повинен бути червоною кнопкою." />
   </component>
 </project>
