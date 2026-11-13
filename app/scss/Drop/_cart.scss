@@ -318,6 +318,7 @@ html.drop-cart-open body {
 		width: 16px;
 		height: 16px;
 		overflow: hidden;
+		@include drop-delete-hover;
 	}
 
 	&__delete-lid,

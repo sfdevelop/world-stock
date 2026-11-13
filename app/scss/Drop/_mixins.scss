@@ -39,3 +39,14 @@
 	font-family: inherit;
 	cursor: pointer;
 }
+
+@mixin drop-delete-hover {
+	img {
+		transition: filter 0.2s linear;
+	}
+
+	&:hover img,
+	&:focus-visible img {
+		filter: invert(14%) sepia(97%) saturate(4486%) hue-rotate(349deg) brightness(87%) contrast(101%);
+	}
+}

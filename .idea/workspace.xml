@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="При наведенні в дизайні тут повинен бути чорний. Чорна заливка кнопки. Проте поки що теж під питанням. В старому дизайні гурту теж сіре.">
-      <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_catalog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_catalog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
-    </list>
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Не такі відступи, перевірити цей блок." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -228,7 +224,7 @@
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
       <workItem from="1794388591463" duration="11127000" />
-      <workItem from="1794568898025" duration="926000" />
+      <workItem from="1794568898025" duration="1266000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -558,7 +554,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794569514067</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Не такі відступи, перевірити цей блок.">
+      <option name="closed" value="true" />
+      <created>1794570109892</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1794570109892</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot;Add styles and markup for the product page layout and visuals&quot;" />
     <MESSAGE value="Implement &quot;Drop&quot; cart structure with HTML, SCSS, and JavaScript. Includes visuals, animations, accessibility features, and detailed product grouping, stepper, and summary functionality." />
     <MESSAGE value="При наведенні Кнопки меню мають бути червоними і підкресленими." />
     <MESSAGE value="Не такі відступи між пунктами меню в футері." />
@@ -601,6 +604,7 @@
     <MESSAGE value="Ховер‑ефект повинен бути червоною кнопкою." />
     <MESSAGE value="Перевір, будь ласка, відображення цифр розташування цього кружка не таке, як у дизайні." />
     <MESSAGE value="При наведенні в дизайні тут повинен бути чорний. Чорна заливка кнопки. Проте поки що теж під питанням. В старому дизайні гурту теж сіре." />
-    <option name="LAST_COMMIT_MESSAGE" value="При наведенні в дизайні тут повинен бути чорний. Чорна заливка кнопки. Проте поки що теж під питанням. В старому дизайні гурту теж сіре." />
+    <MESSAGE value="Не такі відступи, перевірити цей блок." />
+    <option name="LAST_COMMIT_MESSAGE" value="Не такі відступи, перевірити цей блок." />
   </component>
 </project>
