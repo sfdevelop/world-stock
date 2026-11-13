@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Ховер‑ефект повинен бути червоною кнопкою." />
+    <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Перевір, будь ласка, відображення цифр розташування цього кружка не таке, як у дизайні.">
+      <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_cabinet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_cabinet.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_user.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +24,9 @@
               <execution>
                 <execution>
                   <execution>
-                    <execution />
+                    <execution>
+                      <execution />
+                    </execution>
                   </execution>
                 </execution>
               </execution>
@@ -30,7 +37,7 @@
     </execution>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="672" />
+    <option name="cachedIndexableFilesCount" value="747" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -95,16 +102,16 @@
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
       <entry key="S60" value="0.0" />
-      <entry key="M2" value="2.6717234736200663E-198" />
-      <entry key="M5" value="4.9327296932503616E-79" />
-      <entry key="M10" value="2.8092268529026096E-39" />
-      <entry key="M15" value="5.0168077970806526E-26" />
-      <entry key="M30" value="8.959254098686358E-13" />
-      <entry key="H1" value="3.786129386104132E-6" />
-      <entry key="H2" value="0.00778318942412699" />
-      <entry key="H4" value="0.35288952102731264" />
-      <entry key="D1" value="8.47305011692802" />
-      <entry key="W1" value="14.611000409328971" />
+      <entry key="M2" value="1.159362818403178E-199" />
+      <entry key="M5" value="1.406236810697344E-79" />
+      <entry key="M10" value="1.4999348075576355E-39" />
+      <entry key="M15" value="3.3018031511419266E-26" />
+      <entry key="M30" value="7.268314509113922E-13" />
+      <entry key="H1" value="3.410172752761415E-6" />
+      <entry key="H2" value="0.007386659238931585" />
+      <entry key="H4" value="0.3437826812687998" />
+      <entry key="D1" value="8.436208677965658" />
+      <entry key="W1" value="14.601907780970674" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
@@ -112,37 +119,37 @@
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
       <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0" />
-      <entry key="D1" value="1.0" />
-      <entry key="W1" value="1.0" />
+      <entry key="S30" value="1.0000072183775663" />
+      <entry key="S60" value="1.0037994263960772" />
+      <entry key="M2" value="1.0871705578896764" />
+      <entry key="M5" value="1.5711693862688492" />
+      <entry key="M10" value="2.0688020821444586" />
+      <entry key="M15" value="2.3170678706263974" />
+      <entry key="M30" value="2.623002007188889" />
+      <entry key="H1" value="2.801666990534132" />
+      <entry key="H2" value="2.898244968847152" />
+      <entry key="H4" value="2.9484583476704804" />
+      <entry key="D1" value="2.9913160036452555" />
+      <entry key="W1" value="2.998757114338958" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0033306050459685817" />
-      <entry key="MS500" value="0.3195248408007628" />
-      <entry key="S2" value="0.7518412622105121" />
-      <entry key="S5" value="0.8921758488010397" />
-      <entry key="S10" value="0.9445506067972429" />
-      <entry key="S30" value="0.9811643133692703" />
-      <entry key="S60" value="0.9905373861542381" />
-      <entry key="M2" value="0.9952574471734629" />
-      <entry key="M5" value="0.9981002730046015" />
-      <entry key="M10" value="0.9990496849529564" />
-      <entry key="M15" value="0.9993663562486004" />
-      <entry key="M30" value="0.9996831279212386" />
-      <entry key="H1" value="0.9998453372602503" />
-      <entry key="H2" value="1.0077036781259987" />
-      <entry key="H4" value="1.352843473197534" />
-      <entry key="D1" value="9.473017776001358" />
-      <entry key="W1" value="15.610993125865555" />
+      <entry key="MS100" value="0.06163954403083495" />
+      <entry key="MS500" value="0.5727589489898784" />
+      <entry key="S2" value="0.8699473527086508" />
+      <entry key="S5" value="0.9457953802089453" />
+      <entry key="S10" value="0.9725201181512624" />
+      <entry key="S30" value="0.9907618543802875" />
+      <entry key="S60" value="0.999114909520771" />
+      <entry key="M2" value="1.084262489088215" />
+      <entry key="M5" value="1.5686958038648529" />
+      <entry key="M10" value="2.066891367336261" />
+      <entry key="M15" value="2.3155698623965035" />
+      <entry key="M30" value="2.622114845869212" />
+      <entry key="H1" value="2.801186473812476" />
+      <entry key="H2" value="2.905378490199409" />
+      <entry key="H4" value="3.2921054923766406" />
+      <entry key="D1" value="11.427477106954138" />
+      <entry key="W1" value="17.600655413556737" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
@@ -195,8 +202,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PS-262.11879.104" />
-        <option value="bundled-php-predefined-a98d8de5180a-9522f28f0b20-com.jetbrains.php.sharedIndexes-PS-262.11879.104" />
+        <option value="bundled-js-predefined-d6986cc7102b-56aff7b04f6f-JavaScript-PS-263.7307.215" />
+        <option value="bundled-php-predefined-a98d8de5180a-ec844a175cc0-com.jetbrains.php.sharedIndexes-PS-263.7307.215" />
       </set>
     </attachedChunks>
   </component>
@@ -222,6 +229,7 @@
       <workItem from="1793818307754" duration="7000" />
       <workItem from="1793897910810" duration="773000" />
       <workItem from="1794388591463" duration="11127000" />
+      <workItem from="1794568898025" duration="581000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -535,7 +543,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794498080820</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Перевір, будь ласка, відображення цифр розташування цього кружка не таке, як у дизайні.">
+      <option name="closed" value="true" />
+      <created>1794568979801</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1794568979801</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add desktop drop-menu with SVG icons and HTML structure&#10;&#10;Implement a detailed desktop dropdown menu with categorized sections for Men, Women, Kids, and Brands. Add support for SVG arrow icons, promo banners, and brand-specific logos. Update associated styles in `drop.min.css` for layout and responsiveness." />
     <MESSAGE value="Add styles and markup for &quot;Drop&quot; card layout, catalog, filters, and basket components" />
     <MESSAGE value="&quot;Add styles and markup for the product page layout and visuals&quot;" />
     <MESSAGE value="Implement &quot;Drop&quot; cart structure with HTML, SCSS, and JavaScript. Includes visuals, animations, accessibility features, and detailed product grouping, stepper, and summary functionality." />
@@ -578,6 +593,7 @@
     <MESSAGE value="В розгорнутому вигляді в мобільній версії тут загальної суми також не повинно бути." />
     <MESSAGE value="ховер‑ефект: повинна бути чорна кнопка, білий текст." />
     <MESSAGE value="Ховер‑ефект повинен бути червоною кнопкою." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ховер‑ефект повинен бути червоною кнопкою." />
+    <MESSAGE value="Перевір, будь ласка, відображення цифр розташування цього кружка не таке, як у дизайні." />
+    <option name="LAST_COMMIT_MESSAGE" value="Перевір, будь ласка, відображення цифр розташування цього кружка не таке, як у дизайні." />
   </component>
 </project>

@@ -5,7 +5,7 @@ $drop-user-width: 296px;
 $drop-user-slide: 0.45s;
 $drop-user-ease: cubic-bezier(0.22, 1, 0.36, 1);
 $drop-user-overlay: rgba(0, 0, 0, 0.2);
-$drop-user-hover: rgba(237, 237, 237, 0.4);
+$drop-user-hover: $drop-grey-light;
 $drop-user-header: calc(#{$drop-header-pad-y} * 2 + 30.222px);
 $drop-user-desktop-right: calc(#{$drop-header-pad-x-desktop} + 34px + 12px);
 
