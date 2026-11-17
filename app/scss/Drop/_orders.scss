@@ -378,7 +378,7 @@ $drop-order-control-h: 44px;
 		height: 0;
 		overflow: hidden;
 		padding: 0 12px;
-		transition: height 0.35s ease;
+		@include drop-accordion-height;
 	}
 
 	&__metrics {

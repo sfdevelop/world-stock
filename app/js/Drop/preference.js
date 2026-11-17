@@ -72,10 +72,6 @@
         group.classList.toggle("is-open", isOpen);
         panel.style.height = isOpen ? panel.scrollHeight + "px" : "0px";
 
-        if (isOpen) {
-          initCards();
-        }
-
         panel.addEventListener("transitionend", function onEnd(event) {
           if (event.target !== panel || event.propertyName !== "height" || panel._animToken !== token) {
             return;
@@ -85,6 +81,7 @@
 
           if (isOpen) {
             panel.style.height = "auto";
+            initCards();
             return;
           }
 

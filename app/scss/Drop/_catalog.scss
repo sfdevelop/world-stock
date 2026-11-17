@@ -123,7 +123,8 @@ $drop-catalog-muted: #757575;
 	}
 
 	&__choice {
-		padding: 12px 18px;
+		height: 34px;
+		padding: 0 18px;
 		border: 1px solid $drop-grey-link;
 		border-radius: 4px;
 		background: $drop-white;
@@ -275,18 +276,16 @@ $drop-catalog-muted: #757575;
 .drop-pagination {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: 4px;
+	justify-content: space-between;
+	width: 100%;
+	gap: 8px;
 	margin-top: 32px;
-
-	@include drop-desktop {
-		justify-content: space-between;
-		margin-top: 32px;
-	}
 
 	&__list {
 		display: flex;
+		flex: 1 1 auto;
 		align-items: center;
+		justify-content: center;
 		gap: 2px;
 
 		@include drop-desktop {
@@ -354,9 +353,23 @@ $drop-catalog-muted: #757575;
 		pointer-events: none;
 	}
 
+	&__list a {
+		transition: color 0.2s linear, background 0.2s linear;
+
+		&:hover,
+		&:focus-visible {
+			color: $drop-red;
+		}
+	}
+
 	&__list a[aria-current="page"] {
 		border-radius: 8px;
 		background: $drop-black;
 		color: $drop-white;
+
+		&:hover,
+		&:focus-visible {
+			color: $drop-white;
+		}
 	}
 }

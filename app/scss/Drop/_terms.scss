@@ -226,8 +226,7 @@ $drop-terms-back: rgba(237, 237, 237, 0.4);
 	&__panel {
 		width: 100%;
 		min-width: 0;
-		overflow: hidden;
-		transition: height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+		@include drop-accordion-height;
 	}
 
 	&__item.is-open &__panel {

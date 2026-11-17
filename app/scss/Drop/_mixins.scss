@@ -40,6 +40,23 @@
 	cursor: pointer;
 }
 
+@mixin drop-link-hover {
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	transition: color 0.2s linear, text-decoration-color 0.2s linear;
+
+	&:hover,
+	&:focus-visible {
+		color: $drop-red;
+		text-decoration-color: $drop-red;
+	}
+}
+
+@mixin drop-accordion-height {
+	overflow: hidden;
+	transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @mixin drop-delete-hover {
 	img {
 		transition: filter 0.2s linear;

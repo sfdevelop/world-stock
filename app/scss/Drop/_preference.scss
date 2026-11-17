@@ -153,7 +153,6 @@ $drop-pref-unavailable: #c5c5c5;
 
 	&__head {
 		width: 100%;
-		border-bottom: 1px solid $drop-grey-light;
 	}
 
 	&__toggle {
@@ -167,6 +166,8 @@ $drop-pref-unavailable: #c5c5c5;
 
 		p {
 			min-width: 0;
+			padding-bottom: 4px;
+			border-bottom: 1px solid $drop-grey-light;
 			color: $drop-black;
 			font-size: 12px;
 			font-weight: 700;
@@ -212,8 +213,7 @@ $drop-pref-unavailable: #c5c5c5;
 	&__panel {
 		width: 100%;
 		min-width: 0;
-		overflow: hidden;
-		transition: height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+		@include drop-accordion-height;
 	}
 
 	&__group:not(.is-open) &__panel {

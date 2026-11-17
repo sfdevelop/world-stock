@@ -178,8 +178,7 @@ $drop-filter-chip: rgba(237, 237, 237, 0.4);
 	}
 
 	&__panel {
-		overflow: hidden;
-		transition: height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+		@include drop-accordion-height;
 
 		> :last-child {
 			margin-bottom: 12px;
@@ -267,6 +266,11 @@ $drop-filter-chip: rgba(237, 237, 237, 0.4);
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 1.4;
+		transition: color 0.2s linear;
+	}
+
+	&:hover &__name {
+		color: $drop-red;
 	}
 
 	&__count {
