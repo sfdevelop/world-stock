@@ -5,29 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46b1f709-b2ea-4d80-8f9b-919102ec29d0" name="Changes" comment="Перевір висоту імпутів і кнопки. Там різниця в 1-2 піксель, але я впевнена, що він її замітить.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/Drop/drop.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/Drop/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/catalog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/Drop/drop.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/drop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/Drop/drop.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/drop.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/Drop/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/orders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/Drop/preference.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/preference.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partials/Drop/menu-groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partials/Drop/menu-groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_catalog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_catalog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/Drop/terms.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/Drop/terms.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/Drop/_filters.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_filters.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/Drop/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/Drop/_orders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_orders.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_preference.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_preference.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_product.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_terms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_terms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-information.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-orders-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-orders-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-orders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-personal-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-personal-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-preference.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-preference.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/drop-terms.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/drop-terms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/Drop/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/Drop/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/Drop/drop.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/Drop/drop.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/Drop/drop.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/Drop/drop.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +38,9 @@
                       <execution>
                         <execution>
                           <execution>
-                            <execution />
+                            <execution>
+                              <execution />
+                            </execution>
                           </execution>
                         </execution>
                       </execution>
@@ -63,7 +55,7 @@
     </execution>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="781" />
+    <option name="cachedIndexableFilesCount" value="785" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -259,6 +251,7 @@
       <workItem from="1794827306406" duration="73000" />
       <workItem from="1794921165198" duration="731000" />
       <workItem from="1794922091678" duration="162000" />
+      <workItem from="1794924323575" duration="715000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
