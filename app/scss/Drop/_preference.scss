@@ -219,8 +219,8 @@ $drop-pref-unavailable: #c5c5c5;
 		@include drop-accordion-height;
 	}
 
-	&__group:not(.is-open) &__panel {
-		height: 0;
+	&__group.is-open &__panel {
+		@include drop-accordion-open;
 	}
 
 	&__cards {

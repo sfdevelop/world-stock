@@ -169,7 +169,7 @@ $drop-filter-chip: rgba(237, 237, 237, 0.4);
 		img {
 			width: 10px;
 			height: 6px;
-			transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+			transition: transform $drop-accordion-duration $drop-accordion-ease;
 		}
 	}
 
@@ -185,8 +185,8 @@ $drop-filter-chip: rgba(237, 237, 237, 0.4);
 		}
 	}
 
-	&__group:not(.is-open) &__panel {
-		height: 0;
+	&__group.is-open &__panel {
+		@include drop-accordion-open;
 	}
 
 	&__list {

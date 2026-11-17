@@ -44,23 +44,6 @@
       openButton.setAttribute("aria-label", isOpen ? "Закрити меню" : "Меню");
     }
 
-    function setCategoryOpen(item, isOpen) {
-      var toggle = item.querySelector("[data-drop-menu-toggle]");
-      var sub = item.querySelector("[data-drop-menu-sub]");
-
-      if (!toggle || !sub || item.classList.contains("is-open") === isOpen) {
-        return;
-      }
-
-      var currentHeight = sub.getBoundingClientRect().height;
-
-      sub.style.height = currentHeight + "px";
-      sub.offsetHeight;
-      item.classList.toggle("is-open", isOpen);
-      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-      sub.style.height = isOpen ? sub.scrollHeight + "px" : "0px";
-    }
-
     openButton.addEventListener("click", function () {
       setMenuOpen(!menu.classList.contains("is-open"));
     });
@@ -71,29 +54,6 @@
       }
 
       finishClose();
-    });
-
-    menu.querySelectorAll("[data-drop-menu-item]").forEach(function (item) {
-      var toggle = item.querySelector("[data-drop-menu-toggle]");
-      var sub = item.querySelector("[data-drop-menu-sub]");
-
-      if (!toggle || !sub) {
-        return;
-      }
-
-      toggle.addEventListener("click", function () {
-        setCategoryOpen(item, !item.classList.contains("is-open"));
-      });
-
-      sub.addEventListener("transitionend", function (event) {
-        if (event.target !== sub || event.propertyName !== "height") {
-          return;
-        }
-
-        if (item.classList.contains("is-open")) {
-          sub.style.height = "auto";
-        }
-      });
     });
 
     document.addEventListener("keydown", function (event) {
@@ -127,6 +87,7 @@
     }
 
     initDropMenu();
+    window.DropAccordion.bindAll();
   }
 
   if (document.querySelector("[data-partial]")) {

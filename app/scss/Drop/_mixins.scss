@@ -53,8 +53,18 @@
 }
 
 @mixin drop-accordion-height {
+	height: 0;
+	min-height: 0;
 	overflow: hidden;
-	transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: height $drop-accordion-duration $drop-accordion-ease;
+
+	@media (prefers-reduced-motion: reduce) {
+		transition: none;
+	}
+}
+
+@mixin drop-accordion-open {
+	height: auto;
 }
 
 @mixin drop-delete-hover {

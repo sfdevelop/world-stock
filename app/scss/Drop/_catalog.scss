@@ -217,6 +217,7 @@ $drop-catalog-text: #1a1a1a;
 		border: 1px solid $drop-grey-link;
 		border-radius: 4px;
 		background: $drop-white;
+		@include drop-accordion-height;
 
 		button {
 			display: block;
@@ -236,6 +237,10 @@ $drop-catalog-text: #1a1a1a;
 				color: $drop-white;
 			}
 		}
+	}
+
+	&__dropdown.is-open &__menu {
+		@include drop-accordion-open;
 	}
 
 	&__dropdown:not(&__count) {

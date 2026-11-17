@@ -182,26 +182,35 @@ html.drop-user-open .drop-top {
 		left: auto;
 		z-index: 3;
 		width: $drop-user-width;
-		height: 0;
+		height: auto;
 		overflow: visible;
-		transition: visibility 0s linear 0s;
+		filter: drop-shadow($drop-shadow);
+		transition: visibility 0s linear $drop-accordion-duration;
+
+		&.is-open {
+			transition: visibility 0s linear 0s;
+		}
 
 		&::before {
 			display: none;
 		}
 
 		&__panel {
-			position: absolute;
-			top: 0;
-			right: 0;
+			position: relative;
+			top: auto;
+			right: auto;
 			width: 100%;
-			height: auto;
 			padding: 24px;
-			overflow: visible;
+			overflow: hidden;
 			border: 1px solid $drop-grey-light;
 			border-radius: $drop-radius;
+			box-shadow: none;
 			transform: none;
-			transition: none;
+			@include drop-accordion-height;
+		}
+
+		&.is-open &__panel {
+			@include drop-accordion-open;
 		}
 	}
 }

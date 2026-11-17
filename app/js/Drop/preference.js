@@ -7,9 +7,14 @@
     }
 
     initTabs(root);
-    initGroups(root);
     initFavorites(root);
     initCards();
+
+    root.addEventListener("drop-accordion:done", function (event) {
+      if (event.detail && event.detail.isOpen) {
+        initCards();
+      }
+    });
   }
 
   function initTabs(root) {
@@ -27,71 +32,6 @@
           item.classList.toggle("is-active", isActive);
           item.setAttribute("aria-selected", isActive ? "true" : "false");
         });
-      });
-    });
-  }
-
-  function prefersReducedMotion() {
-    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  }
-
-  function initGroups(root) {
-    root.querySelectorAll("[data-drop-pref-group]").forEach(function (group) {
-      var toggle = group.querySelector("[data-drop-pref-toggle]");
-      var panel = group.querySelector("[data-drop-pref-panel]");
-
-      if (!toggle || !panel) {
-        return;
-      }
-
-      function setGroupOpen(isOpen) {
-        if (group.classList.contains("is-open") === isOpen) {
-          return;
-        }
-
-        var token = {};
-
-        panel._animToken = token;
-        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-
-        if (prefersReducedMotion()) {
-          group.classList.toggle("is-open", isOpen);
-          panel.hidden = !isOpen;
-          panel.style.height = "";
-
-          if (isOpen) {
-            initCards();
-          }
-
-          return;
-        }
-
-        panel.hidden = false;
-        panel.style.height = panel.getBoundingClientRect().height + "px";
-        panel.offsetHeight;
-        group.classList.toggle("is-open", isOpen);
-        panel.style.height = isOpen ? panel.scrollHeight + "px" : "0px";
-
-        panel.addEventListener("transitionend", function onEnd(event) {
-          if (event.target !== panel || event.propertyName !== "height" || panel._animToken !== token) {
-            return;
-          }
-
-          panel.removeEventListener("transitionend", onEnd);
-
-          if (isOpen) {
-            panel.style.height = "auto";
-            initCards();
-            return;
-          }
-
-          panel.hidden = true;
-          panel.style.height = "";
-        });
-      }
-
-      toggle.addEventListener("click", function () {
-        setGroupOpen(!group.classList.contains("is-open"));
       });
     });
   }

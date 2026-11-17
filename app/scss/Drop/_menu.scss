@@ -3,7 +3,6 @@
 
 $drop-menu-ease: cubic-bezier(0.22, 1, 0.36, 1);
 $drop-menu-slide: 0.45s;
-$drop-menu-reveal: 0.35s;
 $drop-menu-offset: calc(#{$drop-header-pad-y} * 2 + 30.222px + 16px);
 
 .drop-menu {
@@ -90,9 +89,11 @@ $drop-menu-offset: calc(#{$drop-header-pad-y} * 2 + 30.222px + 16px);
 	}
 
 	&__sub {
-		height: 0;
-		overflow: hidden;
-		transition: height $drop-menu-reveal $drop-menu-ease;
+		@include drop-accordion-height;
+	}
+
+	&__item.is-open &__sub {
+		@include drop-accordion-open;
 	}
 
 	&__groups {

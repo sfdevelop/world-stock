@@ -21,8 +21,6 @@
   var searchQuery = "";
   var lastSearchValue = "";
 
-  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
   function isPdfFile(file) {
     var type = file && file.type ? file.type.toLowerCase() : "";
     var name = file && file.name ? file.name : "";
@@ -50,41 +48,6 @@
     if (addLabel && file) {
       addLabel.textContent = file.name;
     }
-  }
-
-  function animateHeight(el, isOpen) {
-    var token = {};
-
-    el._animToken = token;
-
-    if (reduceMotion) {
-      el.style.height = isOpen ? "auto" : "0px";
-      return;
-    }
-
-    if (isOpen) {
-      var locked = el.style.height;
-
-      el.style.height = "auto";
-      var target = el.scrollHeight;
-      el.style.height = locked || "0px";
-      el.offsetHeight;
-      el.style.height = target + "px";
-    } else {
-      el.style.height = "0px";
-    }
-
-    el.addEventListener("transitionend", function onEnd(event) {
-      if (event.target !== el || event.propertyName !== "height" || el._animToken !== token) {
-        return;
-      }
-
-      el.removeEventListener("transitionend", onEnd);
-
-      if (isOpen) {
-        el.style.height = "auto";
-      }
-    });
   }
 
   function formatExportDate(value) {
@@ -273,24 +236,13 @@
 
   function setOpen(order, isOpen) {
     var toggle = order.querySelector("[data-order-toggle]");
-    var body = order.querySelector(".drop-order__body");
 
-    if (body && !reduceMotion) {
-      body.style.height = body.getBoundingClientRect().height + "px";
-      body.offsetHeight;
-    }
-
-    order.classList.toggle("is-open", isOpen);
-
-    if (body) {
-      animateHeight(body, isOpen);
-    }
+    DropAccordion.setOpen(order, isOpen);
 
     if (!toggle) {
       return;
     }
 
-    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     toggle.setAttribute("aria-label", isOpen ? "Згорнути замовлення" : "Розгорнути замовлення");
   }
 
@@ -361,24 +313,13 @@
 
     if (alertToggle && root.contains(alertToggle)) {
       var alert = alertToggle.closest(".drop-order__alert");
-      var body = alert.querySelector(".drop-order__alert-body");
-      var isOpen = alert.classList.contains("is-collapsed");
+      var isOpen = !alert.classList.contains("is-open");
       var label = alertToggle.querySelector("p");
 
-      if (body && !reduceMotion) {
-        body.style.height = body.getBoundingClientRect().height + "px";
-        body.offsetHeight;
-      }
-
-      alert.classList.toggle("is-collapsed", !isOpen);
-      alertToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      DropAccordion.setOpen(alert, isOpen);
 
       if (label) {
         label.textContent = isOpen ? "Згорнути" : "Розгорнути";
-      }
-
-      if (body) {
-        animateHeight(body, isOpen);
       }
     }
   });

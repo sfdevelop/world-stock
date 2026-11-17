@@ -86,21 +86,25 @@
         root.inert = false;
         root.setAttribute("aria-hidden", "false");
         panel.setAttribute("aria-modal", desktop.matches ? "false" : "true");
-        root.classList.add("is-open");
 
-        if (!desktop.matches) {
+        if (desktop.matches) {
+          DropAccordion.setOpen(root, panel, true);
+        } else {
+          root.classList.add("is-open");
           document.documentElement.classList.add("drop-user-open");
         }
+      } else if (desktop.matches) {
+        DropAccordion.setOpen(root, panel, false, finishClose);
       } else {
         root.classList.remove("is-open");
 
-        if (prefersReducedMotion() || desktop.matches) {
+        if (prefersReducedMotion()) {
           finishClose();
         }
+      }
 
-        if (lastFocus && typeof lastFocus.focus === "function") {
-          lastFocus.focus();
-        }
+      if (!isOpen && lastFocus && typeof lastFocus.focus === "function") {
+        lastFocus.focus();
       }
 
       openButton.setAttribute("aria-expanded", isOpen ? "true" : "false");

@@ -114,18 +114,17 @@ $drop-terms-back: rgba(237, 237, 237, 0.4);
 		}
 
 		&.is-open {
-			gap: 6px;
-			padding: 12px;
+			padding: 6px 12px 12px;
 
 			@include drop-desktop {
-				gap: 20px;
-				padding: 24px;
+				padding: 6px 16px 24px;
 			}
 		}
 	}
 
 	&__toggle {
 		display: flex;
+		flex-shrink: 0;
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
@@ -149,15 +148,6 @@ $drop-terms-back: rgba(237, 237, 237, 0.4);
 			p {
 				font-size: 16px;
 			}
-		}
-	}
-
-	&__item.is-open &__toggle {
-		padding-bottom: 6px;
-		border-bottom: 1px solid $drop-grey-light;
-
-		@include drop-desktop {
-			padding-bottom: 12px;
 		}
 	}
 
@@ -230,11 +220,7 @@ $drop-terms-back: rgba(237, 237, 237, 0.4);
 	}
 
 	&__item.is-open &__panel {
-		display: block;
-	}
-
-	&__item:not(.is-open) &__panel {
-		height: 0;
+		@include drop-accordion-open;
 	}
 
 	&__text {

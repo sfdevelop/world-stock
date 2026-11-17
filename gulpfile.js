@@ -54,6 +54,7 @@ function orderNewScripts() {
 
 function dropScripts() {
     return src([
+        APP_DIR + '/js/Drop/services/accordion.js',
         APP_DIR + '/js/Drop/drop.js',
         APP_DIR + '/js/Drop/catalog.js',
         APP_DIR + '/js/Drop/product.js',
@@ -61,7 +62,6 @@ function dropScripts() {
         APP_DIR + '/js/Drop/basket.js',
         APP_DIR + '/js/Drop/orders.js',
         APP_DIR + '/js/Drop/preference.js',
-        APP_DIR + '/js/Drop/terms.js',
         APP_DIR + '/js/Drop/auth.js',
         APP_DIR + '/js/Drop/user.js'
     ])

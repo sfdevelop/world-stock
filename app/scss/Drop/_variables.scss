@@ -22,3 +22,5 @@ $drop-header-pad-y: 12px;
 $drop-header-pad-x-mobile: 16px;
 $drop-header-pad-x-desktop: 92px;
 $drop-logo-scale: calc(49 / 55);
+$drop-accordion-duration: var(--drop-accordion-duration, 1000ms);
+$drop-accordion-ease: var(--drop-accordion-ease, cubic-bezier(0.4, 0, 0.2, 1));

@@ -8,6 +8,8 @@
 }
 
 html {
+	--drop-accordion-duration: 1000ms;
+	--drop-accordion-ease: cubic-bezier(0.4, 0, 0.2, 1);
 	overflow-x: hidden;
 	overflow-x: clip;
 	scroll-behavior: smooth;

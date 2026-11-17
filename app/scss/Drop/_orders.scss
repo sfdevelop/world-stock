@@ -368,15 +368,13 @@ $drop-order-control-h: 44px;
 		height: 24px;
 
 		img {
-			transition: transform 0.35s ease;
+			transition: transform $drop-accordion-duration $drop-accordion-ease;
 		}
 	}
 
 	&__body {
 		display: flex;
 		flex-direction: column;
-		height: 0;
-		overflow: hidden;
 		padding: 0 12px;
 		@include drop-accordion-height;
 	}
@@ -776,9 +774,8 @@ $drop-order-control-h: 44px;
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
-		margin-top: 10px;
-		overflow: hidden;
-		transition: height 0.35s ease, margin 0.35s ease;
+		padding-top: 10px;
+		@include drop-accordion-height;
 
 		> p {
 			color: $drop-black;
@@ -788,9 +785,8 @@ $drop-order-control-h: 44px;
 		}
 	}
 
-	&__alert.is-collapsed &__alert-body {
-		height: 0;
-		margin-top: 0;
+	&__alert.is-open &__alert-body {
+		@include drop-accordion-open;
 	}
 
 	&__alert-author p {
@@ -977,7 +973,7 @@ $drop-order-control-h: 44px;
 	}
 
 	&.is-open &__body {
-		height: auto;
+		@include drop-accordion-open;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
