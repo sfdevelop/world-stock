@@ -168,14 +168,22 @@ $drop-menu-offset: calc(#{$drop-header-pad-y} * 2 + 30.222px + 16px);
 	&__brands {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 10px 16px;
+		gap: 20px 16px;
 		padding-left: 12px;
 	}
 
 	&__brand {
-		color: $drop-black;
-		@include drop-text(14px);
-		@include drop-link-hover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: calc((100% - 32px) / 3);
+		height: 40px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
 	}
 }
 

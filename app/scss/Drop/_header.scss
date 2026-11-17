@@ -241,57 +241,30 @@
 	}
 
 	&__icon {
-		width: 100%;
-		height: 100%;
-	}
+		width: 20px;
+		height: 20px;
 
-	&__cart,
-	&__dot {
-		position: absolute;
-		max-width: none;
-	}
-
-	&__cart {
-		top: 14.58%;
-		right: 10.42%;
-		bottom: 28.33%;
-		left: 10.42%;
-		width: auto;
-		height: auto;
-	}
-
-	&__dot {
-		top: 79.17%;
-		bottom: 12.5%;
-		width: auto;
-		height: auto;
-
-		&--left {
-			right: 56.25%;
-			left: 35.42%;
-		}
-
-		&--right {
-			right: 20.83%;
-			left: 70.83%;
+		@include drop-desktop {
+			width: 24px;
+			height: 24px;
 		}
 	}
 
 	&__badge {
 		position: absolute;
-		top: -5.33px;
-		left: 14.05px;
+		top: -5px;
+		left: 10px;
 		z-index: 1;
 		@include drop-flex-center;
-		width: 22.67px;
-		height: 22.67px;
+		width: 16px;
+		height: 16px;
 		padding: 0;
 		border-radius: 50%;
 		background: $drop-red;
 		color: $drop-white;
 
 		p {
-			font-size: 10.67px;
+			font-size: 9px;
 			font-weight: 400;
 			line-height: 1.4;
 			white-space: nowrap;
@@ -299,9 +272,9 @@
 
 		@include drop-desktop {
 			top: -6px;
-			left: 15.81px;
-			width: 25.5px;
-			height: 25.5px;
+			left: 12px;
+			width: 18px;
+			height: 18px;
 
 			p {
 				font-size: 12px;
