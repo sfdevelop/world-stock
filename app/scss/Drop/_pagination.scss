@@ -1,0 +1,117 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+$drop-pagination-text: #1e1e1e;
+$drop-pagination-muted: #757575;
+
+.drop-pagination {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr) auto;
+	align-items: center;
+	column-gap: 4px;
+	width: 100%;
+	max-width: 100%;
+	margin-top: 32px;
+
+	@include drop-desktop {
+		column-gap: 0;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 0;
+		gap: 2px;
+
+		@include drop-desktop {
+			gap: 8px;
+		}
+	}
+
+	&__list a,
+	&__list span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 32px;
+		height: 32px;
+		padding: 0;
+		color: $drop-pagination-text;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1;
+
+		@include drop-desktop {
+			min-width: 42px;
+			height: 36px;
+		}
+	}
+
+	&__step {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		gap: 8px;
+		height: 32px;
+		padding: 8px 0;
+		color: $drop-pagination-text;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1;
+		white-space: nowrap;
+
+		@include drop-desktop {
+			height: 36px;
+			padding: 8px 12px;
+		}
+
+		img {
+			width: 16px;
+			height: 16px;
+		}
+
+		span {
+			display: none;
+
+			@include drop-desktop {
+				display: block;
+			}
+		}
+	}
+
+	&__step--prev img {
+		transform: rotate(90deg);
+	}
+
+	&__step--next img {
+		transform: rotate(-90deg);
+	}
+
+	&__step.is-disabled {
+		color: $drop-pagination-muted;
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	&__list a {
+		transition: color 0.2s linear, background 0.2s linear;
+
+		&:hover,
+		&:focus-visible {
+			color: $drop-red;
+		}
+	}
+
+	&__list a[aria-current="page"] {
+		border-radius: 8px;
+		background: $drop-black;
+		color: $drop-white;
+
+		&:hover,
+		&:focus-visible {
+			color: $drop-white;
+		}
+	}
+}
