@@ -1,6 +1,6 @@
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M4.26562 6.36427C4.26562 5.97656 4.58105 5.66114 4.96875 5.66114H7.28494L6.41723 6.52884L7.41159 7.5232L9.97678 4.95802L7.36195 2.34319L6.36759 3.33755L7.28494 4.25489H4.96875C3.80564 4.25489 2.85938 5.20116 2.85938 6.36427V8.47364H4.26562V6.36427Z" fill="white"/>
-  <path d="M19.7344 17.6143C19.7344 18.002 19.419 18.3174 19.0312 18.3174H16.7078L17.5949 17.4303L16.6005 16.4359L14.0159 19.0205L16.6554 21.66L17.6497 20.6657L16.7078 19.7236H19.0312C20.1944 19.7236 21.1406 18.7774 21.1406 17.6143V15.5049H19.7344V17.6143Z" fill="white"/>
-  <path d="M0 12.9141V20.8144L6.32812 23.9785L12.6562 20.8144V12.9141L6.32812 9.75Z M6.32812 15.375V9.75M6.32812 15.375L12.6562 20.8144M6.32812 15.375L0 20.8144" stroke="white" stroke-width="1.15" stroke-linejoin="miter"/>
-  <path d="M17.6719 0L11.3438 3.16406V11.0644L17.6719 14.2285L24 11.0644V3.16406Z M17.6719 5.625V0M17.6719 5.625L24 11.0644M17.6719 5.625L11.3438 11.0644" stroke="white" stroke-width="1.15" stroke-linejoin="miter"/>
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="20.375" height="14.6875" viewBox="0 0 20.375 14.6875" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<path id="Vector" d="M1 3.84375H19.375M16.5312 6.6875L19.375 3.84375L16.5312 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+<path id="Vector_2" d="M19.375 10.8438H1M3.84375 13.6875L1 10.8438L3.84375 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+</g>
 </svg>

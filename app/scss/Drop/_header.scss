@@ -157,15 +157,7 @@
 			> ul a {
 				@include drop-text(16px, 600);
 				text-transform: uppercase;
-				text-decoration: underline;
-				text-decoration-color: transparent;
-				transition: color 0.2s linear, text-decoration-color 0.2s linear;
-
-				&:hover,
-				&:focus-visible {
-					color: $drop-red;
-					text-decoration-color: $drop-red;
-				}
+				@include drop-link-hover;
 			}
 
 			> ul .drop-header__item:hover > a,
@@ -209,19 +201,15 @@
 		background: $drop-black;
 
 		img {
-			width: 20px;
-			height: 20px;
+			width: 20.375px;
+			height: 14.6875px;
+			transform: rotate(90deg);
 		}
 
 		@include drop-desktop {
 			width: 40px;
 			height: 40px;
 			border-radius: $drop-radius;
-
-			img {
-				width: 28px;
-				height: 28px;
-			}
 		}
 	}
 
@@ -243,12 +231,12 @@
 		display: block;
 		flex-shrink: 0;
 		overflow: visible;
-		width: 30.222px;
-		height: 30.222px;
+		width: 20px;
+		height: 20px;
 
 		@include drop-desktop {
-			width: 34px;
-			height: 34px;
+			width: 24px;
+			height: 24px;
 		}
 	}
 
