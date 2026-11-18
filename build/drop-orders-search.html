@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Пошук замовлень — WORLD STOCK DROP</title>
+  <title>Результати пошуку — WORLD STOCK DROP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -615,18 +615,12 @@
 
 
         <div class="drop-orders__content">
-          <div class="drop-orders__heading">
-            <h1>Пошук замовлень</h1>
-          </div>
-
           <section class="drop-orders-search" aria-labelledby="orders-search-title">
             <div class="drop-orders-search__bar">
-              <div class="drop-orders-search__title">
-                <h2 id="orders-search-title">Результати пошуку</h2>
-              </div>
-              <a class="drop-orders-search__back" href="drop-orders.html">
-                <p>Назад</p>
-              </a>
+              <h1 class="drop-orders-search__title" id="orders-search-title">
+                Результати пошуку: <span data-orders-search-query>1234</span>
+              </h1>
+              <a class="drop-orders-search__back" href="drop-orders.html">Назад</a>
             </div>
 
             <div class="drop-orders-search__list" id="orders-search-results">
@@ -1053,6 +1047,26 @@
               </article>
             </div>
           </section>
+
+          <nav class="drop-pagination" aria-label="Сторінки">
+            <a class="drop-pagination__step drop-pagination__step--prev is-disabled" aria-disabled="true">
+              <img src="images/Drop/catalog/icon-page-arrow.svg" alt="" width="16" height="16">
+              <span>Попередня</span>
+            </a>
+            <ul class="drop-pagination__list">
+              <li><a href="#" aria-current="page">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><span>…</span></li>
+              <li><a href="#">67</a></li>
+              <li><a href="#">68</a></li>
+            </ul>
+            <a class="drop-pagination__step drop-pagination__step--next" href="#">
+              <span>Наступна</span>
+              <img src="images/Drop/catalog/icon-page-arrow.svg" alt="" width="16" height="16">
+            </a>
+          </nav>
+
         </div>
       </div>
     </main>

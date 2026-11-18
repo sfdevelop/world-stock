@@ -380,16 +380,38 @@
     });
   }
 
+  function fillSearchQueryLabel() {
+    var el = root.querySelector("[data-orders-search-query]");
+    var query;
+
+    try {
+      query = new URLSearchParams(window.location.search).get("q") || "";
+    } catch (error) {
+      query = "";
+    }
+
+    query = query.replace(/\s+/g, " ").trim();
+
+    if (el && query) {
+      el.textContent = query;
+    }
+  }
+
+  fillSearchQueryLabel();
+
   if (searchForm) {
     searchForm.addEventListener("submit", function (event) {
+      var query;
+
       event.preventDefault();
       lastSearchValue = searchInput ? searchInput.value : "";
+      query = lastSearchValue.replace(/\s+/g, " ").trim();
 
-      if (!lastSearchValue.replace(/\s+/g, " ").trim()) {
+      if (!query) {
         return;
       }
 
-      window.location.href = "drop-orders-search.html";
+      window.location.href = "drop-orders-search.html?q=" + encodeURIComponent(query);
     });
   }
 
