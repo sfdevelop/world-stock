@@ -88,6 +88,7 @@
 
     initDropMenu();
     window.DropAccordion.bindAll();
+    window.DropSelect.bindAll();
   }
 
   if (document.querySelector("[data-partial]")) {

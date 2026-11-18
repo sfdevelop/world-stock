@@ -242,19 +242,20 @@
             <button class="drop-toolbar__filter" type="button" aria-label="Фільтр" aria-expanded="false" data-drop-filter-open>
               <img src="images/Drop/catalog/icon-filter.svg" alt="" width="13" height="13">
             </button>
-            <div class="drop-toolbar__dropdown" data-drop-dropdown>
-              <button class="drop-toolbar__select" type="button" aria-expanded="false" data-drop-dropdown-toggle>
-                <span data-drop-sort-label>Новинки</span>
-                <div class="drop-toolbar__chevron">
+            <div class="drop-select drop-toolbar__dropdown" data-drop-select>
+              <label class="drop-select__label" for="drop-sort">Сортування</label>
+              <select class="drop-select__native" id="drop-sort" name="sort" tabindex="-1" aria-hidden="true" data-drop-sort-select>
+                <option value="new" selected>Новинки</option>
+                <option value="popular">Популярні</option>
+                <option value="price-asc">За збільшенням ціни</option>
+                <option value="price-desc">За зменшенням ціни</option>
+              </select>
+              <button class="drop-select__toggle" type="button" data-drop-select-toggle>
+                <span data-drop-select-value></span>
+                <span class="drop-select__chevron" aria-hidden="true">
                   <img src="images/Drop/catalog/icon-chevron.svg" alt="" width="5" height="8">
-                </div>
+                </span>
               </button>
-              <div class="drop-toolbar__menu" data-drop-dropdown-menu>
-                <button type="button" class="is-active" data-drop-sort="new">Новинки</button>
-                <button type="button" data-drop-sort="popular">Популярні</button>
-                <button type="button" data-drop-sort="price-asc">За збільшенням ціни</button>
-                <button type="button" data-drop-sort="price-desc">За зменшенням ціни</button>
-              </div>
             </div>
             <div class="drop-toolbar__choices">
               <div class="drop-toolbar__sort-label">
@@ -267,21 +268,20 @@
                 <button class="drop-toolbar__choice" type="button" data-drop-choice data-drop-sort="price-desc">За зменшенням ціни</button>
               </div>
             </div>
-            <div class="drop-toolbar__count drop-toolbar__dropdown" data-drop-dropdown>
-              <button class="drop-toolbar__select" type="button" aria-expanded="false" aria-label="Кількість на сторінці" data-drop-dropdown-toggle>
-                <div class="drop-toolbar__count-main">
-                  <img class="drop-toolbar__grid" src="images/Drop/catalog/icon-grid.svg" alt="" width="13" height="13">
-                  <span data-drop-per-page-value>24</span>
-                </div>
-                <div class="drop-toolbar__chevron">
+            <div class="drop-select drop-select--end drop-toolbar__count" data-drop-select>
+              <label class="drop-select__label" for="drop-per-page">Кількість на сторінці</label>
+              <select class="drop-select__native" id="drop-per-page" name="per-page" tabindex="-1" aria-hidden="true">
+                <option value="24" selected>24</option>
+                <option value="48">48</option>
+                <option value="96">96</option>
+              </select>
+              <button class="drop-select__toggle" type="button" data-drop-select-toggle>
+                <img class="drop-toolbar__grid" src="images/Drop/catalog/icon-grid.svg" alt="" width="13" height="13">
+                <span data-drop-select-value></span>
+                <span class="drop-select__chevron" aria-hidden="true">
                   <img src="images/Drop/catalog/icon-chevron.svg" alt="" width="5" height="8">
-                </div>
+                </span>
               </button>
-              <div class="drop-toolbar__menu" data-drop-dropdown-menu>
-                <button type="button" class="is-active" data-drop-per-page="24">24</button>
-                <button type="button" data-drop-per-page="48">48</button>
-                <button type="button" data-drop-per-page="96">96</button>
-              </div>
             </div>
           </div>
 

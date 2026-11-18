@@ -1,0 +1,88 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.drop-select {
+	position: relative;
+	display: flex;
+	align-items: center;
+	min-width: 0;
+
+	&__label,
+	&__native {
+		@include drop-visually-hidden;
+	}
+
+	&__toggle {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		width: 100%;
+		height: 100%;
+		min-width: 0;
+		color: $drop-black;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.4;
+		white-space: nowrap;
+
+		&:focus,
+		&:focus-visible {
+			outline: none;
+		}
+	}
+
+	&__chevron {
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+		justify-content: center;
+		width: 8px;
+		height: 8px;
+		pointer-events: none;
+
+		img {
+			width: 5px;
+			height: 8px;
+			transform: rotate(90deg);
+			transform-origin: center;
+		}
+	}
+
+	&__menu {
+		position: absolute;
+		top: calc(100% + 4px);
+		left: 0;
+		z-index: 8;
+		min-width: 100%;
+		padding: 4px 0;
+		border: 1px solid $drop-grey-link;
+		border-radius: 4px;
+		background: $drop-white;
+
+		li {
+			padding: 8px 12px;
+			color: $drop-black;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.4;
+			white-space: nowrap;
+			cursor: pointer;
+			transition: background 0.2s linear, color 0.2s linear;
+
+			&:hover,
+			&.is-active {
+				background: $drop-black;
+				color: $drop-white;
+			}
+		}
+	}
+
+	&--end &__menu {
+		right: 0;
+		left: auto;
+	}
+
+	&.is-open &__chevron img {
+		transform: rotate(-90deg);
+	}
+}

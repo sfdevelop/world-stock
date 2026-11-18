@@ -143,22 +143,23 @@ $drop-catalog-text: #1a1a1a;
 	}
 
 	&__filter,
-	&__select {
+	&__dropdown,
+	&__count {
+		height: 29px;
+		border-radius: 4px;
+	}
+
+	&__filter {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 29px;
+		width: 51px;
 		border: 1px solid $drop-black;
-		border-radius: 4px;
 		background: $drop-white;
 
 		@include drop-desktop {
 			display: none;
 		}
-	}
-
-	&__filter {
-		width: 51px;
 
 		img {
 			width: 13px;
@@ -166,113 +167,38 @@ $drop-catalog-text: #1a1a1a;
 		}
 	}
 
+	&__dropdown,
+	&__count {
+		padding: 0 12px;
+	}
+
 	&__dropdown {
-		position: relative;
-	}
-
-	&__select {
-		gap: 6px;
-		padding: 6px 12px;
-		color: $drop-black;
-		font-size: 14px;
-		font-weight: 600;
-		line-height: 1.4;
-		white-space: nowrap;
-	}
-
-	&__count-main {
-		display: flex;
-		align-items: center;
-		gap: 6px;
-	}
-
-	&__grid {
-		display: block;
-		width: 13px;
-		height: 13px;
-	}
-
-	&__chevron {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 8px;
-		height: 8px;
-
-		img {
-			width: 5px;
-			height: 8px;
-			transform: rotate(90deg);
-			transform-origin: center;
-		}
-	}
-
-	&__menu {
-		position: absolute;
-		top: calc(100% + 4px);
-		left: 0;
-		z-index: 5;
-		min-width: 100%;
-		padding: 4px 0;
-		border: 1px solid $drop-grey-link;
-		border-radius: 4px;
+		border: 1px solid $drop-black;
 		background: $drop-white;
-		@include drop-accordion-height;
 
-		button {
-			display: block;
-			width: 100%;
-			padding: 8px 12px;
-			color: $drop-catalog-text;
-			font-size: 14px;
-			font-weight: 400;
-			line-height: 1.4;
-			text-align: left;
-			white-space: nowrap;
-			transition: background 0.2s linear, color 0.2s linear;
-
-			&:hover,
-			&.is-active {
-				background: $drop-black;
-				color: $drop-white;
-			}
-		}
-	}
-
-	&__dropdown.is-open &__menu {
-		@include drop-accordion-open;
-	}
-
-	&__dropdown:not(&__count) {
 		@include drop-desktop {
 			display: none;
 		}
 	}
 
 	&__count {
+		margin-left: auto;
+		background: $drop-grey-light;
 
-		.drop-toolbar__select {
-			display: flex;
-			gap: 6px;
-			height: 29px;
-			border: 0;
-			background: $drop-grey-light;
+		@include drop-desktop {
+			height: 36px;
 
-			@include drop-desktop {
-				display: flex;
+			.drop-select__toggle {
 				gap: 18px;
-				height: 36px;
-				padding: 6px 12px;
 			}
 		}
+	}
 
-		.drop-toolbar__grid {
-			display: block;
-		}
-
-		.drop-toolbar__menu {
-			right: 0;
-			left: auto;
-		}
+	&__grid {
+		display: block;
+		flex-shrink: 0;
+		width: 13px;
+		height: 13px;
+		pointer-events: none;
 	}
 }
