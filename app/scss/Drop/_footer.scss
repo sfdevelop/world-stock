@@ -1,6 +1,5 @@
 @use "variables" as *;
 @use "mixins" as *;
-@use "logo" as logo;
 
 .drop-footer {
 	position: relative;
@@ -27,19 +26,20 @@
 	}
 
 	&__logo {
-		position: relative;
-		display: block;
+		display: flex;
+		align-items: center;
 		flex-shrink: 0;
 		width: calc(197px * #{$drop-logo-scale});
 		height: 49px;
 
-		.drop-logo {
-			position: absolute;
-			top: 50%;
-			left: 0;
-			transform: translateY(-50%) scale($drop-logo-scale);
-			transform-origin: left center;
-			@include logo.drop-logo-full;
+		.drop-logo--mobile {
+			display: none;
+		}
+
+		.drop-logo--desktop {
+			display: block;
+			width: 100%;
+			height: 49px;
 		}
 	}
 

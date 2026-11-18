@@ -116,27 +116,14 @@
 	}
 
 	&__logo {
-		position: relative;
-		display: block;
+		display: flex;
+		align-items: center;
 		flex-shrink: 0;
-		width: 107.528px;
-		height: 21.778px;
-
-		.drop-logo {
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
+		height: 22px;
 
 		@include drop-desktop {
 			width: calc(197px * #{$drop-logo-scale});
 			height: 49px;
-
-			.drop-logo {
-				top: 50%;
-				transform: translateY(-50%) scale($drop-logo-scale);
-				transform-origin: left center;
-			}
 		}
 	}
 
