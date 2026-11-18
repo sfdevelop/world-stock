@@ -295,8 +295,6 @@ $drop-order-control-h: 44px;
 	}
 
 	&__price {
-		margin-left: auto;
-
 		p {
 			color: $drop-grey;
 			font-size: 14px;
@@ -961,11 +959,8 @@ $drop-order-control-h: 44px;
 	}
 
 	&.is-open &__price--mobile {
-		display: none;
-	}
-
-	&.is-open &__meta {
-		justify-content: flex-start;
+		visibility: hidden;
+		pointer-events: none;
 	}
 
 	&.is-open &__toggle img {
